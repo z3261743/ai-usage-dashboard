@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-06-11</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-06-11</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-06-11</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/#atom-everything" target="_blank" rel="noopener">Anthropic 撤回可能“破坏”使用 Claude 的 AI 研究人员的政策</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-06-11 11:45</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Anthropic 撤回了一项可能“破坏”使用 Claude 的 AI 研究人员的政策。该政策曾规定，Claude Fable/Mythos 会识别“针对前沿 LLM 开发的请求”并在不通知用户的情况下“限制其有效性”。此举引发巨大争议。Anthropic 在声明中承认“做出了错误的权衡”，并为此道歉，表示将调整安全措施使其透明化。放弃该政策是积极进展。  
+标签：ai, generative-ai, llms, anthropic, claude, ai-ethics, claude-mythos</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem" target="_blank" rel="noopener">支持欧洲构建可信AI生态系统的工作</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-06-11 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI支持欧盟关于AI内容透明度的《实践准则》，推动溯源标准与工具的发展，帮助人们识别AI生成内容。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jun/10/datasette-agent/#atom-everything" target="_blank" rel="noopener">datasette-agent 0.2a0</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-06-11 07:57</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jun/10/datasette-agent/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：datasette-agent 0.2a0  
+更新亮点：工具现可在执行中向用户提问。声明了 `context` 参数的工具会收到一个 `ToolContext` 对象，通过 `await context.ask_user(...)` 可提出 yes/no、多选（`options=[...]`）或自由文本（`free_text=True`）问题。问题未回答时，agent 轮次暂停：问题在聊天界面以表单形式渲染，并持久化至内部数据库，因此挂起的对话在服务器重启后仍可恢复。问题回答后，工具会从头重新执行，并回放已存储的答案，因此需在执行副作用前调用 `ask_user()`。#20 新增内置 `save_query` 工具：agent 可将编写的 SQL 保存为 Datasette 存储查询。保存操作始终需人工批准——agent 会展示完整查询内容。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/May/28/markdown-svg-renderer/#atom-everything" target="_blank" rel="noopener">markdown-svg渲染器</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-05-29 03:45</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/May/28/markdown-svg-renderer/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">工具：markdown-svg-renderer  
+一款经微调的 Markdown 渲染工具，对围栏代码 SVG 块进行特殊处理——既能渲染图像，又提供切换至代码视图的标签。支持直接粘贴 Markdown 内容，或输入支持 CORS 的 Markdown 文件/Gist 的 URL。示例中加载了包含 Opus 4.8 的 LLM 鹈鹕日志的 Markdown 文件。标签：svg, tools, markdown, cors</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-a-trend-of-trying-to-cut" target="_blank" rel="noopener">脉搏：工程部门削减AI支出的趋势？</a></h2>
+<div class="source">
+    <span>📰 The Pragmatic Engineer</span>
+    <span>🕐 2026-05-29 00:57</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-a-trend-of-trying-to-cut" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">《脉搏》系列报道聚焦科技巨头与初创企业的事件、洞察及趋势。若您发现有趣事件或趋势，欢迎回复分享。今日主题：AI投资回报率（ROI）引发新趋势探讨。笔者与中型及大型企业工程负责人交流发现，AI代理支出正通过“人均月度限额”机制受到抑制……（全文约300字）</div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/" target="_blank" rel="noopener">回顾 I/O 2026 的 12 个重要时刻</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-05-28 23:00</span>
+    <span>🔗 <a href="https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">以下是Google I/O 2026主题演讲的12个重大时刻摘要，涵盖Gemini Omni、Gemini 3.5 Flash等最新技术动态。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/endava" target="_blank" rel="noopener">Endava 如何利用 Codex 构建代理型组织</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-05-28 20:00</span>
+    <span>🔗 <a href="https://openai.com/index/endava" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">了解 Endava 如何利用 Codex 构建代理型组织，加速软件交付，并将需求分析时间从数周缩短至数小时。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/mufg" target="_blank" rel="noopener">三菱日联金融集团计划借助OpenAI实现AI原生转型</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-05-28 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/mufg" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">三菱日联金融集团（MUFG）采用ChatGPT Enterprise构建AI原生组织，优化工作流程，并大规模推出AI驱动的金融服务。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/openai-frontier-governance-framework" target="_blank" rel="noopener">OpenAI前沿治理框架</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-05-28 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/openai-frontier-governance-framework" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">探索OpenAI的前沿治理框架，以及其AI安全、安保与风险管理实践如何与欧盟及加州新兴法规保持一致。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything" target="_blank" rel="noopener">sqlite AGENTS.md</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-05-28 07:44</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">SQLite 五天前新增了 `AGENTS.md` 文件，但并非用于自身开发，而是面向指向 SQLite 代码库的智能体。文件内容包括：SQLite 不接受未经事先同意或未附法律文件（将 PR 置于公共领域）的 Pull Request。但人类开发者会审查简洁且编写良好的 PR，作为概念验证后再自行重写更改。SQLite 不接受智能体生成的代码，但接受包含可复现测试用例的智能体错误报告。欢迎提供展示可能修复方案的补丁或 PR，仅用于文档目的。该文件的最新提交已移除部分内容。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
