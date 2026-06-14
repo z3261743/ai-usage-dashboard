@@ -33,98 +33,94 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-06-14</div>
     <div class="article">
-<h2><a href="https://openai.com/index/adventhealth" target="_blank" rel="noopener">AdventHealth 借助 OpenAI 推进全人护理</a></h2>
+<h2><a href="https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/#atom-everything" target="_blank" rel="noopener">将WASM轮子发布到PyPI供Pyodide使用</a></h2>
 <div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-05-21 20:00</span>
-    <span>🔗 <a href="https://openai.com/index/adventhealth" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-06-14 07:55</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/#atom-everything" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">AdventHealth正在利用ChatGPT for Healthcare优化工作流程，减少行政负担，并将更多时间回归到患者护理上。</div>
+<div class="content">Pyodide 314.0版本发布（来自Hacker News）包含了我期待已久的功能：现在可以直接将专为Pyodide（或任何兼容PEP 783定义的PyEmscripten平台的Python运行时）构建的Python包发布到PyPI，并在运行时安装。此前，Pyodide维护者需自行维护、构建并托管超过300个包，这给维护者带来巨大负担，也成为社区的主要瓶颈——每个新包都需要人工审核。今后，包维护者可以像为Linux、macOS或Windows构建原生wheel一样，直接将Pyodide wheel构建并发布到PyPI。支持此功能的PyPI PR已于4月21日合并。我热爱Pyodide……</div>
 </div>
 <div class="article">
-<h2><a href="https://martinfowler.com/bliki/VibeCoding.html" target="_blank" rel="noopener">Bliki：氛围编程</a></h2>
+<h2><a href="https://simonwillison.net/2026/Jun/13/luau-wasm/#atom-everything" target="_blank" rel="noopener">luau-wasm 0.1a0</a></h2>
 <div class="source">
-    <span>📰 Martin Fowler</span>
-    <span>🕐 2026-05-21 19:49</span>
-    <span>🔗 <a href="https://martinfowler.com/bliki/VibeCoding.html" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-06-14 07:14</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jun/13/luau-wasm/#atom-everything" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">Vibe coding 是一种通过提示 LLM 构建软件应用的方法：用户只需描述需求、测试结果并请求修改，而无需查看 LLM 生成的任何代码。该技术对无编程基础者友好，但生成的软件常存在可维护性、正确性和安全性问题，因此最适合用于面向有限受众的一次性软件。该术语由资深程序员 Andrej Karpathy 于 2025 年 2 月在 X 平台提出，他描述道：“这是一种我称之为‘vibe coding’的新编程方式——你完全顺应氛围，拥抱指数级增长，甚至忘记代码的存在。之所以可行，是因为 LLM（如 Cursor Composer w Sonnet）已变得过于强大。”</div>
+<div class="content">发布：luau-wasm 0.1a0。详情请参阅《将WASM wheels发布到PyPI以用于Pyodide》。标签：lua, webassembly, pyodide。</div>
 </div>
 <div class="article">
-<h2><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/" target="_blank" rel="noopener">我们宣布在密苏里州的新社区投资。</a></h2>
+<h2><a href="https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/#atom-everything" target="_blank" rel="noopener">将SQLite结果列映射回其源`table.column`</a></h2>
 <div class="source">
-    <span>📰 AI</span>
-    <span>🕐 2026-05-21 04:40</span>
-    <span>🔗 <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-06-14 07:05</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/#atom-everything" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">我们正助力培养下一代劳动力，并投资于能源项目。</div>
+<div class="content">研究：将 SQLite 查询结果列映射回其源 `table.column`。若 Datasette 中的任意 SQL 查询能根据结果中包含的列来自哪些表而显示额外信息，将非常实用。为此，需能解析如 `select users.name, orders.total from users join orders on orders.user_id = users.id` 的查询，并程序化地识别每个结果的 `table.column`，不仅处理 JOIN，还要应对 CTE 等复杂语法。我让 Claude Code（Opus 4.8，因 Fable 当前被美国政府禁用）解决此问题。它找到了几个可行方案：一个使用 apsw，另一个通过 ctypes 调用 SQLite 的 `sqlite3_column_table_name()` C 函数（该函数未公开）。</div>
 </div>
 <div class="article">
-<h2><a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/" target="_blank" rel="noopener">I/O 2026 上公布的 100 项新内容</a></h2>
-<div class="source">
-    <span>📰 AI</span>
-    <span>🕐 2026-05-21 03:30</span>
-    <span>🔗 <a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">我们一直很忙碌！以下是 I/O 2026 上最重要的公告、发布和演示的概要。</div>
-</div>
-<div class="article">
-<h2><a href="https://blog.google/innovation-and-ai/models-and-research/google-research/google-beam-group-meetings/" target="_blank" rel="noopener">Google Beam 新实验：提升群组会议体验</a></h2>
-<div class="source">
-    <span>📰 AI</span>
-    <span>🕐 2026-05-21 00:45</span>
-    <span>🔗 <a href="https://blog.google/innovation-and-ai/models-and-research/google-research/google-beam-group-meetings/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">以真实大小和声音看到并听到同事，让混合会议更具包容性和连接感。</div>
-</div>
-<div class="article">
-<h2><a href="https://newsletter.pragmaticengineer.com/p/why-rust-is-different-with-alice" target="_blank" rel="noopener">Alice Ryhl 解读：Rust 为何与众不同</a></h2>
-<div class="source">
-    <span>📰 The Pragmatic Engineer</span>
-    <span>🕐 2026-05-21 00:22</span>
-    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/why-rust-is-different-with-alice" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">最新一期节目已上线，欢迎在YouTube、Spotify和Apple平台观看或收听。页面顶部可查看节目文稿，底部附有时间戳。本期由以下赞助商支持：
-
-• **Antithesis** – 如果你编写Rust代码，可以试试Hegel-Rust：一个免费开源的Rust属性测试库，由Hypothesis团队打造，现由Antithesis维护。如果你喜欢Hegel，你的测试用例可直接在Antithesis中运行。
-
-• **Sentry** – 由开发者专为开发者构建的应用监控软件。我自Uber时期就开始使用Sentry，至今已有10年。它能提供问题的完整上下文：堆栈跟踪、用户操作、环境细节等。新功能Seer调试代理也很实用！欢迎了解Sentry。</div>
-</div>
-<div class="article">
-<h2><a href="https://pytorch.org/blog/pytorch-docathon-2026-results/" target="_blank" rel="noopener">PyTorch Docathon 2026 成果：150 余个合并拉取请求</a></h2>
-<div class="source">
-    <span>📰 Blog – PyTorch</span>
-    <span>🕐 2026-05-20 23:45</span>
-    <span>🔗 <a href="https://pytorch.org/blog/pytorch-docathon-2026-results/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">感谢所有参与 PyTorch Docathon 2026 的开发者！社区再次以惊人的热情和奉献精神，为全球开发者改进了 PyTorch 文档。本次活动于2026年5月5日至19日举行，吸引了260多名注册者和30多名活跃参与者。大家攻克了不同难度的任务，最终合并了150多个 pull request，修复了多项问题，新增了 API 文档，并为 ExecuTorch 文档做出了贡献。特别感谢我们的顶级贡献者，你们的专业与付出直接提升了全球数百万 PyTorch 用户的使用体验。完整贡献者名单请查看排行榜。</div>
-</div>
-<div class="article">
-<h2><a href="https://martinfowler.com/articles/sensors-for-coding-agents.html#StaticCodeAnalysisDependencyRules" target="_blank" rel="noopener">三个额外的静态代码分析传感器</a></h2>
-<div class="source">
-    <span>📰 Martin Fowler</span>
-    <span>🕐 2026-05-20 22:27</span>
-    <span>🔗 <a href="https://martinfowler.com/articles/sensors-for-coding-agents.html#StaticCodeAnalysisDependencyRules" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">Birgitta Böckeler 进一步探讨了静态代码分析中的三种传感器，重点在于检查并强化更好的模块化设计。用于依赖检查的计算型传感器在规则执行方面表现良好，但规则本身存在局限性。针对耦合数据构建计算型传感器的尝试效果平平。相比之下，通过提示推理型传感器来审查模块化设计则更为有效。</div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/the-next-phase-of-education-for-countries" target="_blank" rel="noopener">OpenAI国家教育计划新阶段</a></h2>
+<h2><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture" target="_blank" rel="noopener">OpenAI模型推翻离散几何核心猜想</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
     <span>🕐 2026-05-20 08:00</span>
-    <span>🔗 <a href="https://openai.com/index/the-next-phase-of-education-for-countries" target="_blank" rel="noopener">原文</a></span>
+    <span>🔗 <a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">OpenAI 推动各国教育发展，通过新合作、教师培训及工具，扩大AI在学校中的应用，以提升全球学习成果。</div>
+<div class="content">OpenAI模型解决了80年历史的单位距离问题，推翻了离散几何中的一个重要猜想，标志着AI驱动数学的里程碑。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/ramp" target="_blank" rel="noopener">Ramp工程师如何利用Codex加速代码审查</a></h2>
+<h2><a href="https://openai.com/index/introducing-openai-for-singapore" target="_blank" rel="noopener">OpenAI 登陆新加坡</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2026-05-20 08:00</span>
-    <span>🔗 <a href="https://openai.com/index/ramp" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-05-20 04:30</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-openai-for-singapore" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">Ramp工程师利用Codex与GPT-5.5进行代码审查并快速交付改进，将获取实质性反馈的时间从数小时缩短至数分钟。</div>
+<div class="content">OpenAI 在新加坡启动了一项多年期AI合作计划，旨在扩大AI部署、培养本地人才，并支持企业与公共服务应用AI技术。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/allenai/olmoearth-v1-1" target="_blank" rel="noopener">OlmoEarth v1.1：更高效的地球观测模型系列</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-05-20 02:38</span>
+    <span>🔗 <a href="https://huggingface.co/blog/allenai/olmoearth-v1-1" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/" target="_blank" rel="noopener">I/O 2026：欢迎进入智能体Gemini时代</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-05-20 01:45</span>
+    <span>🔗 <a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Google I/O最新发布：了解我们如何通过Gemini助您提升效率。</div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/" target="_blank" rel="noopener">Google AI 订阅服务在 I/O 2026 上的所有新功能</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-05-20 01:45</span>
+    <span>🔗 <a href="https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">推出100美元AI Ultra计划——同时为Google AI Plus、Pro及Ultra订阅用户新增功能与权益。</div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/" target="_blank" rel="noopener">Gemini 3.5：具备行动能力的前沿智能</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-05-20 01:45</span>
+    <span>🔗 <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">在Google I/O大会上，我们发布了Gemini 3.5系列模型，这是将前沿智能与行动能力相结合的最新模型系列。</div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/" target="_blank" rel="noopener">I/O 2026</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-05-20 01:45</span>
+    <span>🔗 <a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">在Google I/O 2026上，我们分享了如何让AI对每个人都更有帮助。以下是所有宣布的内容。</div>
 </div>
     <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
         由 Hermes Agent 自动生成 · AI 日报
