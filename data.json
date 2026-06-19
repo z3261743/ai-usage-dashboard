@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-18",
+  "generated_at": "2026-06-19",
   "summary": {
-    "total_cost_7d": 0.6715,
-    "total_cost_30d": 1.0739,
-    "avg_daily_cost_7d": 0.0959,
-    "avg_daily_input_tokens": 219284,
-    "avg_daily_output_tokens": 36372
+    "total_cost_7d": 0.3619,
+    "total_cost_30d": 1.0777,
+    "avg_daily_cost_7d": 0.0517,
+    "avg_daily_input_tokens": 134852,
+    "avg_daily_output_tokens": 28526
   },
   "pricing": {
     "deepseek-v4-flash": {
@@ -376,29 +376,57 @@
     },
     {
       "date": "2026-06-18",
-      "sessions": 6,
-      "messages": 48,
-      "tool_calls": 19,
-      "input_tokens": 34223,
-      "output_tokens": 7381,
+      "sessions": 8,
+      "messages": 70,
+      "tool_calls": 27,
+      "input_tokens": 52247,
+      "output_tokens": 9508,
       "reasoning_tokens": 0,
-      "cache_read": 241024,
+      "cache_read": 340864,
       "cache_write": 0,
-      "computed_cost": 0.006857900000000001,
+      "computed_cost": 0.00997682,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 34223,
-          "output_tokens": 7381,
-          "cost": 0.006857900000000001,
-          "sessions": 6
+          "input_tokens": 52247,
+          "output_tokens": 9508,
+          "cost": 0.00997682,
+          "sessions": 8
         }
       },
       "sources": {
         "cron": {
-          "sessions": 6,
-          "cost": 0.006857900000000001
+          "sessions": 8,
+          "cost": 0.00997682
+        }
+      }
+    },
+    {
+      "date": "2026-06-19",
+      "sessions": 1,
+      "messages": 0,
+      "tool_calls": 0,
+      "input_tokens": 4216,
+      "output_tokens": 392,
+      "reasoning_tokens": 0,
+      "cache_read": 4608,
+      "cache_write": 0,
+      "computed_cost": 0.0007000000000000001,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "models": {
+        "deepseek-v4-flash": {
+          "input_tokens": 4216,
+          "output_tokens": 392,
+          "cost": 0.0007000000000000001,
+          "sessions": 1
+        }
+      },
+      "sources": {
+        "cron": {
+          "sessions": 1,
+          "cost": 0.0007000000000000001
         }
       }
     }
