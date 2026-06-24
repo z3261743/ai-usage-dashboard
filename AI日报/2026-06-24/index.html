@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-06-24</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-06-24</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-06-24</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Jun/23/datasette/#atom-everything" target="_blank" rel="noopener">datasette 1.0a35</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-06-24 05:34</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jun/23/datasette/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Datasette 1.0a35 发布，这是一次重大更新。主要亮点包括：数据库操作菜单新增“创建表”界面，支持通过 /<database>/-/create JSON API 定义列、主键、自定义列类型、NOT NULL 约束、字面量默认值、表达式默认值及单列外键（#2787）；新增“修改表”操作及 /<database>/<table>/-/alter JSON API，支持添加、重命名、重排和删除列，修改列类型、默认值、NOT NULL 约束、主键和外键，以及重命名表，修改对话框还包含“删除表”按钮（#2788）；新增模板上下文文档。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jun/23/opfs-pyodide/#atom-everything" target="_blank" rel="noopener">OPFS + Pyodide 测试框架</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-06-24 02:58</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jun/23/opfs-pyodide/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">工具：OPFS + Pyodide 测试框架。我一直在思考，Datasette Lite（一款完全在浏览器中通过 Pyodide 和 WebAssembly 运行的 Python Datasette 应用）是否能够编辑存储在用户电脑上的持久化 SQLite 文件。这正是 OFPS（Origin Private File System，源私有文件系统）的用途，因此我让 Claude Code 为 Web 构建了这个 playground UI，以便在不同浏览器中尝试。标签：browsers, pyodide, datasette-lite</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/gpt-5-immunology-mystery" target="_blank" rel="noopener">GPT-5 助免疫学家 Derya Unutmaz 破解三年未解之谜</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-06-24 01:00</span>
+    <span>🔗 <a href="https://openai.com/index/gpt-5-immunology-mystery" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">GPT-5 Pro 帮助解开了一个持续三年的免疫学谜题，揭示了T细胞行为的关键机制。这一突破可能为癌症和自身免疫疾病研究提供新方向。</div>
+</div>
+<div class="article">
+<h2><a href="https://engineering.fb.com/2026/06/23/production-engineering/how-meta-built-ultra-narrow-batteries-for-ai-glasses-meta-tech-podcast/" target="_blank" rel="noopener">Meta 如何为 AI 眼镜设计超窄电池</a></h2>
+<div class="source">
+    <span>📰 Engineering at Meta</span>
+    <span>🕐 2026-06-24 00:00</span>
+    <span>🔗 <a href="https://engineering.fb.com/2026/06/23/production-engineering/how-meta-built-ultra-narrow-batteries-for-ai-glasses-meta-tech-podcast/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">像Ray-Ban Meta和Oakley Meta Vanguard这样的智能眼镜，需要足够能量来驱动摄像头、扬声器、AI工作负载甚至显示屏，但所有组件必须塞进眼镜腿。如何将能支撑全天运行的电池，放入比成人小指还窄的形态中？这需要重新思考电池制造方式。在Meta Tech Podcast第86集中，主持人Pascal Hartig与Meta钢壳电池技术工程师Karthik和Myuran探讨了新一代可穿戴设备的供电方案。传统软包电池（多数手机和笔记本电脑所用）无法满足智能眼镜需求，因其形态限制与能量密度不足。</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/serving-deepseek-v4-on-gb300-with-sglang-5x-higher-throughput-at-the-same-interactivity-since-day-0/" target="_blank" rel="noopener">在GB300上使用SGLang部署DeepSeek-V4：自上线起交互性不变，吞吐量提升5倍</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-06-23 23:51</span>
+    <span>🔗 <a href="https://pytorch.org/blog/serving-deepseek-v4-on-gb300-with-sglang-5x-higher-throughput-at-the-same-interactivity-since-day-0/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">TL;DR：DeepSeek-V4 支持在 SGLang 上线首日即已可用，但首日版本仅是起点。自发布以来，我们协同推进了一系列内核、运行时及加固改进：MHC 融合与 token-bucket 预热、KV Compression V2、W4A4 MegaMoE、更强的 SWA 预算与驱逐策略、更优的解耦解码准入、DeepSeek-V4 prefill 路径中可中断的 CUDA graph 支持，以及 SGLang 和 Dynamo 中消除服务前沿不稳定的 Bug 修复。本文展示性能结果：在公开的 SemiAnalysis InferenceX GB300 解耦测试场景（DeepSeek-V4 Pro, FP4, ISL=8192, OSL=1024, dynamo-sglang）中，2026年6月 MTP 曲线在约 50 tok/s/user 下实现约 11,200 tok/s/GPU，而首日版本（4月）仅为约 2,200 tok/s/GPU。</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/slow-down-to-speed-up" target="_blank" rel="noopener">放慢脚步，加速前行：六个月间的巨变</a></h2>
+<div class="source">
+    <span>📰 The Pragmatic Engineer</span>
+    <span>🕐 2026-06-23 23:30</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/slow-down-to-speed-up" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">日程说明：本周四《脉搏》将暂停一期，因我将在旧金山停留一周半，走访AI实验室与初创公司，并参加下周一开幕的AI工程师世界博览会。播客与周二文章照常更新。
+
+三周前，在匈牙利布达佩斯Craft Conference上，我以《慢下来，才能快起来》为主题发表开幕演讲。与多数演讲类似，这篇讲稿分阶段成型，其中包含《务实工程师》付费订阅者的反馈——我提前在《观点：使用AI代理时慢下来才能快起来》一文中分享了思考。感谢所有评论！
+
+机缘巧合的是，就在演讲前两天，社交媒体巨头Meta恰好为我的发言提供了现实案例...</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/helping-build-shared-standards-for-advanced-ai" target="_blank" rel="noopener">助力构建先进AI的共享标准</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-06-23 21:00</span>
+    <span>🔗 <a href="https://openai.com/index/helping-build-shared-standards-for-advanced-ai" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI通过Appia Foundation协助建立先进AI的共享标准，支持评估框架、安全实践及全球合作。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/ibm-research/cuga-apps" target="_blank" rel="noopener">使用CUGA构建真正的智能体应用：轻量级框架上的二十多个实用示例</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-06-23 20:51</span>
+    <span>🔗 <a href="https://huggingface.co/blog/ibm-research/cuga-apps" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/cross-origin-storage" target="_blank" rel="noopener">在Transformers.js中试验跨域存储API提案</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-06-23 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/cross-origin-storage" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">以下是英文技术文章的中文摘要（300字以内）：
+
+本文介绍了在Transformers.js中实验性使用跨域存储API（Cross-Origin Storage API）的方法。Transformers.js通过任务特定pipeline，让Web开发者能轻松在应用中集成transformers模型。开发者需创建`pipeline()`实例并指定任务类型。例如，以下代码展示了如何搭建自动语音识别（ASR）pipeline：
+
+```js
+import { pipeline } from 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.2.0';
+const asr = await pipeline(
+  'automatic-speech-recognition',
+  'Xenova/whisper-tiny.en',
+  { device: 'webgpu' },
+);
+const result = await...
+```
+
+该API允许跨域存储模型数据，提升浏览器端推理效率。文章由Google Chrome团队开发者关系工程师Thomas Steiner撰写，强调通过WebGPU设备加速推理，并展示了如何利用pipeline简化复杂任务（如语音识别）的实现。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/introducing-b2b-signals" target="_blank" rel="noopener">前沿企业如何脱颖而出</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-05-06 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-b2b-signals" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI的B2B Signals研究揭示了前沿企业如何深化AI应用、扩展基于Codex的代理工作流（agentic workflows），并构建持久的竞争优势。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
