@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-06-26</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-06-26</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-06-26</div>
+    <div class="article">
+<h2><a href="https://huggingface.co/blog/vllm-jobs" target="_blank" rel="noopener">一行命令在HF任务上运行vLLM服务器</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-06-26 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/vllm-jobs" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">通过一条命令即可在 Hugging Face 基础设施上启动一个私有的、兼容 OpenAI 的 LLM 端点——无需配置服务器、无需 Kubernetes，按秒计费。启动后，你可以从笔记本、笔记本电脑或其他任何地方查询该端点。这是为测试、评估或批量生成快速部署模型的最快方式（如需托管的生产级服务，请使用 Inference Endpoints，文末会说明何时选择哪种方案）。以下是完整流程。
+
+**前置条件**：
+- 已绑定支付方式或拥有正预付余额（Jobs 按硬件使用分钟计费）。
+- 安装 `huggingface_hub >= 1.20.0`：`pip install -U "huggingface_hub>=1.20.0"`
+- 本地登录：`hf auth login`
+
+**启动命令**：...</div>
+</div>
+<div class="article">
+<h2><a href="https://engineering.fb.com/2026/06/25/security/privacy-aware-infrastructure-in-the-ai-native-era-an-asset-classification-case-study/" target="_blank" rel="noopener">AI原生时代的隐私感知基础设施：资产分类案例研究</a></h2>
+<div class="source">
+    <span>📰 Engineering at Meta</span>
+    <span>🕐 2026-06-26 06:30</span>
+    <span>🔗 <a href="https://engineering.fb.com/2026/06/25/security/privacy-aware-infrastructure-in-the-ai-native-era-an-asset-classification-case-study/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">隐私控制（如执行保留、访问、用途限制、下游共享或匿名化策略的系统）需要可靠理解数据才能运作。在有效运行前，它必须精确识别所处理的内容。这过程可能很复杂，例如名为"age"的字段：在一个上下文中，它可能描述个人并需严格保护；在另一个上下文中，它可能是基础设施管道中的缓存TTL数值。图1显示同一字段名产生两种治理结果——当描述个人时是个人数据，当作为缓存TTL时是普通系统元数据。因此仅凭名称无法确定隐私要求，这正是日常问题的根源。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jun/25/ai-and-liability/#atom-everything" target="_blank" rel="noopener">人工智能与责任</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-06-26 06:28</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jun/25/ai-and-liability/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Bruce Schneier 评论德国近期裁定谷歌需为其AI概览中的错误负责：AI代理本质上是部署方（个人或组织）的代理，法律应如此对待。若公司雇佣人类撰稿人撰写摘要，则需为内容不准确承担责任。若允许企业以"AI出错"为由推卸责任，无异于向企业输送利益，并助长其不当行为——既然AI不仅成本更低，还能让雇主在出错时免责，何必再雇佣人类律师、医生或撰稿人？标签：bruce-schneier, google, law, ai, generative-ai, llms, ai-ethics, hallucinations</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jun/25/datasette-export-database/#atom-everything" target="_blank" rel="noopener">datasette-export-database 0.3a2</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-06-26 01:21</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jun/25/datasette-export-database/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：datasette-export-database 0.3a2  
+一个微不足道的小版本更新。`pyproject.toml` 中错误地将依赖固定为 `datasette==1.0a27`，导致该插件与其他所有 Datasette 版本不兼容。现已改为 `datasette>=1.0a27`。  
+标签：datasette</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/allenai/hybrid-token-prediction" target="_blank" rel="noopener">混合模型预测哪些令牌更准确？</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-06-26 00:11</span>
+    <span>🔗 <a href="https://huggingface.co/blog/allenai/hybrid-token-prediction" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/" target="_blank" rel="noopener">Google Finance 最新升级，包括全新应用</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-06-26 00:00</span>
+    <span>🔗 <a href="https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">新版 Google Finance 已结束测试，并推出全新 Android 应用。</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/lightseek-tokenspeed-kernel/" target="_blank" rel="noopener">TokenSpeed-Kernel：面向多芯片LLM推理的可移植API与高性能内核</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-06-25 22:48</span>
+    <span>🔗 <a href="https://pytorch.org/blog/lightseek-tokenspeed-kernel/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">TL;DR TokenSpeed-kernel 是一个独立的开源子系统，旨在解决 LLM 推理中的后端复杂性。它通过引入清晰的层次化 API 和注册系统，将高层运行时与底层硬件特定代码解耦。本文从技术角度解析 TokenSpeed-kernel，展示其如何帮助开发者处理多芯片 LLM 推理中的高性能内核。引言 LLM 模型与推理硬件正以惊人速度演进。高效服务这些模型不再仅是寻找一个快速 attention 或 MoE 内核的问题；现代推理引擎需在模型、量化格式、GPU 代际及供应商后端间快速切换，而无需将运行时变成特殊处理的迷宫。</div>
+</div>
+<div class="article">
+<h2><a href="https://martinfowler.com/articles/structured-prompt-driven/" target="_blank" rel="noopener">结构化提示驱动开发（SPDD）</a></h2>
+<div class="source">
+    <span>📰 Martin Fowler</span>
+    <span>🕐 2026-04-28 21:02</span>
+    <span>🔗 <a href="https://martinfowler.com/articles/structured-prompt-driven/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">LLM编程助手已展现出显著价值，但主要惠及个人开发者。Thoughtworks内部IT团队将其应用于团队协作，并开发出名为"结构化提示驱动开发（SPDD）"的方法与工作流。Wei Zhang与Jessie Jie Xia在GitHub上通过简单示例详细描述了该流程。此工作流将prompt视为一等制品，与代码一同纳入版本控制，用于确保开发与业务需求对齐。团队发现，开发者需掌握三项关键技能才能高效运用：对齐能力（alignment）、抽象优先（abstraction-first）及迭代审查（iterative review）。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/openai-on-aws" target="_blank" rel="noopener">OpenAI模型、Codex与托管代理登陆AWS</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-04-28 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/openai-on-aws" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI的GPT模型、Codex及Managed Agents现已登陆AWS，企业可在其AWS环境中构建安全的AI应用。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/our-commitment-to-community-safety" target="_blank" rel="noopener">我们对社区安全的承诺</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-04-28 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/our-commitment-to-community-safety" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">了解OpenAI如何通过模型防护、滥用检测、政策执行以及与安全专家合作，在ChatGPT中保护社区安全。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
