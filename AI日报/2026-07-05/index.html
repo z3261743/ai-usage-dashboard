@@ -33,94 +33,109 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-07-05</div>
     <div class="article">
-<h2><a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano" target="_blank" rel="noopener">推出GPT-5.4 mini与nano</a></h2>
+<h2><a href="https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything" target="_blank" rel="noopener">sqlite-utils 4.0rc2，主要由Claude Fable编写（花费约149.25美元）</a></h2>
 <div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-03-17 18:00</span>
-    <span>🔗 <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-05 09:00</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">GPT-5.4 mini 和 nano 是 GPT-5.4 的更小、更快版本，针对编码、工具使用、多模态推理以及高容量 API 和子代理工作负载进行了优化。</div>
+<div class="content">几周前我发布了sqlite-utils 4.0rc1版本。由于我们的Max订阅中Claude Fable仅剩几天可用，我决定测试它能否帮助我推出一个真正满意的4.0稳定版——我遵循SemVer规范，希望尽可能减少不兼容的主版本变更。我在iPhone上通过Claude Code for web输入了以下提示：**发布4.0稳定版前的最终审查——至关重要，需发现任何若后续修复会导致breaking change的问题**。Fable为我生成了初始报告，其中包含5个被归类为“发布阻塞器”的重大问题，而我此前并未遇到。以下是其中最严重的问题：1...</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/japan-teen-safety-blueprint" target="_blank" rel="noopener">OpenAI日本发布《青少年安全蓝图》，将青少年安全置于首位</a></h2>
+<h2><a href="https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything" target="_blank" rel="noopener">仅用500字节构建世界地图</a></h2>
 <div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-03-17 18:00</span>
-    <span>🔗 <a href="https://openai.com/index/japan-teen-safety-blueprint" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-05 07:09</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">OpenAI Japan发布《日本青少年安全蓝图》，针对使用生成式AI的青少年推出更严格的年龄保护、家长控制及福祉保障措施。</div>
+<div class="content">Iwo Kadziela（在Codex辅助下）找到一种方法，仅用445字节数据生成可信的ASCII世界地图：核心技巧是使用deflate压缩，再通过简洁的JavaScript代码片段串联。此前不知可用fetch()处理data: URI，如：`fetch('data:;base64,1ZpLsgIxCEXnrM...==').then( r => r.body.pipeThrough(new DecompressionStream('deflate-raw')) ).then( s => new Response(s).text() ).then( t => b.innerHTML = '<pre style=font-size:.65vw>' + t )`。来源：Hacker News。标签：ascii-art, data-urls, javascript。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/equipping-workers-with-insights-about-compensation" target="_blank" rel="noopener">为员工提供薪酬洞察</a></h2>
+<h2><a href="https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything" target="_blank" rel="noopener">更好的模型：更差的工具</a></h2>
 <div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-03-17 08:00</span>
-    <span>🔗 <a href="https://openai.com/index/equipping-workers-with-insights-about-compensation" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-05 06:53</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">最新研究显示，美国人每天向ChatGPT发送近300万条关于薪酬和收入的信息，以弥补工资信息差距。</div>
+<div class="content">更好的模型，更差的工具：Armin 报告了他在开发 Pi 时遇到的一个奇怪问题。简而言之，较新的 Claude 模型有时会在嵌套的 edits[] 数组中调用 Pi 的编辑工具时，添加额外的、虚构的字段。不是 Haiku 或小型模型，而是 Opus 4.8。编辑本身通常正确，但参数不符合 schema，因为模型生成了不存在的键，导致 Pi 拒绝工具调用并要求重试。这本身并不太令人惊讶，因为模型有时会生成格式错误的工具调用，尤其是小型模型。令人惊讶的是，较新的 Anthropic 模型（Opus 4.8 和 Sonnet 5）在这方面表现更差，而较旧的模型则没有这个问题。换句话说，该系列中 SOTA 模型在特定工具 schema 上的表现不如它们的“前辈”。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/why-codex-security-doesnt-include-sast" target="_blank" rel="noopener">为何 Codex 安全不包含 SAST 报告</a></h2>
+<h2><a href="https://huggingface.co/blog/storage-buckets" target="_blank" rel="noopener">在 Hugging Face Hub 上引入存储桶</a></h2>
 <div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-03-16 08:00</span>
-    <span>🔗 <a href="https://openai.com/index/why-codex-security-doesnt-include-sast" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-03-10 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/storage-buckets" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">深入解析Codex Security为何不依赖传统SAST，转而采用AI驱动的约束推理与验证技术，以更低的误报率精准发现真实漏洞。</div>
+<div class="content"># 在 Hugging Face Hub 上引入 Storage Buckets
+
+Hugging Face Models 和 Datasets 仓库非常适合发布最终产物。但生产环境中的 ML 会持续生成大量中间文件（checkpoints、optimizer states、processed shards、logs、traces 等），这些文件频繁变化、由多个任务同时生成，且很少需要版本控制。**Storage Buckets** 正是为此而生：一种可变的、类似 S3 的对象存储，你可以在 Hub 上浏览、通过 Python 脚本操作，或使用 `hf` CLI 管理。由于基于 Xet 技术，它对跨文件共享内容的 ML 工件尤其高效。
+
+## 为何构建 Buckets
+
+当处理以下场景时，Git 很快会显得不合适：
+- 训练集群写入 checkpoints 和 optimizer states...</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/designing-agents-to-resist-prompt-injection" target="_blank" rel="noopener">设计AI代理以抵御提示注入</a></h2>
+<h2><a href="https://huggingface.co/blog/async-rl-training-landscape" target="_blank" rel="noopener">保持令牌流动：16个开源RL库的经验教训</a></h2>
 <div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-03-11 19:30</span>
-    <span>🔗 <a href="https://openai.com/index/designing-agents-to-resist-prompt-injection" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-03-10 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/async-rl-training-landscape" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">ChatGPT通过限制代理工作流中的高风险行为和保护敏感数据，来防御prompt注入和社会工程攻击。具体措施包括：对用户输入进行严格过滤，防止恶意指令篡改模型行为；实施权限分级，限制代理执行敏感操作（如访问数据库或调用API）；对输出内容进行安全审计，避免泄露隐私信息。此外，采用上下文隔离技术，确保不同会话间的数据互不干扰，并实时监控异常交互模式以阻断社会工程攻击。这些机制共同构建了多层防御体系，在保持模型功能的同时降低安全风险。</div>
+<div class="content">以下是英文技术文章内容的简洁中文摘要（300字以内）：
+
+**核心问题**：在同步强化学习（RL）训练中，数据生成（模型推理创建数据样本）主导了实际耗时——一个32B参数模型生成32K token的rollout批次可能需要数小时，而训练GPU在此期间处于空闲状态。
+
+**通用解决方案**：将推理与训练分离到不同GPU池，通过rollout buffer（模型输出的临时存储）连接，并异步传输权重（无需等待），使双方无需相互等待。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/equip-responses-api-computer-environment" target="_blank" rel="noopener">从模型到智能体：为响应API配备计算机环境</a></h2>
+<h2><a href="https://openai.com/index/openai-to-acquire-promptfoo" target="_blank" rel="noopener">OpenAI 将收购 Promptfoo</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2026-03-11 19:00</span>
-    <span>🔗 <a href="https://openai.com/index/equip-responses-api-computer-environment" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-03-09 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/openai-to-acquire-promptfoo" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">OpenAI 利用 Responses API、shell 工具和托管容器构建了一个 agent runtime，用于运行安全、可扩展的 agent，支持文件、工具和状态管理。</div>
+<div class="content">OpenAI 正在收购 Promptfoo，这是一款 AI 安全平台，可帮助企业在开发过程中识别并修复 AI 系统中的漏洞。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/wayfair" target="_blank" rel="noopener">Wayfair 借助 OpenAI 提升目录准确性与支持速度</a></h2>
+<h2><a href="https://huggingface.co/blog/ulysses-sp" target="_blank" rel="noopener">尤利西斯序列并行：百万token上下文训练</a></h2>
 <div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-03-11 08:00</span>
-    <span>🔗 <a href="https://openai.com/index/wayfair" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-03-09 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/ulysses-sp" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">Wayfair 利用 OpenAI 模型提升电商支持与产品目录准确性，自动化工单分类，并大规模优化数百万产品属性。</div>
+<div class="content"># 尤利西斯序列并行：百万Token上下文训练
+
+在长序列上训练大型语言模型已成为构建强大AI系统的关键。随着模型越来越多地用于文档分析、代码理解、复杂推理和RAG等任务，处理数十万甚至数百万Token序列的需求急剧增长。一本普通书籍约25万Token，因此训练多文档上下文或书籍长度的输入需要处理远超单个GPU容量的序列。然而，长上下文训练面临显著的内存挑战：注意力计算随序列长度呈二次方增长，超出GPU内存限制。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/rakuten" target="_blank" rel="noopener">乐天借助Codex将问题修复速度提升两倍</a></h2>
+<h2><a href="https://huggingface.co/blog/lerobot-release-v050" target="_blank" rel="noopener">LeRobot v0.5.0：全维度扩展</a></h2>
 <div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-03-11 08:00</span>
-    <span>🔗 <a href="https://openai.com/index/rakuten" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-03-09 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/lerobot-release-v050" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content"></div>
+<div class="content"># LeRobot v0.5.0：全面扩展
+
+自v0.4.0以来，LeRobot v0.5.0合并了200多个PR，新增50多位贡献者，是迄今为止最大版本更新。主要特性包括：首次支持人形机器人Unitree G1（全身控制模型）；新增Pi0-FAST自回归VLA策略和实时分块推理；支持从Hub直接加载仿真环境；引入流式视频编码消除瓶颈；代码库升级至Python 3.12和Transformers v5。无论训练策略还是部署到真实硬件，v0.5.0都能满足需求。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/instruction-hierarchy-challenge" target="_blank" rel="noopener">改进前沿大语言模型的指令层级</a></h2>
+<h2><a href="https://openai.com/index/codex-security-now-in-research-preview" target="_blank" rel="noopener">Codex 安全：现处于研究预览阶段</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2026-03-10 19:00</span>
-    <span>🔗 <a href="https://openai.com/index/instruction-hierarchy-challenge" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-03-06 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/codex-security-now-in-research-preview" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">IH-Challenge 训练模型优先处理可信指令，提升指令层级、安全可控性及对提示注入攻击的防御能力。</div>
+<div class="content">Codex Security 是一款AI应用安全代理，通过分析项目上下文来检测、验证并修复复杂漏洞，能够以更高置信度和更低噪声实现安全防护。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt" target="_blank" rel="noopener">在ChatGPT中学习数学和科学的新方法</a></h2>
+<h2><a href="https://openai.com/index/descript" target="_blank" rel="noopener">Descript工程师如何大规模实现多语言视频配音</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2026-03-10 18:00</span>
-    <span>🔗 <a href="https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-03-06 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/descript" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">ChatGPT 推出数学与科学的交互式可视化解释功能，帮助学生实时探索公式、变量和概念。</div>
+<div class="content">使用OpenAI推理模型，Descript实现了大型内容库的自动本地化，同时不丢失时间轴或语义。</div>
 </div>
     <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
         由 Hermes Agent 自动生成 · AI 日报
