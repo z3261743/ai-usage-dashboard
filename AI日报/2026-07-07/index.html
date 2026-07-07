@@ -33,96 +33,96 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-07-07</div>
     <div class="article">
-<h2><a href="https://huggingface.co/blog/Photoroom/prx-part4-data" target="_blank" rel="noopener">PRX 第四部分：我们的数据策略</a></h2>
+<h2><a href="https://simonwillison.net/2026/Jul/6/hy3/#atom-everything" target="_blank" rel="noopener">腾讯/Hy3</a></h2>
 <div class="source">
-    <span>📰 Hugging Face - Blog</span>
-    <span>🕐 2026-07-06 23:30</span>
-    <span>🔗 <a href="https://huggingface.co/blog/Photoroom/prx-part4-data" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-07 07:57</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/6/hy3/#atom-everything" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content"></div>
+<div class="content">腾讯Hy团队发布Hy3模型：基于Apache 2.0许可的295B参数混合专家（MoE）模型，含21B活跃参数和3.8B MTP层参数。自4月底预览版后，团队收集50+产品反馈，用更高质量数据扩展后训练。Hy3性能超越同规模模型，媲美参数规模2-5倍的旗舰开源模型，在多种产品和生产力任务中表现显著提升。完整模型（Hugging Face）598GB，FP8量化版300GB，上下文长度256K。OpenRouter平台免费使用至7月21日。</div>
 </div>
 <div class="article">
-<h2><a href="https://martinfowler.com/fragments/2026-07-06.html" target="_blank" rel="noopener">碎片：7月6日</a></h2>
+<h2><a href="https://pytorch.org/blog/bringing-pytorch-monarch-to-amd-gpus-single-controller-distributed-training-on-rocm/" target="_blank" rel="noopener">将PyTorch Monarch引入AMD GPU：基于ROCm的单控制器分布式训练</a></h2>
 <div class="source">
-    <span>📰 Martin Fowler</span>
-    <span>🕐 2026-07-06 20:53</span>
-    <span>🔗 <a href="https://martinfowler.com/fragments/2026-07-06.html" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-07-07 07:31</span>
+    <span>🔗 <a href="https://pytorch.org/blog/bringing-pytorch-monarch-to-amd-gpus-single-controller-distributed-training-on-rocm/" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">上周，Thoughtworks在欧洲举办了第二届软件开发未来研讨会。与往届一样，我将分享一些零散思考。活动设有五个并行分会场，我最多只能参与五分之一。这不是一个形成结论的活动，而是让探索者分享发现与未来愿景的平台。bliki文章汇总了我本人及他人撰写的相关文章，并将持续更新。Giles Edwards-Alexander注意到两届研讨会的显著差异：鹿谷会场充满犹豫，认为存在某种价值但尚未明确；而恩格尔伯格会场则充满自信——价值已然显现。正如我向同事解释的那样……</div>
+<div class="content">训练拥有数十亿参数的最先进大语言模型（LLMs）需要跨数百或数千个GPU进行分布式训练。在此规模下，硬件故障并非异常事件，而是常态。单个GPU内存错误、网络分区或节点崩溃可能导致已持续数天或数周的整个训练任务中断。尽管我们此前的工作展示了FP8训练在规模上的近线性扩展（在搭载DeepSeekV3-671B的1024-GPU MI325集群上实现了96.16%的扩展效率），但核心挑战依然是：大规模可靠性。为应对这些挑战，我们已将PyTorch Monarch引入基于ROCm的AMD Instinct GPU，将单控制器模型扩展到CUDA环境之外，使这一新兴运行时惠及更广泛的用户。</div>
 </div>
 <div class="article">
-<h2><a href="https://jack-clark.net/2026/07/06/import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation/" target="_blank" rel="noopener">Import AI 464：Fables 编写 GPU 内核；AI 自动化；以及模拟计算</a></h2>
-<div class="source">
-    <span>📰 Import AI</span>
-    <span>🕐 2026-07-06 20:31</span>
-    <span>🔗 <a href="https://jack-clark.net/2026/07/06/import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">欢迎阅读《Import AI》——一份关于AI研究的通讯。本期内容基于arXiv、卡布奇诺咖啡和读者反馈运行。如需支持，请订阅。  
-**Fable编写出高效的GPU内核，预示AI研发自动化新阶段**  
-据基准测试维护者及官方排行榜显示，Fable提交了“首个真正且最快的KernelBench-Mega超级内核”。这标志着AI系统在AI研发基础任务（如内核设计）上的能力提升。结果：Fable在RTX PRO 6000 Blackwell上编写Cuda代码，相比优化后的PyTorch基线实现了18.71倍加速。作为参考，其他尝试的加速效果远低于此。</div>
-</div>
-<div class="article">
-<h2><a href="https://huggingface.co/blog/Photoroom/prx-part3" target="_blank" rel="noopener">PRX 第三部分：24小时训练文本到图像模型！</a></h2>
-<div class="source">
-    <span>📰 Hugging Face - Blog</span>
-    <span>🕐 2026-03-04 00:50</span>
-    <span>🔗 <a href="https://huggingface.co/blog/Photoroom/prx-part3" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content"></div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/gpt-5-3-instant" target="_blank" rel="noopener">GPT-5.3 Instant：更流畅、更实用的日常对话</a></h2>
-<div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-03-03 18:00</span>
-    <span>🔗 <a href="https://openai.com/index/gpt-5-3-instant" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content"></div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/gpt-5-3-instant-system-card" target="_blank" rel="noopener">GPT-5.3 即时系统卡</a></h2>
-<div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-03-03 18:00</span>
-    <span>🔗 <a href="https://openai.com/index/gpt-5-3-instant-system-card" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content"></div>
-</div>
-<div class="article">
-<h2><a href="https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html" target="_blank" rel="noopener">设计优先协作</a></h2>
-<div class="source">
-    <span>📰 Martin Fowler</span>
-    <span>🕐 2026-03-03 12:04</span>
-    <span>🔗 <a href="https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">Rahul Garg 继续其“减少AI辅助开发摩擦的模式”系列。该模式描述了一种结构化对话，模拟与人类搭档的白板协作：在编写任何代码之前，逐步对齐设计层级，降低认知负荷，并在成本最低的时机捕捉误解。更多内容…</div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/our-agreement-with-the-department-of-war" target="_blank" rel="noopener">我们与战争部的协议</a></h2>
-<div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-02-28 20:30</span>
-    <span>🔗 <a href="https://openai.com/index/our-agreement-with-the-department-of-war" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">OpenAI与美国国防部的合同细节，明确了安全红线、法律保护措施，以及AI系统在机密环境中的部署方式。</div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock" target="_blank" rel="noopener">Amazon Bedrock 中智能体的有状态运行时环境介绍</a></h2>
+<h2><a href="https://openai.com/index/continuing-microsoft-partnership" target="_blank" rel="noopener">OpenAI与微软联合声明</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
     <span>🕐 2026-02-27 13:30</span>
-    <span>🔗 <a href="https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock" target="_blank" rel="noopener">原文</a></span>
+    <span>🔗 <a href="https://openai.com/index/continuing-microsoft-partnership" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">Amazon Bedrock 中的 Stateful Runtime for Agents 为基于 OpenAI 的多步骤 AI 工作流提供了持久化编排、记忆与安全执行能力。</div>
+<div class="content">微软与OpenAI在研究、工程及产品开发领域持续紧密合作，基于多年深度协作与共同成功的基础推进发展。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/scaling-ai-for-everyone" target="_blank" rel="noopener">为所有人扩展AI规模</a></h2>
+<h2><a href="https://openai.com/index/amazon-partnership" target="_blank" rel="noopener">OpenAI与亚马逊宣布战略合作</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
     <span>🕐 2026-02-27 13:30</span>
-    <span>🔗 <a href="https://openai.com/index/scaling-ai-for-everyone" target="_blank" rel="noopener">原文</a></span>
+    <span>🔗 <a href="https://openai.com/index/amazon-partnership" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">今日我们宣布获得1100亿美元新投资，投前估值7300亿美元。其中软银投资300亿美元，NVIDIA投资300亿美元，亚马逊投资500亿美元。</div>
+<div class="content">OpenAI与亚马逊宣布战略合作，将OpenAI的Frontier平台引入AWS，以扩展AI基础设施、定制模型及企业级AI代理（Enterprise AI Agents）。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/update-on-mental-health-related-work" target="_blank" rel="noopener">关于我们心理健康工作的最新进展</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-02-27 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/update-on-mental-health-related-work" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI 更新了其心理健康安全工作的进展，包括家长控制、可信联系人、改进的困境检测功能以及近期的诉讼动态。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/pacific-northwest-national-laboratory" target="_blank" rel="noopener">太平洋西北国家实验室与OpenAI合作加速联邦审批</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-02-26 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/pacific-northwest-national-laboratory" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI与太平洋西北国家实验室联合推出DraftNEPABench，这是一个评估AI编码代理加速联邦许可流程的新基准。实验表明，该工具可将NEPA文件起草时间缩短最多15%，并推动基础设施审查流程现代化。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/figma-partnership" target="_blank" rel="noopener">OpenAI Codex 与 Figma 推出无缝代码到设计体验</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-02-26 14:00</span>
+    <span>🔗 <a href="https://openai.com/index/figma-partnership" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI与Figma推出新的Codex集成，连接代码与设计，使团队能在实现与Figma画布间无缝切换，加速迭代与发布。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/moe-transformers" target="_blank" rel="noopener">Transformer中的混合专家模型（MoE）</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-02-26 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/moe-transformers" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># Transformer中的混合专家模型（MoE）简介
+
+过去几年，扩展密集语言模型推动了LLM的大部分进步。从早期的ULMFiT（约3000万参数）和GPT-2（15亿参数，当时被认为"过于危险不宜发布"），到如今千亿参数系统，其配方很简单：更多数据+更多参数=更好性能。扩展定律强化了这一趋势，但密集扩展存在实际限制：训练成本增加、推理延迟增长、部署需要大量内存和硬件。混合专家模型（MoE）应运而生。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/disrupting-malicious-ai-uses" target="_blank" rel="noopener">破坏人工智能的恶意用途 | 2026年2月</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-02-25 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/disrupting-malicious-ai-uses" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">最新威胁报告分析了恶意行为者如何将AI模型与网站及社交平台结合使用，并探讨这对检测与防御工作的影响。</div>
+</div>
+<div class="article">
+<h2><a href="https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html" target="_blank" rel="noopener">知识启动</a></h2>
+<div class="source">
+    <span>📰 Martin Fowler</span>
+    <span>🕐 2026-02-24 22:40</span>
+    <span>🔗 <a href="https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Rahul Garg 观察到使用AI编程助手时存在一个“挫败循环”——生成大量代码，但需要大量修复。他总结了五个改进与LLM交互的模式，并描述了第一个：通过代码库知识和偏好编码模式来“预热”LLM（priming）。</div>
 </div>
     <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
         由 Hermes Agent 自动生成 · AI 日报
