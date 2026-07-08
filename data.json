@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-07",
+  "generated_at": "2026-07-08",
   "summary": {
-    "total_cost_7d": 0.0684,
-    "total_cost_30d": 1.3328,
-    "avg_daily_cost_7d": 0.0098,
-    "avg_daily_input_tokens": 50678,
-    "avg_daily_output_tokens": 9573
+    "total_cost_7d": 0.0659,
+    "total_cost_30d": 1.3403,
+    "avg_daily_cost_7d": 0.0094,
+    "avg_daily_input_tokens": 49241,
+    "avg_daily_output_tokens": 8998
   },
   "deepseek_balance": {
-    "cny": 19.19,
-    "usd": 0.0
+    "usd": 0.0,
+    "cny": 19.13
   },
   "pricing": {
     "deepseek-v4-flash": {
@@ -868,29 +868,57 @@
     },
     {
       "date": "2026-07-07",
-      "sessions": 5,
-      "messages": 27,
-      "tool_calls": 10,
-      "input_tokens": 43020,
-      "output_tokens": 5973,
+      "sessions": 8,
+      "messages": 58,
+      "tool_calls": 22,
+      "input_tokens": 79730,
+      "output_tokens": 11560,
       "reasoning_tokens": 0,
-      "cache_read": 135936,
+      "cache_read": 258176,
       "cache_write": 0,
-      "computed_cost": 0.007695240000000001,
+      "computed_cost": 0.014399000000000002,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 43020,
-          "output_tokens": 5973,
-          "cost": 0.007695240000000001,
-          "sessions": 5
+          "input_tokens": 79730,
+          "output_tokens": 11560,
+          "cost": 0.014399000000000002,
+          "sessions": 8
         }
       },
       "sources": {
         "cron": {
-          "sessions": 5,
-          "cost": 0.007695240000000001
+          "sessions": 8,
+          "cost": 0.014399000000000002
+        }
+      }
+    },
+    {
+      "date": "2026-07-08",
+      "sessions": 1,
+      "messages": 0,
+      "tool_calls": 0,
+      "input_tokens": 5296,
+      "output_tokens": 523,
+      "reasoning_tokens": 0,
+      "cache_read": 9600,
+      "cache_write": 0,
+      "computed_cost": 0.0008878800000000002,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "models": {
+        "deepseek-v4-flash": {
+          "input_tokens": 5296,
+          "output_tokens": 523,
+          "cost": 0.0008878800000000002,
+          "sessions": 1
+        }
+      },
+      "sources": {
+        "cron": {
+          "sessions": 1,
+          "cost": 0.0008878800000000002
         }
       }
     }
