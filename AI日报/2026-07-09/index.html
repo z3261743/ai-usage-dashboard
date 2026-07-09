@@ -33,94 +33,101 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-07-09</div>
     <div class="article">
-<h2><a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything" target="_blank" rel="noopener">GPT-Live 介绍</a></h2>
+<h2><a href="https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything" target="_blank" rel="noopener">用Rust重写Bun</a></h2>
 <div class="source">
     <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-07-09 07:20</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-07-09 07:57</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">OpenAI 正式升级了 ChatGPT 语音模式所采用的模型，推出了 GPT‑Live。作者在 iPhone 应用上提前体验数周，认为新模型表现惊艳。GPT‑Live 能将复杂任务（如网页搜索、深度推理等）转交给 GPT-5.5 后台处理，并在完成后将结果无缝融入对话，同时保持语音交流的流畅性。上线初期，GPT‑Live 将使用 GPT-5.5 作为后台模型，未来会随新前沿模型的发布持续更新。此前 ChatGPT 应用的语音模式基于 GPT-4o 时代的模型，知识截止时间较早。</div>
-</div>
-<div class="article">
-<h2><a href="https://simonwillison.net/2026/Jul/8/kenton-varda/#atom-everything" target="_blank" rel="noopener">引用 Kenton Varda</a></h2>
-<div class="source">
-    <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-07-09 04:03</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Jul/8/kenton-varda/#atom-everything" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">我刚刚宣布暂停团队使用AI编写变更描述（如PR、commit消息及issue/ticket）。AI生成的描述对我审查PR毫无帮助甚至适得其反：它只罗列代码中显而易见的细节，却省略了理解代码整体逻辑所需的高层框架。— Kenton Varda 标签：kenton-varda, ai-assisted-programming, generative-ai, ai, llms</div>
+<div class="content">Jarred Sumner自5月9日起承诺撰写关于将Bun从Zig重写为Rust的博客文章，而实际重写完成时间远短于承诺周期。文章详细描述了这一高度复杂的工程实践，包含动态工作流、试运行、对抗性审查等创新技术。前半部分作者赞扬Zig对Bun早期发展的贡献，随后揭示核心动机：Bug修复清单令人沮丧，且长期担忧Bun的运行时崩溃问题。作者强调并非归咎于Zig（其他Zig用户未出现类似问题），而是因为将GC与手动内存管理混合使用属于罕见场景。</div>
 </div>
 <div class="article">
-<h2><a href="https://pytorch.org/blog/pytorch-2-13-release-blog/" target="_blank" rel="noopener">PyTorch 2.13 发布博客</a></h2>
-<div class="source">
-    <span>📰 Blog – PyTorch</span>
-    <span>🕐 2026-07-09 01:42</span>
-    <span>🔗 <a href="https://pytorch.org/blog/pytorch-2-13-release-blog/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">我们很高兴宣布 PyTorch® 2.13 版本发布（详见发布说明）。主要更新包括：FlexAttention 登陆 Apple Silicon (MPS)，在稀疏模式下相比 SDPA 实现最高约 12 倍加速，并在 CUDA 上新增确定性反向路径以支持可复现梯度计算；CuTeDSL “原生 DSL” 后端为 Inductor 提供第二条高性能代码路径（与 Triton 并列），显著提升关键 GPU 操作的编译速度；nn.LinearCrossEntropyLoss 将最终预测与损失计算合并，在大词汇量语言模型训练中可将峰值 GPU 内存降低 4 倍；torchcomms 作为 PyTorch Distributed 的新通信后端，提升了大规模集群训练的容错性、可扩展性与可调试性；FSDP2 现已支持计算与通信重叠。</div>
-</div>
-<div class="article">
-<h2><a href="https://huggingface.co/blog/nvidia/open-data-for-agents" target="_blank" rel="noopener">智能体数据</a></h2>
+<h2><a href="https://huggingface.co/blog/native-speed-vllm-transformers-backend" target="_blank" rel="noopener">原生速度的vLLM transformers建模后端</a></h2>
 <div class="source">
     <span>📰 Hugging Face - Blog</span>
-    <span>🕐 2026-07-09 01:16</span>
-    <span>🔗 <a href="https://huggingface.co/blog/nvidia/open-data-for-agents" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-07-08 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/native-speed-vllm-transformers-backend" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">**摘要**：  
+vLLM 的 transformers 后端现在在多种 LLM 架构上已达到甚至超越自定义 vLLM 实现的速度。模型作者可自动利用其 transformers 实现，免费获得超快 vLLM 推理性能。升级命令：`uv pip install --upgrade vllm --torch-backend auto`。transformers 库已成为机器学习领域的**参考建模库**，支持 450+ 架构，API 一致，实现自包含且易于理解。通过阅读 transformers 代码，贡献者可轻松学习架构原理，并将其移植到其他框架。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/7/sqlite-migrate/#atom-everything" target="_blank" rel="noopener">sqlite-migrate 0.2</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-08 00:33</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/7/sqlite-migrate/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：sqlite-migrate 0.2 版本，该版本将库退役，改为针对新的 sqlite-utils 4.0 依赖实现一个兼容性 shim。标签：sqlite-utils</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything" target="_blank" rel="noopener">github-code Web组件</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-08 00:18</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">工具：github-code Web Component  
+一个实验性 Web Component，基于 GPT-5.5 构建，用于嵌入 GitHub 中的代码片段。它接收类似 `https://github.com/.../parser.py#L9-L18` 的 URL，将其转换为 `https://raw.githubusercontent.com/.../parser.py`，然后通过 `fetch()` 获取内容，并显示指定行范围（带行号，无语法高亮）。  
+标签：github, web-components, gpt</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/7/sqlite-utils/#atom-everything" target="_blank" rel="noopener">sqlite-utils 4.0</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-07 23:42</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/7/sqlite-utils/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：sqlite-utils 4.0  
+详情请参见 sqlite-utils 4.0，新增数据库 schema 迁移功能。  
+标签：sqlite-utils</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/7/sqlite-utils-2/#atom-everything" target="_blank" rel="noopener">sqlite-utils 4.0rc4</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-07 13:36</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/7/sqlite-utils-2/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：sqlite-utils 4.0rc4  
+这是 4.0 稳定版发布前的最后一个 RC 版本。主要实现了来自 Claude Fable 5 详细审查的反馈意见。  
+标签：sqlite-utils, claude-mythos-fable</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/openai-for-india" target="_blank" rel="noopener">OpenAI 正式登陆印度</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-02-19 05:00</span>
+    <span>🔗 <a href="https://openai.com/index/openai-for-india" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI在印度扩展AI接入——建设本地基础设施，赋能企业，并提升劳动力技能。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/ibm-research/itbenchandmast" target="_blank" rel="noopener">IBM与加州大学伯克利分校利用IT-Bench和MAST诊断企业代理失败原因</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-02-19 00:15</span>
+    <span>🔗 <a href="https://huggingface.co/blog/ibm-research/itbenchandmast" target="_blank" rel="noopener">原文</a></span>
 </div>
 <div class="content"></div>
 </div>
 <div class="article">
-<h2><a href="https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-ama" target="_blank" rel="noopener">实用工程师AMA</a></h2>
-<div class="source">
-    <span>📰 The Pragmatic Engineer</span>
-    <span>🕐 2026-07-09 00:38</span>
-    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-ama" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">在本期特别节目中，我们探讨了如何通过将整个系统置于对抗性模拟环境中运行来发现漏洞，从而验证系统正确性。赞助商Antithesis展示了其创新调试工具：在完全确定性的模拟环境中进行Bug概率分析，当概率出现峰值时，可沿时间线“回退”检查日志以定位触发Bug的原因。节目中展示了更多该工具简洁UI的实例。</div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/government-national-security-partnerships" target="_blank" rel="noopener">我们处理政府与国家安全合作的方式</a></h2>
+<h2><a href="https://openai.com/deployco/news/evals-your-bridge-from-ai-experimentation-to-confident-production-deployments" target="_blank" rel="noopener">评估：从AI实验到自信部署的桥梁</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2026-07-08 21:30</span>
-    <span>🔗 <a href="https://openai.com/index/government-national-security-partnerships" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-02-18 20:00</span>
+    <span>🔗 <a href="https://openai.com/deployco/news/evals-your-bridge-from-ai-experimentation-to-confident-production-deployments" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">了解OpenAI如何开展政府与国家安全合作，其原则包括负责任AI使用、民主问责制和公共安全。</div>
+<div class="content">大多数组织都进行过AI试点，但真正部署AI产品的却少得多。AI实验与生产之间存在根本性差距。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/separating-signal-from-noise-coding-evaluations" target="_blank" rel="noopener">从编码评估中分离信号与噪声</a></h2>
+<h2><a href="https://openai.com/index/introducing-evmbench" target="_blank" rel="noopener">EVMbench 简介</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2026-07-08 21:00</span>
-    <span>🔗 <a href="https://openai.com/index/separating-signal-from-noise-coding-evaluations" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-02-18 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-evmbench" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">OpenAI的最新分析揭示了热门编码基准SWE-Bench Pro存在的问题，引发了对评估AI模型可靠性与准确性的担忧。</div>
-</div>
-<div class="article">
-<h2><a href="https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-experiences.html" target="_blank" rel="noopener">本地模型编码经验</a></h2>
-<div class="source">
-    <span>📰 Martin Fowler</span>
-    <span>🕐 2026-07-08 19:57</span>
-    <span>🔗 <a href="https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-experiences.html" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">Birgitta Böckeler 近期分享了使用本地LLM进行编程的体验。她通过两项标准任务对比了多个模型，并挑选出最有潜力的模型进行日常试用。更多内容…</div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/k-12-educators-practical-skills" target="_blank" rel="noopener">帮助K-12教育工作者掌握实用AI技能</a></h2>
-<div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-07-08 18:00</span>
-    <span>🔗 <a href="https://openai.com/index/k-12-educators-practical-skills" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">OpenAI Academy与Walton Family Foundation合作推出AI Skills Jams实践项目，旨在帮助K-12教师掌握课堂所需的实用AI技能。</div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/introducing-gpt-live" target="_blank" rel="noopener">GPT-Live 简介</a></h2>
-<div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-07-08 08:00</span>
-    <span>🔗 <a href="https://openai.com/index/introducing-gpt-live" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">新一代语音模型推动自然的人机交互，现已为ChatGPT Voice提供支持。</div>
+<div class="content">OpenAI与Paradigm联合推出EVMbench，这是一个用于评估AI代理检测、修复及利用高危智能合约漏洞能力的基准测试。</div>
 </div>
     <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
         由 Hermes Agent 自动生成 · AI 日报
