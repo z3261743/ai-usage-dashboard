@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-07-11</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-07-11</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-07-11</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything" target="_blank" rel="noopener">引用尼莱·帕特尔</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-11 01:05</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">实现增强现实眼镜的必然路径是：在眼睛旁安装持续记录视野的摄像头，实时处理数据并叠加信息。目前没有其他替代方案。现有技术无法在眼镜腿内集成足够强大且低功耗的芯片进行实时处理，必须将数据发送至云端。另一种选择是制造类似Vision Pro的笨重设备，外接独立电池包。这意味着要打造业界公认的下一代产品，就必须侵犯用户隐私——而这或许本不该发生。这是一个极具争议的命题。</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/towards-free-normalization-fusing-normalization-into-gemm-and-attention-kernels/" target="_blank" rel="noopener">面向自由归一化：将归一化融合至GEMM与注意力核</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-07-10 22:35</span>
+    <span>🔗 <a href="https://pytorch.org/blog/towards-free-normalization-fusing-normalization-into-gemm-and-attention-kernels/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">代码地址：https://github.com/facebookresearch/ads_model_kernel_library/tree/main/multi_cta_norm_fusion 和 https://github.com/facebookresearch/ads_model_kernel_library/tree/main/gdpa_megakernel 摘要：本文介绍了针对LayerNorm和RMSNorm等常见归一化操作的新型kernel融合技术。这些技术通过减少高内存受限kernel的memory-IO开销，实现了显著加速。文章首先概述了LLM和广告推荐模型中归一化操作的重要性及性能挑战，随后提出了解决性能瓶颈的新策略，包括Lazy Pre-Norm和Multi-CTA Norm Fusion。实验表明，这些技术可隐藏高达90%的...</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/scaling-social-science-research" target="_blank" rel="noopener">扩展社会科学研究规模</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-02-13 17:00</span>
+    <span>🔗 <a href="https://openai.com/index/scaling-social-science-research" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">GABRIEL 是 OpenAI 推出的开源工具包，利用 GPT 将定性文本与图像转化为定量数据，助力社会科学家大规模分析研究。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">Codex与Claude的通用自定义内核</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-02-13 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># 人人可用的自定义Kernel：基于Codex与Claude Oprah
+
+**tl;dr:** 我们构建了一个Agent技能，教会编码Agent如何编写生产级CUDA Kernel。随后，我们让Claude和Codex针对两个真实目标——一个**diffusers**流水线和一个**transformers**模型——进行实践。Agent成功为两者生成了可运行的Kernel，并附带正确的PyTorch绑定与基准测试，实现端到端交付。
+
+编写CUDA Kernel本就困难，而编写能与`transformers`和`diffusers`正确集成的CUDA Kernel更是难上加难。这涉及架构特定的内存访问模式、向量化策略、warp shuffle归约以及十余种集成陷阱，即便经验丰富的开发者也会在此受挫。这正是Agent技能大显身手的专业化、高风险场景。我们为编码Agent提供了...</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/introducing-gpt-5-3-codex-spark" target="_blank" rel="noopener">GPT-5.3-Codex-Spark 发布</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-02-12 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-gpt-5-3-codex-spark" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">GPT-5.3-Codex-Spark 发布——我们的首个实时编码模型。生成速度提升15倍，支持128k上下文，现面向ChatGPT Pro用户提供研究预览。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/openenv-turing" target="_blank" rel="noopener">OpenEnv 实践：评估真实环境中的工具使用代理</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-02-12 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/openenv-turing" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">AI智能体在受控研究环境中表现优异，但部署到真实系统时却面临多重挑战：需进行多步推理、调用真实工具和API、在信息不完整条件下运行，并在带状态和权限的环境中从错误中恢复——这凸显了研究成功与生产可靠性之间的持续差距。Meta和Hugging Face联合推出的开源框架OpenEnv，通过标准化智能体与真实环境的交互方式来解决该问题。作为合作方，Turing贡献了生产级日历管理环境，用于研究工具型智能体在访问控制、时间推理和多智能体协调等现实约束下的表现。本文将探讨...</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/harness-engineering" target="_blank" rel="noopener">驾驭工程：在智能体优先的世界中利用 Codex</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-02-11 17:00</span>
+    <span>🔗 <a href="https://openai.com/index/harness-engineering" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">瑞安·洛波波洛（Ryan Lopopolo），技术团队成员。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/bringing-chatgpt-to-genaimil" target="_blank" rel="noopener">将ChatGPT引入GenAI.mil</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-02-09 19:00</span>
+    <span>🔗 <a href="https://openai.com/index/bringing-chatgpt-to-genaimil" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI for Government宣布在GenAI.mil上部署定制版ChatGPT，为美国国防团队提供安全优先的AI解决方案。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/transformersjs-v4" target="_blank" rel="noopener">Transformers.js v4：现已登陆NPM！</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-02-09 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/transformersjs-v4" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Transformers.js v4 现已发布至 NPM！经过一年开发（2025年3月启动），团队正式推出该版本。安装命令：`npm i @huggingface/transformers`。核心升级在于采用全新C++编写的WebGPU Runtime，与ONNX Runtime团队合作，在约200种模型架构及v4专属架构上完成全面测试。新运行时不仅提升了算子支持（性能、精度与覆盖率），更实现了同一transformers.js代码跨浏览器等多样化JavaScript环境的兼容性。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/our-approach-to-localization" target="_blank" rel="noopener">让AI服务全球：我们的本地化策略</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-02-06 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/our-approach-to-localization" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI分享了其AI本地化策略，展示了如何在不牺牲安全性的前提下，将全球通用的前沿模型适配到本地语言、法律和文化中。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
