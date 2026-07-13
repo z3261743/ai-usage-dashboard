@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-07-13</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-07-13</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-07-13</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/12/bump/#atom-everything" target="_blank" rel="noopener">Fable 再次升级</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-13 05:20</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/12/bump/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">GPT-5.6 Sol被明确归类为Fable/Mythos级别模型后，Anthropic再次推迟了Fable在Claude Max计划中的停用日期：所有付费计划中Claude Fable 5的访问权限延长至7月19日，同时Claude Code的周使用限额保持50%提升。用户每周最多可将一半限额用于Fable 5，超出后可使用积分继续使用或切换其他模型。Anthropic最初因计算资源限制做出此决定——他们需评估需求与算力可用性，再决定是否维持新模型的低价订阅。而OpenAI似乎自信无需采取类似措施。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/unrolling-the-codex-agent-loop" target="_blank" rel="noopener">展开Codex代理循环</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-23 20:00</span>
+    <span>🔗 <a href="https://openai.com/index/unrolling-the-codex-agent-loop" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">深入解析Codex代理循环的技术原理，阐述Codex CLI如何通过Responses API协调模型、工具、提示词与性能。该循环以模型为核心，通过工具调用（如代码执行、文件操作）实现任务分解与迭代优化。提示词工程采用结构化模板，动态注入上下文与约束条件，确保输出一致性。性能层面，Responses API支持流式响应与异步处理，降低延迟并提升吞吐量。关键机制包括：状态管理追踪多轮交互历史，错误重试策略自动修复执行失败，以及沙箱隔离保障安全。整体架构强调模块化与可扩展性，为复杂编程任务提供高效、鲁棒的自动化解决方案。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/scaling-postgresql" target="_blank" rel="noopener">扩展PostgreSQL以支持8亿ChatGPT用户</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-22 20:00</span>
+    <span>🔗 <a href="https://openai.com/index/scaling-postgresql" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI 通过副本、缓存、限流和工作负载隔离，将 PostgreSQL 扩展至每秒数百万次查询。核心策略包括：使用只读副本分担读负载，引入缓存层减少数据库压力，实施限流机制防止过载，并通过工作负载隔离确保关键查询不受干扰。这些技术手段协同作用，实现了高并发下的稳定性能。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/business/guides-and-resources/chatgpt-usage-and-adoption-patterns-at-work" target="_blank" rel="noopener">GPT-5 工作版揭秘：企业如何使用 GPT-5</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-22 08:00</span>
+    <span>🔗 <a href="https://openai.com/business/guides-and-resources/chatgpt-usage-and-adoption-patterns-at-work" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">一份数据驱动的报告，概述各行业员工如何使用ChatGPT，涵盖采用趋势、主要任务、部门模式及AI在工作中的未来。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/praktika" target="_blank" rel="noopener">Praktika对话式语言学习法解析</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-22 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/praktika" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Praktika 利用 GPT-4.1 和 GPT-5.2 构建自适应 AI 导师，通过个性化课程、追踪学习进度，帮助学习者实现真实场景的语言流利度。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/higgsfield" target="_blank" rel="noopener">Higgsfield如何将简单创意转化为电影级社交视频</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-21 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/higgsfield" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">了解Higgsfield如何利用OpenAI GPT-4.1、GPT-5和Sora 2，让创作者通过简单输入获得电影级、社交优先的视频输出。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face" target="_blank" rel="noopener">AssetOpsBench：弥合AI智能体基准测试与工业现实之间的鸿沟</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-01-21 14:25</span>
+    <span>🔗 <a href="https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/edu-for-countries" target="_blank" rel="noopener">推出Edu国家版</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-21 09:00</span>
+    <span>🔗 <a href="https://openai.com/index/edu-for-countries" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Edu for Countries 是 OpenAI 的一项新计划，旨在帮助政府利用 AI 实现教育系统现代化，并培养面向未来的劳动力。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/how-countries-can-end-the-capability-overhang" target="_blank" rel="noopener">各国如何终结能力过剩</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-21 09:00</span>
+    <span>🔗 <a href="https://openai.com/index/how-countries-can-end-the-capability-overhang" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">最新报告显示，各国在先进AI采用率上存在显著差异，并概述了帮助各国从AI中获取生产力提升的新举措。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/horizon-1000" target="_blank" rel="noopener">Horizon 1000：推动初级医疗保健的人工智能发展</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-21 05:00</span>
+    <span>🔗 <a href="https://openai.com/index/horizon-1000" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI与盖茨基金会联合启动Horizon 1000项目，投入5000万美元试点资金，旨在提升非洲医疗领域的AI能力。该计划目标在2028年前覆盖1000家诊所。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
