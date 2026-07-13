@@ -33,94 +33,106 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-07-13</div>
     <div class="article">
-<h2><a href="https://simonwillison.net/2026/Jul/12/bump/#atom-everything" target="_blank" rel="noopener">Fable 再次升级</a></h2>
+<h2><a href="https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything" target="_blank" rel="noopener">直接责任人（DRI）</a></h2>
 <div class="source">
     <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-07-13 05:20</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Jul/12/bump/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-07-13 07:57</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">GPT-5.6 Sol被明确归类为Fable/Mythos级别模型后，Anthropic再次推迟了Fable在Claude Max计划中的停用日期：所有付费计划中Claude Fable 5的访问权限延长至7月19日，同时Claude Code的周使用限额保持50%提升。用户每周最多可将一半限额用于Fable 5，超出后可使用积分继续使用或切换其他模型。Anthropic最初因计算资源限制做出此决定——他们需评估需求与算力可用性，再决定是否维持新模型的低价订阅。而OpenAI似乎自信无需采取类似措施。</div>
+<div class="content">Directly Responsible Individuals (DRI) 指对特定项目、计划或活动的成败负最终责任的人，该术语源自苹果公司，GitLab手册中有明确定义。作者认为，在LLM驱动的agent与人类组织协作的背景下，agent不应被视为项目的DRI，因为只有人类才能为自己的行为承担责任，而机器无法做到这一点（参考IBM 1979年培训幻灯片中“计算机永远不能被追究责任”的观点）。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/unrolling-the-codex-agent-loop" target="_blank" rel="noopener">展开Codex代理循环</a></h2>
+<h2><a href="https://simonwillison.net/2026/Jul/12/shot-scraper/#atom-everything" target="_blank" rel="noopener">shot-scraper 1.11</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-13 07:46</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/12/shot-scraper/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：shot-scraper 1.11 版本带来若干小改进，主要围绕命令选项一致性，并优化了 server: 机制。当服务器启动服务耗时超过一秒时，shot-scraper video 和 shot-scraper multi 使用的 server: 进程现在会等待目标 URL 接受连接最多 30 秒，通过轮询端口可用性替代之前固定的 1 秒延迟。#197 shot-scraper、pdf、html、accessibility 和 har 命令新增 --js-file 选项，支持从本地文件、标准输入或 gh:username/script 加载 JavaScript，作为直接接受 JavaScript 字符串参数的 --javascript 的替代方案。#192 shot-scraper multi 支持等效的 js_file:... 语法。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/12/sqlite-utils/#atom-everything" target="_blank" rel="noopener">sqlite-utils 4.1.1</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-13 04:55</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/12/sqlite-utils/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">**发布：sqlite-utils 4.1.1**  
+主要修复一个边缘情况：当在开启 `PRAGMA foreign_keys` 的事务中调用 `table.transform()`，且目标表被外键引用并包含破坏性 `ON DELETE` 操作（`CASCADE`、`SET NULL` 或 `SET DEFAULT`）时，会抛出 `TransactionError`。由于 pragma 无法在事务内更改，此前删除旧表可能触发这些操作，静默删除或修改引用行。详见 Foreign keys and transactions 及解决方法（#794）。  
+CLI 与 Python API 文档现已相互交叉引用：CLI 章节链接至对应 Python API 功能。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/stargate-community" target="_blank" rel="noopener">星门社区</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2026-01-23 20:00</span>
-    <span>🔗 <a href="https://openai.com/index/unrolling-the-codex-agent-loop" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-01-21 03:00</span>
+    <span>🔗 <a href="https://openai.com/index/stargate-community" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">深入解析Codex代理循环的技术原理，阐述Codex CLI如何通过Responses API协调模型、工具、提示词与性能。该循环以模型为核心，通过工具调用（如代码执行、文件操作）实现任务分解与迭代优化。提示词工程采用结构化模板，动态注入上下文与约束条件，确保输出一致性。性能层面，Responses API支持流式响应与异步处理，降低延迟并提升吞吐量。关键机制包括：状态管理追踪多轮交互历史，错误重试策略自动修复执行失败，以及沙箱隔离保障安全。整体架构强调模块化与可扩展性，为复杂编程任务提供高效、鲁棒的自动化解决方案。</div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/scaling-postgresql" target="_blank" rel="noopener">扩展PostgreSQL以支持8亿ChatGPT用户</a></h2>
-<div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-01-22 20:00</span>
-    <span>🔗 <a href="https://openai.com/index/scaling-postgresql" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">OpenAI 通过副本、缓存、限流和工作负载隔离，将 PostgreSQL 扩展至每秒数百万次查询。核心策略包括：使用只读副本分担读负载，引入缓存层减少数据库压力，实施限流机制防止过载，并通过工作负载隔离确保关键查询不受干扰。这些技术手段协同作用，实现了高并发下的稳定性能。</div>
+<div class="content">Stargate Community计划提出了一种以社区为先的AI基础设施方案，通过社区反馈、能源需求和劳动力优先级制定本地化计划。该方案强调因地制宜，优先考虑社区参与和实际需求。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/business/guides-and-resources/chatgpt-usage-and-adoption-patterns-at-work" target="_blank" rel="noopener">GPT-5 工作版揭秘：企业如何使用 GPT-5</a></h2>
-<div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-01-22 08:00</span>
-    <span>🔗 <a href="https://openai.com/business/guides-and-resources/chatgpt-usage-and-adoption-patterns-at-work" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">一份数据驱动的报告，概述各行业员工如何使用ChatGPT，涵盖采用趋势、主要任务、部门模式及AI在工作中的未来。</div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/praktika" target="_blank" rel="noopener">Praktika对话式语言学习法解析</a></h2>
-<div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-01-22 08:00</span>
-    <span>🔗 <a href="https://openai.com/index/praktika" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">Praktika 利用 GPT-4.1 和 GPT-5.2 构建自适应 AI 导师，通过个性化课程、追踪学习进度，帮助学习者实现真实场景的语言流利度。</div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/higgsfield" target="_blank" rel="noopener">Higgsfield如何将简单创意转化为电影级社交视频</a></h2>
-<div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-01-21 18:00</span>
-    <span>🔗 <a href="https://openai.com/index/higgsfield" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">了解Higgsfield如何利用OpenAI GPT-4.1、GPT-5和Sora 2，让创作者通过简单输入获得电影级、社交优先的视频输出。</div>
-</div>
-<div class="article">
-<h2><a href="https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face" target="_blank" rel="noopener">AssetOpsBench：弥合AI智能体基准测试与工业现实之间的鸿沟</a></h2>
+<h2><a href="https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment" target="_blank" rel="noopener">“DeepSeek时刻”一周年</a></h2>
 <div class="source">
     <span>📰 Hugging Face - Blog</span>
-    <span>🕐 2026-01-21 14:25</span>
-    <span>🔗 <a href="https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-01-20 23:02</span>
+    <span>🔗 <a href="https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment" target="_blank" rel="noopener">原文</a></span>
 </div>
 <div class="content"></div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/edu-for-countries" target="_blank" rel="noopener">推出Edu国家版</a></h2>
+<h2><a href="https://openai.com/index/servicenow-powers-actionable-enterprise-ai-with-openai" target="_blank" rel="noopener">ServiceNow 借助 OpenAI 赋能企业可操作 AI</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2026-01-21 09:00</span>
-    <span>🔗 <a href="https://openai.com/index/edu-for-countries" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-01-20 13:45</span>
+    <span>🔗 <a href="https://openai.com/index/servicenow-powers-actionable-enterprise-ai-with-openai" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">Edu for Countries 是 OpenAI 的一项新计划，旨在帮助政府利用 AI 实现教育系统现代化，并培养面向未来的劳动力。</div>
+<div class="content">ServiceNow 扩展了对 OpenAI 前沿模型的访问权限，以驱动其平台上的 AI 企业工作流、摘要、搜索和语音功能。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/how-countries-can-end-the-capability-overhang" target="_blank" rel="noopener">各国如何终结能力过剩</a></h2>
+<h2><a href="https://huggingface.co/blog/microsoft/diff-attn-v2" target="_blank" rel="noopener">差分Transformer V2</a></h2>
 <div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-01-21 09:00</span>
-    <span>🔗 <a href="https://openai.com/index/how-countries-can-end-the-capability-overhang" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-01-20 11:20</span>
+    <span>🔗 <a href="https://huggingface.co/blog/microsoft/diff-attn-v2" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">最新报告显示，各国在先进AI采用率上存在显著差异，并概述了帮助各国从AI中获取生产力提升的新举措。</div>
+<div class="content"></div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/horizon-1000" target="_blank" rel="noopener">Horizon 1000：推动初级医疗保健的人工智能发展</a></h2>
+<h2><a href="https://huggingface.co/blog/waypoint-1" target="_blank" rel="noopener">Waypoint-1：Overworld 实时交互视频扩散技术</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-01-20 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/waypoint-1" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># Waypoint-1：来自Overworld的实时交互式视频扩散模型
+
+## Waypoint-1 **权重** 在Hub上
+- Waypoint-1-Small
+- Waypoint-1-Medium（即将推出）
+
+## 尝试模型
+**Overworld Stream:** https://overworld.stream
+
+## 什么是Waypoint-1？
+Waypoint-1是Overworld的实时交互式视频扩散模型，可通过文本、鼠标和键盘进行控制和提示。你可以向模型提供一些帧，运行模型，让它创建一个你可以进入并与之交互的世界。该模型的核心是一个帧因果整流流Transformer，在10,000小时的多样化视频游戏画面（配有控制输入和文本描述）上训练而成。Waypoint-1是一个潜在模型，意味着它在压缩帧上进行训练。这在现有世界模型中已成为标准做法。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/our-approach-to-age-prediction" target="_blank" rel="noopener">我们的年龄预测方法</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2026-01-21 05:00</span>
-    <span>🔗 <a href="https://openai.com/index/horizon-1000" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-01-20 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/our-approach-to-age-prediction" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">OpenAI与盖茨基金会联合启动Horizon 1000项目，投入5000万美元试点资金，旨在提升非洲医疗领域的AI能力。该计划目标在2028年前覆盖1000家诊所。</div>
+<div class="content">ChatGPT 正在推出年龄预测功能，用于估算账户用户是否未满18岁，并针对青少年应用保护措施，同时随时间推移持续优化预测准确性。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence" target="_blank" rel="noopener">随智能价值增长的企业</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-18 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI的商业模式随智能水平扩展，涵盖订阅、API、广告、电商和计算服务，其增长由ChatGPT的深度普及驱动。</div>
 </div>
     <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
         由 Hermes Agent 自动生成 · AI 日报
