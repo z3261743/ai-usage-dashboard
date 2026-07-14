@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-07-14</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-07-14</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-07-14</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/13/doomql/#atom-everything" target="_blank" rel="noopener">DOOMQL</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-14 06:34</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/13/doomql/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">DOOMQL 由 Peter Gostev 基于 GPT-5.6 Sol 构建，源于一个刻意反常规的问题：如果 SQLite 不只是游戏的数据存储，而是游戏引擎本身会怎样？结果诞生了一款小巧的类 Doom 游戏，其中移动、碰撞、敌人、战斗、进度以及屏幕上的每个 RGB 像素均由 SQL 控制。它实现为 Python 终端脚本，运行后会创建 SQLite 数据库，可通过 Datasette 探索。核心是一个利用递归 CTE 在 SQLite 中实现完整光线追踪的庞大 SQL 查询。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything" target="_blank" rel="noopener">GitHub 上的 datasette 代码频率图表</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-14 05:45</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">出于好奇，我尝试寻找能直观展示编码代理（coding agents）和Opus 4.5类模型对我个人产出影响的图表。目前发现的最佳示例是GitHub上Datasette开源项目代码变更频率图：图表末段的大幅活动峰值与Opus 4.8、GPT-5.5、Fable 5及GPT-5.6 Sol的出现时间吻合。标签：github, ai, datasette, generative-ai, llms, ai-assisted-programming, coding-agents</div>
+</div>
+<div class="article">
+<h2><a href="https://martinfowler.com/fragments/2026-07-13.html" target="_blank" rel="noopener">碎片：7月13日</a></h2>
+<div class="source">
+    <span>📰 Martin Fowler</span>
+    <span>🕐 2026-07-14 00:06</span>
+    <span>🔗 <a href="https://martinfowler.com/fragments/2026-07-13.html" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">以下是Thoughtworks软件开发未来研讨会笔记摘要：今年初首次会议时无人提及"Harness Engineering"，本次则专门探讨。在harness的引导端，核心讨论聚焦于上下文管理。尽管模型复杂度提升使上下文窗口增大，但模型仍可能无法精准聚焦关键信息——它们通常只关注部分上下文。为优化模型行为，需主动管理其注意力焦点。有参会者将agents.md文件控制在200行以内以保持上下文精简。在感知端，计算型传感器受到更多关注，有参与者提出转向特定语言的两种模式。</div>
+</div>
+<div class="article">
+<h2><a href="https://engineering.fb.com/2026/07/13/ml-applications/modernizing-the-meta-ads-service-with-an-open-source-kernel-scheduler/" target="_blank" rel="noopener">使用开源内核调度器现代化Meta广告服务</a></h2>
+<div class="source">
+    <span>📰 Engineering at Meta</span>
+    <span>🕐 2026-07-14 00:00</span>
+    <span>🔗 <a href="https://engineering.fb.com/2026/07/13/ml-applications/modernizing-the-meta-ads-service-with-an-open-source-kernel-scheduler/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">TL;DR：在Meta的规模下，毫秒级的延迟退化会对广告性能产生显著的负面影响。当一次Linux内核升级可能影响Meta广告服务集群的延迟时，我们采用了基于BPF的可扩展调度框架sched_ext，为广告投放工作负载定制调度策略。结果：广告检索阶段尾部延迟（99百分位）降低28%，节省3.28兆瓦电力，广告排序数量增加1.1%，证明了针对特定工作负载的调度优化可直接驱动业务价值。为什么广告延迟重要：Meta的广告服务集群在服务平台入口处平均每秒处理超过500万次请求，每日超过4000亿次。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/introducing-chatgpt-go" target="_blank" rel="noopener">ChatGPT Go 全球上线</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-16 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-chatgpt-go" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">ChatGPT Go 现已全球上线，提供更广泛的 GPT-5.2 Instant 访问权限、更高的使用限制以及更长的记忆功能，使先进 AI 在全球范围内更加经济实惠。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/our-approach-to-advertising-and-expanding-access" target="_blank" rel="noopener">我们推广ChatGPT及扩大其访问权限的策略</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-16 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/our-approach-to-advertising-and-expanding-access" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI计划在美国对ChatGPT的免费版和Go版测试广告，以在全球范围内扩大AI的可负担访问，同时保护隐私、信任和回答质量。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/investing-in-merge-labs" target="_blank" rel="noopener">投资Merge Labs</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-15 15:00</span>
+    <span>🔗 <a href="https://openai.com/index/investing-in-merge-labs" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI 正投资于 Merge Labs，以支持新型脑机接口（brain computer interfaces）的开发，这些接口旨在连接生物智能与人工智能，从而最大化人类的能力、自主性与体验。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/strengthening-the-us-ai-supply-chain" target="_blank" rel="noopener">通过国内制造强化美国AI供应链</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-15 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/strengthening-the-us-ai-supply-chain" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI发布新RFP，旨在通过加速国内制造、创造就业和扩展AI基础设施，强化美国AI供应链。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/open-responses" target="_blank" rel="noopener">开放回应：你需要知道的一切</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-01-15 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/open-responses" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Open Responses 是一项全新的开放推理标准。由 OpenAI 发起、开源 AI 社区共建，并得到 Hugging Face 生态支持，该标准基于 Responses API，专为 Agent 的未来而设计。本文将解析 Open Responses 的工作原理，以及开源社区为何应采用此标准。聊天机器人时代早已过去，Agent 正主导推理工作负载。开发者正转向能长期推理、规划并行动的自主系统。然而，当前生态仍普遍使用为回合制对话设计的 **Chat Completion** 格式，难以满足 Agent 场景需求。**Responses 格式**虽旨在解决这些局限，但却是封闭的。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/cerebras-partnership" target="_blank" rel="noopener">OpenAI与Cerebras达成合作</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-14 22:00</span>
+    <span>🔗 <a href="https://openai.com/index/cerebras-partnership" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI与Cerebras合作，新增750MW高速AI算力，降低推理延迟，使ChatGPT在实时AI工作负载中响应更快。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
