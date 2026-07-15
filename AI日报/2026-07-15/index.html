@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-07-15</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-07-15</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-07-15</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/14/pedalican/#atom-everything" target="_blank" rel="noopener">simonw/pedalican</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-15 06:29</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/14/pedalican/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">在 Codex Desktop 中意外激活了一个类似 Clippy 的动画机器人“宠物”，并发现可以自定义创建。我制作了一只骑自行车的小鹈鹕，它会在桌面上跳动并更新 Codex 任务状态。最有趣的是创建过程：只需告诉它想要“骑自行车的鹈鹕”，GPT-5.6 Sol xhigh 便自动调用 gpt-image-2 多轮生成所需的 sprite 资源，并详细记录了所有中间步骤。相关代码已上传至我的 GitHub。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/14/lobsters-sqlite/#atom-everything" target="_blank" rel="noopener">lobste.rs 现已运行于 SQLite</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-15 03:44</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/14/lobsters-sqlite/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">lobste.rs 社区网站已从 MariaDB 迁移至 SQLite。自2018年8月起计划迁移（最初目标为 PostgreSQL），去年决定改用 SQLite。本周末完成迁移后，该架构被确认为永久方案。效果显著：CPU 和内存占用下降，网站响应更迅速，移除 MariaDB VPS 后成本减半。当前 Rails 应用运行于单台 VPS，主内容 SQLite 数据库文件约 3.8GB，另有 1.1GB 缓存库、218MB 队列库及持续增长的 555MB rack_attack 数据库。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything" target="_blank" rel="noopener">引用 Armin Ronacher</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-15 02:04</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">软件项目的共享语言并非英语或Python，而是对概念含义、边界划分、关键不变量、所有权归属及系统形态成因的共同理解。这种语言极少集中记录，分散存在于文档、代码、代码审查、对话讨论、争论以及向他人解释变更的实践经验中。在智能体出现前，部分共识通过摩擦机制维持——若要修改他人的存储层，通常需要阅读其代码、提问咨询，甚至与依赖该服务的其他团队协调。这种缓慢流程虽包含大量无效消耗，但并非全然浪费，其中部分环节正是...</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/what-is-loop-engineering" target="_blank" rel="noopener">什么是“循环工程”？</a></h2>
+<div class="source">
+    <span>📰 The Pragmatic Engineer</span>
+    <span>🕐 2026-07-15 01:01</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/what-is-loop-engineering" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">“循环工程”近一个月成为热门话题。Anthropic与OpenAI的知名人士透露，他们已不再编写提示词，转而设计循环系统。Anthropic开发者大会上，Claude Code创始人Boris Cherny表示：“我不再向Claude输入提示词，而是运行循环让它自主决策。我的工作就是编写循环。”随后，OpenClaw创始人Peter Steinberger发文倡导循环设计。前谷歌工程师Addy Osmani在《循环工程》一文中指出：“循环工程是用系统替代你本人来驱动AI代理。你只需设计这个系统。”短短时间内，三位专家接连提及这一新方法论。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/14/datasette/#atom-everything" target="_blank" rel="noopener">datasette 1.0a37</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-15 00:31</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/14/datasette/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：datasette 1.0a37 是一个小版本更新。主要改进了权限系统的性能与文档，同时撤销了一项导致几乎所有现有插件测试套件失效的API外观变更。标签：datasette</div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary/" target="_blank" rel="noopener">庆祝视觉搜索创新25周年</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-07-15 00:00</span>
+    <span>🔗 <a href="https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Google Images迎来25周年。回顾重大里程碑——并探索与创作视觉内容的新方式。</div>
+</div>
+<div class="article">
+<h2><a href="https://martinfowler.com/articles/llm-and-dsls.html" target="_blank" rel="noopener">DSL让LLM使用更可靠</a></h2>
+<div class="source">
+    <span>📰 Martin Fowler</span>
+    <span>🕐 2026-07-14 20:51</span>
+    <span>🔗 <a href="https://martinfowler.com/articles/llm-and-dsls.html" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">LLMs生成代码速度极快，但为确保其输出完全符合预期，需要清晰的边界。抽象与领域特定语言（DSL）能从一开始就为LLMs提供强有力的约束。Unmesh Joshi通过Tickloom案例——一个用于演示分布式系统行为的领域模型与DSL——展示了如何将LLM作为协作伙伴，迭代构建DSL，并利用其作为自然语言接口。此类DSL可成为LLM时代软件系统的核心事实来源。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/managing-ai-investments-in-agentic-era" target="_blank" rel="noopener">如何在智能体时代管理AI投资</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-07-14 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/managing-ai-investments-in-agentic-era" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">了解企业如何在智能体时代管理AI投资：通过衡量每美元有效产出、提升效率并扩展高价值工作流。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/nvidia-reachy-mini" target="_blank" rel="noopener">NVIDIA 借助 DGX Spark 与 Reachy Mini 让智能体“活”起来</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-01-05 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/nvidia-reachy-mini" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">在CES 2026主题演讲中，NVIDIA展示了如何通过DGX Spark与Reachy Mini的结合，将AI智能体带入现实世界。NVIDIA发布了多项开放模型，包括Nemotron推理LLM、Isaac GR00T N1.6开放推理VLA以及Cosmos世界基础模型，为AI开发者构建智能体提供了完整工具链。Jensen Huang现场演示了如何利用DGX Spark的计算能力与Reachy Mini机器人，在桌面端打造一个能处理私有数据、具备实用功能的AI伙伴。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/openai-grove" target="_blank" rel="noopener">宣布OpenAI Grove第二期学员招募</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-01-02 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/openai-grove" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI Grove Cohort 2 现已开放申请。这是一个为期5周的创始人计划，面向从创意前期到产品阶段的所有参与者。入选者将获得5万美元的API积分、AI工具早期使用权，以及OpenAI团队的实践指导。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
