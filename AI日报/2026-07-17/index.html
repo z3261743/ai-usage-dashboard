@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-07-17</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-07-17</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-07-17</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything" target="_blank" rel="noopener">WebAssembly 中的 Firefox</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-17 07:34</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Firefox 被编译为 WebAssembly 运行在另一个浏览器中，这非常酷。项目选择了单进程支持强的 Firefox/Gecko，耗资约 2.5 万美元的 Claude Opus 和 Fable tokens，利用 Claude Max 订阅计划完成。演示通过 WebSocket 协议（Wisp 协议）经 Puter 服务器转发所有流量，因为浏览器中的代码无法打开任意网络连接。代理成本高昂，团队在 Hacker News 讨论期间不得不扩展服务器以应对流量。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything" target="_blank" rel="noopener">Kimi K3 与鹈鹕基准测试的启示</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-17 04:19</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">中国AI实验室Moonshot AI今日发布Kimi K3，称其为“迄今最强模型，参数规模达2.8万亿”。该模型已通过官网和API开放使用，承诺于2026年7月27日开源权重。Moonshot将其称为首个“开源3T级模型”（将2.8万亿四舍五入为3万亿），超越DeepSeek的1.6T v4 Pro。自测基准显示，K3多数指标超越Claude Opus 4.8 max和GPT-5.5 high，但逊于Claude Fable 5和GPT-5.6 Sol。Artificial Analysis报告亮点：在私有长周期知识工作评估中，K3整体Elo达1547分，较K2.6提升732分。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything" target="_blank" rel="noopener">引用 Thibault Sottiaux</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-17 01:45</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">关于文件删除问题。我们调查了若干GPT-5.6意外删除文件的报告。发现最常见的情况是：启用完全访问模式且codex在无沙箱保护（包括未启用自动审查）下运行；模型试图覆盖$HOME环境变量以定义临时目录；模型犯下诚实错误，误删了$HOME目录。——Thibault Sottiaux描述了一个相当棘手的Codex漏洞。标签：codex, coding-agents, generative-ai, ai, llms</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-groks-cli-caught-uploading" target="_blank" rel="noopener">《脉搏：Grok的CLI被曝将本地文件全部上传至云端》</a></h2>
+<div class="source">
+    <span>📰 The Pragmatic Engineer</span>
+    <span>🕐 2026-07-17 00:48</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-groks-cli-caught-uploading" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">《The Pulse》系列关注大型科技与初创公司的事件、洞察与趋势。今日要点：Grok CLI 被发现将用户本地文件上传至云端。当开发者因 Grok 4.5 编码模型开始使用该 CLI 时，发现了这一行为。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb" target="_blank" rel="noopener">NVIDIA Nemotron 3 Embed 在 RTEB 综合排名第一，推动智能检索发展</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-07-17 00:01</span>
+    <span>🔗 <a href="https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/" target="_blank" rel="noopener">使用两个Google Vids更新创建、编辑和出演视频</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-07-17 00:00</span>
+    <span>🔗 <a href="https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Gemini Omni 与 Google Vids 中的个人虚拟形象让视频创作变得前所未有地简单。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/why-teens-deserve-access-safe-ai" target="_blank" rel="noopener">青少年应享有安全AI的访问权</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-07-17 00:00</span>
+    <span>🔗 <a href="https://openai.com/index/why-teens-deserve-access-safe-ai" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI正通过多项措施提升ChatGPT对青少年的安全性：包括年龄适配保护机制（如限制不当内容）、学习辅助工具（如引导式提问）、家长控制功能（如使用监控与限制），以及与专家合作优化模型。这些举措旨在为青少年提供更安全的AI交互环境。</div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/products-and-platforms/products/search/connected-apps/" target="_blank" rel="noopener">将更多应用连接到搜索</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-07-17 00:00</span>
+    <span>🔗 <a href="https://blog.google/products-and-platforms/products/search/connected-apps/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">您将能够在AI模式下直接安全地链接并交互您常用的服务。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/16/inkling/#atom-everything" target="_blank" rel="noopener">Inkling：我们的开放权重模型</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-16 23:35</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/16/inkling/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Inkling：Mira Murati领导的Thinking Machines Lab发布了首个开源权重模型Inkling。这是一个混合专家（Mixture-of-Experts）Transformer架构，总参数量975B，激活参数41B，采用Apache-2.0许可，基于45万亿token的文本、图像、音频和视频数据训练。他们还承诺推出Inkling-Small（276B总参数，12B激活参数），但该模型仍在测试中，权重将在完成后发布。模型卡内容比预期简短，链接的训练数据文档更短，几乎无实质信息，核心总结为：Thinking Machines Lab用于开发AI服务的数据集包含...</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything" target="_blank" rel="noopener">引用Linus Torvalds的话</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-16 21:26</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Linux创始人Linus Torvalds在Linux媒体邮件列表中明确表态：AI是像其他工具一样有用的工具，Linux项目不会排斥AI。他承认有人不喜欢AI，但作为顶级维护者，他坚持这一立场——反对者可以fork开源分支或离开。Linus指出，一年前AI的实用性或许存疑，但如今已毋庸置疑。关于AI的经济形态等问题仍有待探讨，但"是否有用"已不再是问题。任何怀疑者显然从未真正使用过AI。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
