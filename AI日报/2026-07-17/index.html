@@ -33,94 +33,95 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-07-17</div>
     <div class="article">
-<h2><a href="https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything" target="_blank" rel="noopener">WebAssembly 中的 Firefox</a></h2>
+<h2><a href="https://simonwillison.net/2026/Jul/17/spot-birds-not-golf/#atom-everything" target="_blank" rel="noopener">识别鸟类，而非高尔夫</a></h2>
 <div class="source">
     <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-07-17 07:34</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-07-17 10:58</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/17/spot-birds-not-golf/#atom-everything" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">Firefox 被编译为 WebAssembly 运行在另一个浏览器中，这非常酷。项目选择了单进程支持强的 Firefox/Gecko，耗资约 2.5 万美元的 Claude Opus 和 Fable tokens，利用 Claude Max 订阅计划完成。演示通过 WebSocket 协议（Wisp 协议）经 Puter 服务器转发所有流量，因为浏览器中的代码无法打开任意网络连接。代理成本高昂，团队在 Hacker News 讨论期间不得不扩展服务器以应对流量。</div>
+<div class="content">针对超大规模云服务商数据中心用水压力的建议：收购若干专属乡村俱乐部，将高尔夫球场改造为公共公园，提供观鸟指南与望远镜，引导前会员转向可持续爱好。谷歌2025年耗水109亿加仑（日均3000万加仑）。科切拉谷地120个高尔夫球场年均用水约800英亩-英尺（日均75万加仑）。收购其中40个球场（三分之一）即可解决问题。标签：ai-energy-usage, ai</div>
 </div>
 <div class="article">
-<h2><a href="https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything" target="_blank" rel="noopener">Kimi K3 与鹈鹕基准测试的启示</a></h2>
+<h2><a href="https://simonwillison.net/2026/Jul/16/mermaid-ascii/#atom-everything" target="_blank" rel="noopener">Mermaid 转 ASCII 艺术图 (mermaid-ascii)</a></h2>
 <div class="source">
     <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-07-17 04:19</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-07-16 22:57</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/16/mermaid-ascii/#atom-everything" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">中国AI实验室Moonshot AI今日发布Kimi K3，称其为“迄今最强模型，参数规模达2.8万亿”。该模型已通过官网和API开放使用，承诺于2026年7月27日开源权重。Moonshot将其称为首个“开源3T级模型”（将2.8万亿四舍五入为3万亿），超越DeepSeek的1.6T v4 Pro。自测基准显示，K3多数指标超越Claude Opus 4.8 max和GPT-5.5 high，但逊于Claude Fable 5和GPT-5.6 Sol。Artificial Analysis报告亮点：在私有长周期知识工作评估中，K3整体Elo达1547分，较K2.6提升732分。</div>
+<div class="content">工具：Mermaid转ASCII艺术图（mermaid-ascii）。基于Grok Build的Rust代码构建该工具后，发现一个更成熟、功能更全面的Go库AlexanderGrooff/mermaid-ascii实现了类似模式。因此让Claude Fable 5将其编译为WebAssembly以便对比。该版本支持颜色！标签：go, tools, webassembly, mermaid</div>
 </div>
 <div class="article">
-<h2><a href="https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything" target="_blank" rel="noopener">引用 Thibault Sottiaux</a></h2>
+<h2><a href="https://martinfowler.com/articles/archaeologist-copilot.html" target="_blank" rel="noopener">考古学家的副驾驶</a></h2>
 <div class="source">
-    <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-07-17 01:45</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Martin Fowler</span>
+    <span>🕐 2026-07-16 21:25</span>
+    <span>🔗 <a href="https://martinfowler.com/articles/archaeologist-copilot.html" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">关于文件删除问题。我们调查了若干GPT-5.6意外删除文件的报告。发现最常见的情况是：启用完全访问模式且codex在无沙箱保护（包括未启用自动审查）下运行；模型试图覆盖$HOME环境变量以定义临时目录；模型犯下诚实错误，误删了$HOME目录。——Thibault Sottiaux描述了一个相当棘手的Codex漏洞。标签：codex, coding-agents, generative-ai, ai, llms</div>
-</div>
-<div class="article">
-<h2><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-groks-cli-caught-uploading" target="_blank" rel="noopener">《脉搏：Grok的CLI被曝将本地文件全部上传至云端》</a></h2>
-<div class="source">
-    <span>📰 The Pragmatic Engineer</span>
-    <span>🕐 2026-07-17 00:48</span>
-    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-groks-cli-caught-uploading" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">《The Pulse》系列关注大型科技与初创公司的事件、洞察与趋势。今日要点：Grok CLI 被发现将用户本地文件上传至云端。当开发者因 Grok 4.5 编码模型开始使用该 CLI 时，发现了这一行为。</div>
+<div class="content">提到遗留系统现代化，多数人不会想到目标环境竟是Java 8。但Nik Malykhin面临的就是这样的挑战：他需要在现代硬件上运行Java 1.5代码库。早期使用LLM时，AI给出的答案看似合理，却在代码库中站不住脚。直到他将过程建立在证据基础上——用AI辅助分析、在稳定的Docker环境中验证、通过测试保护逐步重构——才取得进展。核心经验很务实：当AI被证据、明确角色和分步现代化策略约束时，它才最有用。</div>
 </div>
 <div class="article">
-<h2><a href="https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb" target="_blank" rel="noopener">NVIDIA Nemotron 3 Embed 在 RTEB 综合排名第一，推动智能检索发展</a></h2>
+<h2><a href="https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages" target="_blank" rel="noopener">更新模型，优势依旧</a></h2>
 <div class="source">
     <span>📰 Hugging Face - Blog</span>
-    <span>🕐 2026-07-17 00:01</span>
-    <span>🔗 <a href="https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-07-16 19:49</span>
+    <span>🔗 <a href="https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages" target="_blank" rel="noopener">原文</a></span>
 </div>
 <div class="content"></div>
 </div>
 <div class="article">
-<h2><a href="https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/" target="_blank" rel="noopener">使用两个Google Vids更新创建、编辑和出演视频</a></h2>
+<h2><a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noopener">安全事件披露 — 2026年7月</a></h2>
 <div class="source">
-    <span>📰 AI</span>
-    <span>🕐 2026-07-17 00:00</span>
-    <span>🔗 <a href="https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-07-16 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">Gemini Omni 与 Google Vids 中的个人虚拟形象让视频创作变得前所未有地简单。</div>
+<div class="content"># 安全事件披露——2026年7月  
+本周早些时候，我们检测并应对了一起针对部分生产基础设施的入侵事件。此次事件与以往处理过的任何事件有一个重要不同：它完全由自主AI智能体系统端到端驱动，而我们主要借助自有AI技术进行检测与分析。我们识别出对有限内部数据集及若干服务凭证的未授权访问。目前仍在评估合作伙伴或客户数据是否受影响，并将按要求直接联系相关方。未发现公开用户模型、数据集或Spaces被篡改的证据，软件供应链（容器镜像与已发布包）也未受影响。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/why-teens-deserve-access-safe-ai" target="_blank" rel="noopener">青少年应享有安全AI的访问权</a></h2>
+<h2><a href="https://openai.com/index/cars24" target="_blank" rel="noopener">Cars24 如何借助 OpenAI 扩展对话并加速开发</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2026-07-17 00:00</span>
-    <span>🔗 <a href="https://openai.com/index/why-teens-deserve-access-safe-ai" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-07-16 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/cars24" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">OpenAI正通过多项措施提升ChatGPT对青少年的安全性：包括年龄适配保护机制（如限制不当内容）、学习辅助工具（如引导式提问）、家长控制功能（如使用监控与限制），以及与专家合作优化模型。这些举措旨在为青少年提供更安全的AI交互环境。</div>
-</div>
-<div class="article">
-<h2><a href="https://blog.google/products-and-platforms/products/search/connected-apps/" target="_blank" rel="noopener">将更多应用连接到搜索</a></h2>
-<div class="source">
-    <span>📰 AI</span>
-    <span>🕐 2026-07-17 00:00</span>
-    <span>🔗 <a href="https://blog.google/products-and-platforms/products/search/connected-apps/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">您将能够在AI模式下直接安全地链接并交互您常用的服务。</div>
+<div class="content">Cars24 利用基于OpenAI的语音和聊天代理，每月处理超过100万分钟的对话，挽回12%的流失线索，并将代理工作流推广至公司各团队。</div>
 </div>
 <div class="article">
-<h2><a href="https://simonwillison.net/2026/Jul/16/inkling/#atom-everything" target="_blank" rel="noopener">Inkling：我们的开放权重模型</a></h2>
+<h2><a href="https://openai.com/business/guides-and-resources/staying-ahead-in-the-age-of-ai" target="_blank" rel="noopener">在AI时代保持领先</a></h2>
 <div class="source">
-    <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-07-16 23:35</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Jul/16/inkling/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-12-16 08:00</span>
+    <span>🔗 <a href="https://openai.com/business/guides-and-resources/staying-ahead-in-the-age-of-ai" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">Inkling：Mira Murati领导的Thinking Machines Lab发布了首个开源权重模型Inkling。这是一个混合专家（Mixture-of-Experts）Transformer架构，总参数量975B，激活参数41B，采用Apache-2.0许可，基于45万亿token的文本、图像、音频和视频数据训练。他们还承诺推出Inkling-Small（276B总参数，12B激活参数），但该模型仍在测试中，权重将在完成后发布。模型卡内容比预期简短，链接的训练数据文档更短，几乎无实质信息，核心总结为：Thinking Machines Lab用于开发AI服务的数据集包含...</div>
+<div class="content">了解领导者如何通过清晰的战略、培训、治理和加速创新，构建AI-ready组织。</div>
 </div>
 <div class="article">
-<h2><a href="https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything" target="_blank" rel="noopener">引用Linus Torvalds的话</a></h2>
+<h2><a href="https://huggingface.co/blog/ibm-research/cuga-on-hugging-face" target="_blank" rel="noopener">Hugging Face上的CUGA：让可配置AI智能体走向大众化</a></h2>
 <div class="source">
-    <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-07-16 21:26</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-12-16 00:01</span>
+    <span>🔗 <a href="https://huggingface.co/blog/ibm-research/cuga-on-hugging-face" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">Linux创始人Linus Torvalds在Linux媒体邮件列表中明确表态：AI是像其他工具一样有用的工具，Linux项目不会排斥AI。他承认有人不喜欢AI，但作为顶级维护者，他坚持这一立场——反对者可以fork开源分支或离开。Linus指出，一年前AI的实用性或许存疑，但如今已毋庸置疑。关于AI的经济形态等问题仍有待探讨，但"是否有用"已不再是问题。任何怀疑者显然从未真正使用过AI。</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/bbva-collaboration-expansion" target="_blank" rel="noopener">BBVA与OpenAI合作推动全球银行业转型</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-12-12 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/bbva-collaboration-expansion" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">BBVA正通过与OpenAI的多年AI转型计划扩大合作，向全部12万名员工推广ChatGPT Enterprise。双方将共同开发AI解决方案，以优化客户交互、简化运营流程，并助力构建原生AI银行体验。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/bny" target="_blank" rel="noopener">BNY携手OpenAI打造“无处不在的人工智能”</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-12-12 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/bny" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">BNY通过Eliza平台在全企业范围内推广OpenAI应用，超过2万名员工构建AI代理，以提升效率并改善客户成果。</div>
 </div>
     <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
         由 Hermes Agent 自动生成 · AI 日报
