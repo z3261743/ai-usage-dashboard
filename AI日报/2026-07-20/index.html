@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-07-20</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-07-20</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-07-20</div>
+    <div class="article">
+<h2><a href="https://huggingface.co/blog/transformers-v5" target="_blank" rel="noopener">Transformers v5：简洁模型定义驱动AI生态系统</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-12-01 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/transformers-v5" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># Transformers v5：简化模型定义，驱动AI生态发展
+
+Transformers v4.0.0rc-1于2020年11月19日发布，五年后我们推出v5.0.0rc-0。如今v5发布时，Transformers每日通过pip安装量已超**300万次**（v4时为2万次/天），累计安装量突破**12亿次**！生态系统从v4的**40种模型架构**扩展至**400余种**，社区在Hub上贡献了**超过75万个兼容Transformers的模型检查点**（v4时约1000个）。这一增长得益于AI领域的演进和主流化普及。作为领先的模型定义库...</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/mixpanel-incident" target="_blank" rel="noopener">Mixpanel 安全事件：OpenAI 用户须知</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-11-27 03:00</span>
+    <span>🔗 <a href="https://openai.com/index/mixpanel-incident" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI披露了一起涉及Mixpanel的安全事件，该事件影响了有限的API分析数据。此次事件未暴露任何API内容、凭证或支付信息。了解事件经过及我们如何保护用户安全。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/expanding-data-residency-access-to-business-customers-worldwide" target="_blank" rel="noopener">向全球商业客户扩展数据驻留访问权限</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-11-26 06:00</span>
+    <span>🔗 <a href="https://openai.com/index/expanding-data-residency-access-to-business-customers-worldwide" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI扩展了ChatGPT Enterprise、ChatGPT Edu及API Platform的数据驻留功能，允许符合条件的客户将静态数据存储在所在区域。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/continuous_batching" target="_blank" rel="noopener">从头理解连续批处理</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-11-25 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/continuous_batching" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># 连续批处理  
+*TL;DR：本文从注意力机制和KV缓存出发，通过优化吞吐量推导出连续批处理。*  
+
+使用Qwen、Claude等AI聊天机器人时，你会发现：首字响应需等待，随后文字以规律且快速的频率逐字出现。这是因为所有LLM本质都是高级的"下一个token预测器"：先处理整个提示生成首个token，再逐个添加新token（每次需读取之前所有内容），直至生成结束。这一过程计算成本高昂——需要将输入传递至...</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/jetbrains-2025" target="_blank" rel="noopener">JetBrains内部：重塑全球编程方式的公司</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-11-25 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/jetbrains-2025" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">JetBrains 正在将 GPT-5 集成到其编码工具中，帮助数百万开发者更快地设计、推理和构建软件。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/flux-2" target="_blank" rel="noopener">Diffusers 迎来 FLUX-2</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-11-25 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/flux-2" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># 欢迎 FLUX.2 - BFL 的全新开源图像生成模型 🤗
+
+FLUX.2 是 Black Forest Labs 推出的最新图像生成模型系列，继 Flux.1 之后发布。这是一个全新模型，采用**全新架构**并从头开始预训练！本文讨论了 FLUX.2 的关键变化、在不同设置下的推理方法以及 LoRA 微调。
+
+> [!重要]
+> 🚨 FLUX.2 并非 FLUX.1 的直接替代品，而是一个全新的图像生成与编辑模型。
+
+**目录**
+- FLUX.2 简介
+- 使用 Diffusers 进行推理
+- 高级提示词
+- LoRA 微调
+
+## FLUX.2 简要介绍
+
+FLUX.2 可用于**图像引导**和**文本引导**的图像生成，并且支持多模态输入。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/Tavily/tavily-deep-research" target="_blank" rel="noopener">构建深度研究：我们如何实现最先进水平</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-11-25 01:40</span>
+    <span>🔗 <a href="https://huggingface.co/blog/Tavily/tavily-deep-research" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/OVHcloud/inference-providers-ovhcloud" target="_blank" rel="noopener">OVHcloud 登陆 Hugging Face 推理服务提供商 🔥</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-11-25 00:08</span>
+    <span>🔗 <a href="https://huggingface.co/blog/OVHcloud/inference-providers-ovhcloud" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/gpt-5-mathematical-discovery" target="_blank" rel="noopener">GPT-5与数学发现的未来</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-11-24 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/gpt-5-mathematical-discovery" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">加州大学洛杉矶分校教授Ernest Ryu与GPT-5共同解决了优化理论中的一个关键问题，展示了AI在加速数学发现中的作用。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/chatgpt-shopping-research" target="_blank" rel="noopener">ChatGPT 引入购物研究功能</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-11-24 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/chatgpt-shopping-research" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">ChatGPT中的购物研究功能可帮助您探索、比较和发现产品，通过个性化买家指南简化决策过程。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
