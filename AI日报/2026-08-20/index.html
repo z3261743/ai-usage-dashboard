@@ -33,101 +33,96 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-08-20</div>
     <div class="article">
-<h2><a href="https://openai.com/index/offering-zero-data-retention-for-frontier-models" target="_blank" rel="noopener">为前沿模型提供零数据保留</a></h2>
+<h2><a href="https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/" target="_blank" rel="noopener">smolmachines / smolvm：作为不受信任的 Python 和 JavaScript 的沙箱</a></h2>
 <div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-08-20 03:00</span>
-    <span>🔗 <a href="https://openai.com/index/offering-zero-data-retention-for-frontier-models" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-20 07:16</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">OpenAI重申，符合条件的API客户享有零数据保留政策，并预览了私有安全处理功能，以在不牺牲数据隐私的前提下推进高级AI安全。</div>
+<div class="content">研究：smolmachines / smolvm 作为不受信任 Python 与 JavaScript 的沙箱环境。我让 Claude Code 网页版中的 Claude Fable 5 执行以下研究任务：对 https://smolmachines.com 进行测试，评估其作为快速安全沙箱的可行性。探索如何利用它运行不受信任的 Python 和 JavaScript 代码，并限制其 RAM 和 CPU 时间（防止“while true”死循环），同时禁止网络访问，且文件系统仅允许访问指定文件。目标是能用于执行用户提供的任务，如数据转换。但很快遇到问题：Claude Code 网页版环境无法运行 smol machines。其笔记引用如下：此 Claude Code 容器基于 Linux 6.18.5-fc-v20（本身是 Firecracker...）。</div>
 </div>
 <div class="article">
-<h2><a href="https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/" target="_blank" rel="noopener">利用搜索提升学习的5种新方法</a></h2>
+<h2><a href="https://simonwillison.net/2026/Aug/19/jeremy-morrell/" target="_blank" rel="noopener">引用杰里米·莫雷尔</a></h2>
 <div class="source">
-    <span>📰 AI</span>
-    <span>🕐 2026-08-20 03:00</span>
-    <span>🔗 <a href="https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-20 06:56</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/19/jeremy-morrell/" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">以下是如何利用Google搜索工具备考课程和标准化考试的简要指南：
-
-使用Google搜索时，可借助其内置的学术功能提升学习效率。首先，利用“site:”操作符限定搜索范围，例如输入“site:edu”可仅检索教育机构网站，获取可靠资料。其次，使用“related:”查找相似网站，扩展学习资源。对于数学或科学问题，可直接输入公式或方程，Google会提供解题步骤和图表。此外，利用“Google Scholar”搜索学术论文，获取权威引用。备考标准化考试（如SAT、GRE）时，可搜索“practice test”并配合“filetype:pdf”筛选可下载的模拟题。Google的“高级搜索”功能允许按日期、语言或地区过滤结果，确保信息时效性。最后，利用“Google Alerts”设置关键词提醒，持续跟踪最新考试动态或学习资料。这些工具能帮助系统化整理信息，提升复习效果。</div>
+<div class="content">我的假设是，Web上的可扩展软件正迎来新的机遇。LLMs大幅降低了编写扩展的成本，而现代沙箱原语则降低了部署成本，并提供了良好的安全边界。我们可以将应用构建为坚实、可问责的核心，并允许用户通过LLMs填补缺失部分，安全地向多个方向扩展。这赋予用户超能力。——Jeremy Morrell，《LLM时代的可扩展软件》标签：沙箱、LLMs、AI、生成式AI</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/our-commitment-to-zero-data-retention" target="_blank" rel="noopener">为前沿模型提供零数据保留</a></h2>
+<h2><a href="https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/" target="_blank" rel="noopener">概念完整性与代码行数统计</a></h2>
 <div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-08-20 03:00</span>
-    <span>🔗 <a href="https://openai.com/index/our-commitment-to-zero-data-retention" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-20 06:46</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">OpenAI重申，符合条件的API客户可享受零数据保留（Zero Data Retention）政策，并预览了私有安全处理（Private Safety Processing）功能，旨在不牺牲数据隐私的前提下实现高级AI安全。</div>
+<div class="content">上周，我录制了一期与Claire Giordano合作的Talking Postgres播客，主题是“AI如何改变软件开发”。我们的对话非常精彩。以下是我从一份轻微编辑过的转录稿中提炼的几个亮点（提示给Claude：“仅做微小修改以去除不流畅之处”）。这是我在35:01处试图构建的一个论点的最新版本，关于为何有时用代码行数作为编码代理生产力指标是有意义的：很多人会告诉你，用代码行数衡量生产力毫无意义。我实际上不同意，因为存在一个硬性限制。在过去，一名软件工程师每天能产出几百行生产就绪的代码——而200行...</div>
 </div>
 <div class="article">
-<h2><a href="https://martinfowler.com/rachels-ramblings/citizens-agents-experts.html" target="_blank" rel="noopener">公民构建，智能体执行，专家治理</a></h2>
+<h2><a href="https://simonwillison.net/2026/Aug/16/dario-amodei/" target="_blank" rel="noopener">引用达里奥·阿莫迪</a></h2>
 <div class="source">
-    <span>📰 Martin Fowler</span>
-    <span>🕐 2026-08-20 02:30</span>
-    <span>🔗 <a href="https://martinfowler.com/rachels-ramblings/citizens-agents-experts.html" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-16 23:05</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/16/dario-amodei/" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">TL;DR：周末构建应用与企业级软件并非同一回事。过去六个月，我注意到一个有趣的差距正在显现——这并非技术上的差距，而是人们对软件工程本质认知的分歧。对话通常以相同方式开场：一位非技术背景的人士（可能是高管）向我展示他们周末构建的成果，有时是聊天机器人，有时是内部工作流，有时是能解决实际业务问题的精致应用。他们很兴奋，这理所当然——十二个月前他们可能根本无法构建这些。随后问题来了：“既然AI现在能做到这些，为什么我们的工程团队不能快十倍交付？”这是一个完全合理的问题，但答案在于理解两者本质区别：周末项目是个人探索，而企业软件涉及规模、可靠性、安全性、合规性和长期维护等复杂维度。AI降低了入门门槛，但企业级工程仍需专业团队应对系统性挑战。</div>
+<div class="content">我同意公众对AI持负面看法（且这是个大问题），但我认为这并非主要由我或其他AI领袖对AI风险的警告所致。我认为这根本上是一场信任危机。普通人并不信任企业、政府或科技行业，总怀疑我们在酝酿某种新方式坑害他们。这种不信任的根源可追溯至数十年前，AI只是其最新体现。我不认为一场光鲜亮丽、正面包装的营销活动（有人曾建议Anthropic这么做）能赢回信任——如今，宣称AI能治愈癌症更像陈词滥调而非鼓舞人心，多数人视其为欺骗。真正有效的，是实际治愈癌症。我……</div>
 </div>
 <div class="article">
-<h2><a href="https://martinfowler.com/articles/practitioner-voice.html" target="_blank" rel="noopener">从业者之声：尚未被命名的写作类别</a></h2>
+<h2><a href="https://simonwillison.net/2026/Aug/15/cors-chat/" target="_blank" rel="noopener">CORS 聊天</a></h2>
 <div class="source">
-    <span>📰 Martin Fowler</span>
-    <span>🕐 2026-08-20 02:15</span>
-    <span>🔗 <a href="https://martinfowler.com/articles/practitioner-voice.html" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-15 22:49</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/15/cors-chat/" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">Jim Highsmith认为，从业者的有效写作风格不同于学术写作或思想领导力内容。这是一种我所倡导的风格，我的贡献者大多遵循。Jim认为给它命名并明确其独特之处很重要。更多…</div>
+<div class="content">工具：CORS Chat。我今天（使用GPT-5.6-Sol xhigh）构建了这个工具，用于帮助测试在LM Studio中运行的Qwen 3.8 27B模型，该模型同时部署在我的M5 MacBook Pro和NVIDIA DGX Spark上。它提供了一个Web UI，用于调用兼容OpenAI-Responses的聊天端点。我已针对带有--cors选项的LM Studio以及OpenRouter进行了测试，两者均运行正常。对话记录保存在浏览器中，并可导出为可复制的JSON格式。一个有趣的细节是，它能识别正在生成的SVG图像，并在token流式传输过程中，在聊天界面中逐步渲染这些图像。标签：svg、ai、generative-ai、llms、cors、openrouter、lm-studio。</div>
 </div>
 <div class="article">
-<h2><a href="https://newsletter.pragmaticengineer.com/p/from-chrome-devtools-to-ai-engineering" target="_blank" rel="noopener">从Chrome DevTools到AI工程，与Addy Osmani同行</a></h2>
+<h2><a href="https://simonwillison.net/2026/Aug/15/sighting-391300422/" target="_blank" rel="noopener">北鲣鸟</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-15 11:22</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/15/sighting-391300422/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">这是莫里斯，一只在加州 Pillar Point Harbor 的北鲣鸟（Morus bassanus），也是整个太平洋中已知的唯一一只。14年前，它出现在旧金山海岸外的法拉隆群岛，此后便定居于 Pillar Point 港口。它很容易辨认：唯一拥有黄色头部的白色鸟类，通常与较小的黑色布兰特鸬鹚一起，在商业码头尽头可见的港口标志附近活动。标签：摄影、野生动物、半月湾。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/" target="_blank" rel="noopener">不要分类。去幻觉吧！</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-15 05:54</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">不要分类，要“幻觉”！我的博客上还有很多旧内容一直没来得及打标签。博客现有1,856个标签——数量太多，无法一次性塞给LLM并让它判断“哪些标签匹配以下内容”。Doug Turnbull有个巧妙的解法：让模型直接输出标签，不提供现有词汇表，然后利用向量嵌入（vector embeddings）对照现有语料库，找出与模型“想象”出的标签最接近的具体标签。他的示例提示建议包含标签形状的示例，以帮助模型做出更有效的猜测：你的任务是创建全新的、从未见过的家具、家居用品或硬件分类，以最好地匹配搜索查询。产品分类可能看起来像：……</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-metas-self-inflicted-resignation" target="_blank" rel="noopener">《脉搏：Meta自酿的辞职潮》</a></h2>
 <div class="source">
     <span>📰 The Pragmatic Engineer</span>
-    <span>🕐 2026-08-20 00:53</span>
-    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/from-chrome-devtools-to-ai-engineering" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-08-15 00:55</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-metas-self-inflicted-resignation" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">最新一期节目已上线，可在YouTube、Apple和Spotify上观看或收听。节目文字记录见页面顶部，时间戳见底部。
-
-本期节目由以下赞助商支持：
-• Antithesis——无需人工审查或传统集成测试即可验证系统正确性，避免bug和故障。Jane Street、Fly.io和etcd社区等团队使用Antithesis更快地交付更优质的代码。了解更多。
-• Sentry——由开发者打造、为开发者服务的应用监控软件。其Seer AI代理是新增的便捷工具之一，我常用它快速修复后端错误。查看Sentry。
-• Google Cloud Run——在无安全顾虑下运行不受信任的代理代码。Cloud Run沙箱提供超隔离、临时性的执行环境。</div>
+<div class="content">The Pulse 是一个聚焦大型科技公司和初创企业动态、洞察与趋势的系列报道。今日内容涵盖：Meta 引发的“离职潮”难以遏制。意料之中的是，Meta 的裁员和强制调岗促使未受影响的工程师也开始寻找新工作。Meta 现提供大额股权留任奖励以挽留人才，但似乎效果不佳。Grok Bot：托管式 AI 代理的“OpenClaw 时刻”？Cursor 团队开发并发布了通用 AI 框架，体验类似“Codex，但面向知识工作”。我试用后，自动化了许多日常流程，成为其忠实粉丝。更多 AI 供应商必将效仿此框架。本周 The Pulse 延迟一天发布，敬请谅解——我们家这周迎来了一只小狗……</div>
 </div>
 <div class="article">
-<h2><a href="https://huggingface.co/blog/LiquidAI/qad" target="_blank" rel="noopener">LFM2.5 Q4_0 量化感知蒸馏检查点</a></h2>
+<h2><a href="https://huggingface.co/blog/state-of-open-models-summer-2026" target="_blank" rel="noopener">开源模型现状：2026年夏季观察</a></h2>
 <div class="source">
     <span>📰 Hugging Face - Blog</span>
-    <span>🕐 2026-08-19 21:48</span>
-    <span>🔗 <a href="https://huggingface.co/blog/LiquidAI/qad" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-08-14 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/state-of-open-models-summer-2026" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content"></div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/replit" target="_blank" rel="noopener">Replit 借助 GPT-5.6 Luna 扩大软件开发访问权限</a></h2>
-<div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-08-19 15:00</span>
-    <span>🔗 <a href="https://openai.com/index/replit" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">Replit 推出免费模式，由 GPT-5.6 Luna 驱动，让任何人都能将想法转化为可运行的软件，无需担心 token 成本。</div>
+<div class="content">在AI领域，时间仿佛被压缩了。春季报告发布仅数月后，我们对生态系统的半年分析又有了不少新发现。本报告梳理了2026年1月至8月间的观察结果，并附上每项发现背后的数据支撑。
+
+Hugging Face上的模型和数据集每天都在增长。公开模型仓库从243万增至296万，数据集从71.1万增至100万，Spaces从100万增至144万。然而，分布依然极端：约85.6%的模型终身下载量不足200次，仅1.5%的仓库占据了绝大部分流量。</div>
 </div>
 <div class="article">
-<h2><a href="https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/" target="_blank" rel="noopener">Markdown SVG 升级</a></h2>
+<h2><a href="https://simonwillison.net/2026/Aug/13/sqlite-utils-2/" target="_blank" rel="noopener">sqlite-utils 4.2.1</a></h2>
 <div class="source">
     <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-08-17 07:59</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-08-14 07:53</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/13/sqlite-utils-2/" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">我从五月开始构建我的markdown-svg-renderer工具，但此后为其添加了足够多的功能，值得在此再次讨论。它已演变成我分享包含SVG文档的Markdown转录文本的理想工具。鉴于我热衷于绘制骑自行车的鹈鹕，这是一个我必须解决的问题！该工具非常简单。在浏览器中导航到markdown-svg-renderer，粘贴一些Markdown即可查看渲染效果...或者将Markdown保存到支持CORS的URL或GitHub Gist，然后粘贴该文档的URL。URL选项会提供一个可书签的页面，例如https://tools.simonwillison.net/markdown-svg-renderer#url=https%3A%2F%2Fgist.github.com%2Fsimonw%2F6f9e48293be5c916652d29f0dc0b0657 - 这会将URL嵌入其中...</div>
-</div>
-<div class="article">
-<h2><a href="https://simonwillison.net/2026/Aug/16/qwen-38-27b/" target="_blank" rel="noopener">Qwen 3.8 27B 表现出色，但默认情况下会过度思考问题</a></h2>
-<div class="source">
-    <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-08-17 06:00</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Aug/16/qwen-38-27b/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">周五发布的重磅产品是Qwen 3.8 27B，这是阿里巴巴Qwen研究实验室推出的Apache 2许可、拥有270亿参数的视觉能力LLM。我对此期待已久：27B是适合在配置合理的笔记本电脑上运行的理想规模，而其前代Qwen 3.6 27B已令人印象深刻。Qwen自报的基准测试结果令人瞩目，显示该模型在性能上超越了Qwen 3.6 27B和闭源的Qwen 3.7-Plus——后者截至今年5月仍是Qwen旗下最强模型之一。独立基准测试对这款模型的评价值得关注。我已在两台机器上运行该模型：我的128GB M5 Max MacBook Pro和NVIDIA DGX Spark，均使用LM Studio及其17GB版本。</div>
+<div class="content">Release: sqlite-utils 4.2.1 修复了 sqlite-utils 4.2 中的一个崩溃 bug。我引入了类似 `from typing_extensions import Self` 的代码，但发现 typing-extensions 包未被列为 sqlite-utils 的依赖项——它是由开发依赖组中的其他依赖安装的，但当你直接使用 `uvx sqlite-utils` 时，这些依赖不会被包含。作为修复的一部分，我找到了运行冒烟测试的方法，以确保 CLI 工具在没有这些开发依赖的情况下仍能正常工作，可从项目检出中运行：`uv run --isolated --no-default-groups sqlite-utils --help`。`--no-default-groups` 参数阻止安装默认开发组，而 `--isolated` 意味着即使存在包含额外内容的 `.venv/` 文件夹，也会被忽略。</div>
 </div>
     <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
         由 Hermes Agent 自动生成 · AI 日报
