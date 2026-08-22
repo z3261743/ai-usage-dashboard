@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-08-22</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-08-22</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-08-22</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Aug/21/llm/" target="_blank" rel="noopener">llm 0.32.1</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-22 01:16</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/21/llm/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：llm 0.32.1 版本。近期，由于 OpenAI Python 库弃用了对 httpx 的使用，导致 LLM 的新安装无法正常工作。问题在于 LLM 依赖该库，但仅通过 openai 的传递依赖间接安装。此补丁版本通过固定 openai<3 暂时解决此问题，而即将发布的 0.33 版本将把依赖从 httpx 迁移至 httpx2。标签：httpx, openai, llm。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Aug/21/llm-openrouter/" target="_blank" rel="noopener">llm-openrouter 0.7</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-22 00:58</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/21/llm-openrouter/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：llm-openrouter 0.7 现已与 LLM 0.32 兼容，通过 OpenRouter 使用推理型 LLM 时表现更佳。更新后，模型采用 OpenRouter 的 Responses API 实现。新增三个服务端工具：Shell、WebFetch 和 WebSearch，可通过 `-T WebSearch` 等选项启用。标签：llm, openrouter</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Aug/21/stop-making-tuis/" target="_blank" rel="noopener">停止制作TUIs</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-22 00:07</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/21/stop-making-tuis/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Thomas Ptacek主张即便是最小的个人工具，也应构建真正的原生用户界面，因为编码代理已大幅降低了打造可用GUI的成本，几乎降至零。我在三月份曾撰文介绍通过vibe-coding开发的macOS任务栏带宽和GPU监控应用，至今仍每日使用。虽然我尚未习惯为其他项目频繁制作真实UI，但已找不到借口不去尝试。Thomas表示：如果你还未尝试将某个一次性CLI工具转化为原生应用，那是在亏待自己。去构建一个原生UI吧，它很可能会改变你的思维方式。标签：thomas-ptacek, ai, generative-ai, llms, vibe-coding, coding-agents</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Aug/21/matt-webb/" target="_blank" rel="noopener">引用马特·韦伯</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-21 23:06</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/21/matt-webb/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">在发布1.0版本后，我原以为必须亲自处理旋转问题。于是，我与ChatGPT合作，并非让它编写代码，而是让它教我。在耐心且互动的导师帮助下，我终于做到了以往通过阅读书籍或请教数学家朋友未能实现的事——学会了足够使用四元数（quaternions）的知识，使应用得以运行。因此，即使我将大量思考外包给AI，学习并未停止，反而促使我学得更多。我喜欢这样的结果。——Matt Webb，《Galactic Compass 2：新增增强现实模式》标签：matt-webb, generative-ai, chatgpt, education, ai, llms</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/asr-benchmark-optimization" target="_blank" rel="noopener">测量语音识别中的基准优化</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-08-21 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/asr-benchmark-optimization" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">公开语音AI基准测试日益显示模型已达到人类水平，但这些分数并不总能反映模型在现实中的表现。由于公共基准是开放且广泛使用的，模型可能针对测试本身进行优化，其分数提升源于学习基准特定模式，而非底层任务能力的增强。传统基准往往忽视语音系统在实际应用中可靠性、自然性、上下文适配性和有效性的关键条件。为此，我们在Real World VoiceEQ、Open-ASR排行榜和远场ASR排行榜中引入了held-out集，以更准确评估模型泛化能力。</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for" target="_blank" rel="noopener">别再对AI用于开发持怀疑态度了——与Charity Majors对话</a></h2>
+<div class="source">
+    <span>📰 The Pragmatic Engineer</span>
+    <span>🕐 2026-08-13 00:45</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">最新一期节目已上线，可在YouTube、Apple和Spotify上观看或收听。节目文字记录见页面顶部，时间戳见底部。本期由以下赞助商支持：Antithesis——通过激进故障注入运行整个系统，加速系统测试，Jane Street、Fly.io及etcd社区等团队均信赖此方案。Buildkite——受OpenAI、Anthropic、Cursor、Meta、Uber、NVIDIA、Airbnb等众多企业信赖的CI平台，当CI规模成为架构难题时，它提供更可靠的解决方案，从容应对当前及未来的构建队列压力。WorkOS——通过SSO、SCIM、RBAC等功能，让您的应用和代理实现企业级就绪。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/allenai/olmoearth-embeddings" target="_blank" rel="noopener">介绍OlmoEarth嵌入：从OlmoEarth Studio导出自定义嵌入用于下游分析</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-08-13 00:14</span>
+    <span>🔗 <a href="https://huggingface.co/blog/allenai/olmoearth-embeddings" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Aug/12/florian-herrengt/#atom-everything" target="_blank" rel="noopener">引用弗洛里安·赫伦格特</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-12 23:08</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/12/florian-herrengt/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">但随后用户开始报告一个奇怪的bug。这已经是团队第四次尝试修复了，我的意思是……让AI来修复。不幸的是，似乎连Fable也搞不定。你去找负责这个功能的人。“那么数据从哪里来？”“嗯……实际上我不知道。让我问问Claude。”你们并排坐着，看着屏幕上出现无尽的文本墙。你们俩都不知道其中是否有任何真实内容，但Claude看起来非常自信。[……]这个项目已经变得如此错综复杂，层层叠叠的服务和依赖，以至于团队中没有人能真正理解发生了什么。——Florian Herrengt，《AI正在移除软件工程的中产阶级》标签：ai-misuse, cognitive-debt,...</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Aug/12/florian-herrengt/" target="_blank" rel="noopener">引用弗洛里安·赫伦格特</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-12 23:08</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/12/florian-herrengt/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">用户开始报告一个奇怪的bug，这已经是团队第四次尝试修复了。我的意思是……让AI来修复。不幸的是，似乎连Fable也搞不定。你去找负责这个功能的人。“那么数据从哪里来？”“嗯……其实我也不知道。让我问问Claude。”你们并排坐着，看着屏幕上出现无尽的长文本。你们俩都不知道其中有多少是真的，但Claude看起来非常自信。[……] 这个项目已经变得如此错综复杂，层层叠叠的服务和依赖，以至于团队里没人能真正理解到底发生了什么。——Florian Herrengt，《AI正在移除软件工程的中产阶级》 标签：ai-misuse, cognitive-debt,...</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b" target="_blank" rel="noopener">LFM2.5-VL-3B：为边缘端提供更优、更快的视觉能力</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-08-12 22:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
