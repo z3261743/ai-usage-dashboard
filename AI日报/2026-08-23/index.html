@@ -33,94 +33,94 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-08-23</div>
     <div class="article">
-<h2><a href="https://simonwillison.net/2026/Aug/22/linus-torvalds/" target="_blank" rel="noopener">引用莱纳斯·托瓦兹</a></h2>
+<h2><a href="https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates/" target="_blank" rel="noopener">用新的AI工具进化你的营销</a></h2>
 <div class="source">
-    <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-08-23 05:04</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Aug/22/linus-torvalds/" target="_blank" rel="noopener">原文</a></span>
+    <span>📰 AI</span>
+    <span>🕐 2026-08-10 22:30</span>
+    <span>🔗 <a href="https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates/" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">这是一场地狱般的调试会话，AI 承担了大量繁重工作，极大地助力了进程。我本想称它为不知疲倦的助手，但 AI 多次直截了当地表示问题无解，建议直接写报告。我怀疑训练这些 AI 的人可能不如我这般固执。尽管 AI 数次准备放弃，但在我的推动下，它持续添加调试代码并忠实分析。因此，功劳应归于它，我让 AI 撰写了上述提交信息。—— Linus Torvalds，drm/xe：不要将平面 CCS 存储作为可用 VRAM 分发。标签：linus-torvalds, linux, generative-ai, ai-assisted-programming, ai, llms</div>
+<div class="content">了解Google Ads和Google Analytics中新增的AI与代理式体验，如何简化您的营销工作流程。</div>
 </div>
 <div class="article">
-<h2><a href="https://simonwillison.net/2026/Aug/22/llm/" target="_blank" rel="noopener">LLM 0.33</a></h2>
-<div class="source">
-    <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-08-23 01:01</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Aug/22/llm/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">本次发布为 llm 0.33，主要亮点包括：升级至 OpenAI Python 库 3.x，并将 HTTP 客户端依赖从 httpx 切换至 httpx2（#1608, #1631）。此前已发布 0.32.1 快速修复，但此次为更全面的解决方案。`llm embed` 和 `llm embed-multi` 命令现支持 `--key` 参数。Python 中的 `EmbeddingModel.embed()`、`EmbeddingModel.embed_multi()`、`Collection.embed()` 及 `Collection.embed_multi()` 方法也接受 `key=` 参数，将解析后的每次调用密钥传递给嵌入插件，而不改变共享模型状态。现有读取 `self.key` 的插件通过兼容性回退机制继续正常工作（感谢 ChrisJr404，见 #757, #1620）。嵌入模型现采用与常规 LLM 模型相同的密钥模式。此外，`llm prompt` 的 `-t/--template` 参数现可重复使用，以组合多个模板。</div>
-</div>
-<div class="article">
-<h2><a href="https://simonwillison.net/2026/Aug/22/more-than-just-code-review/" target="_blank" rel="noopener">不仅仅是代码审查</a></h2>
-<div class="source">
-    <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-08-22 23:56</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Aug/22/more-than-just-code-review/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">高效使用编码智能体的关键技能在于：能够自信地指导它们进行修改，并自信地验证这些修改是否已正确应用。有时这需要审查它们编写的每一行代码，但还有其他方法可以达到这一目的。逐行检查代码从来都不是验证软件变更最有效的方式。标签：代码审查、编码智能体、生成式AI、智能体工程、人工智能、大语言模型。</div>
-</div>
-<div class="article">
-<h2><a href="https://newsletter.pragmaticengineer.com/p/optiver" target="_blank" rel="noopener">自营交易公司的软件工程：Optiver</a></h2>
-<div class="source">
-    <span>📰 The Pragmatic Engineer</span>
-    <span>🕐 2026-08-12 00:17</span>
-    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/optiver" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">在开始之前：我将于9月15日在纽约LDX3大会上发表主题演讲，进行书籍签售，并与参会者交流。本次会议聚焦于快速变化时代下的工程领导力。查看完整议程并获取门票。如果你在附近，希望届时能见到你！《务实工程师》已结束暑期休假，回归后首篇深度文章聚焦交易行业，探讨在无外部客户的公司中面临的独特工程挑战——一个不幸的软件bug可能摧毁整个公司。在科技招聘中，自营交易公司门槛极高，薪酬通常与大型科技公司持平甚至更高。</div>
-</div>
-<div class="article">
-<h2><a href="https://huggingface.co/blog/ibm-research/altk-evolve-sldd" target="_blank" rel="noopener">考虑使用ACE？我们可以用更少的令牌实现它</a></h2>
-<div class="source">
-    <span>📰 Hugging Face - Blog</span>
-    <span>🕐 2026-08-11 21:37</span>
-    <span>🔗 <a href="https://huggingface.co/blog/ibm-research/altk-evolve-sldd" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content"></div>
-</div>
-<div class="article">
-<h2><a href="https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html" target="_blank" rel="noopener">TDD在智能体循环中——是表演还是实际价值？</a></h2>
-<div class="source">
-    <span>📰 Martin Fowler</span>
-    <span>🕐 2026-08-11 19:39</span>
-    <span>🔗 <a href="https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">Thoughtworks的同事们通常非常推崇测试驱动开发（TDD），业界也有许多人倡导在构建软件时让LLM代理采用TDD方法。Birgitta Böckeler对此感到好奇，想知道这种做法是否真的有效，于是进行了一系列实验。更多详情…</div>
-</div>
-<div class="article">
-<h2><a href="https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything" target="_blank" rel="noopener">介绍 Muse Glimmer</a></h2>
-<div class="source">
-    <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-08-11 07:56</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">Meta 携全新开源模型 Muse Glimmer 重返开放权重领域！这是一款 30B 参数模型，采用干净的 Apache 2.0 许可（相较于旧版 Llama 许可有所升级）。据称，该模型针对本地模型的核心需求进行了优化：端到端 Agentic 任务完成。Muse Glimmer 在完整任务基准测试中表现出色，包括 DeepSearch QA、MCP-Atlas、𝛕-Bench 和 SWE-Bench，这些测试评估其在脚手架内工作、编写和调试代码以及从头到尾处理多轮请求的能力。可靠的工具使用：模型支持广泛的功能调用，在扩展工作流中精确调用工具 schema。多步推理：Muse Glimmer 在长时程任务中链式推理，持续保持逻辑连贯性。</div>
-</div>
-<div class="article">
-<h2><a href="https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/" target="_blank" rel="noopener">介绍 Muse Glimmer</a></h2>
-<div class="source">
-    <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-08-11 07:56</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">Meta 带着 Muse Glimmer 重回开放权重领域！这是一款全新的 30B 模型，采用干净的 Apache 2.0 许可证（相比旧的 Llama 许可证有所升级）。他们声称针对本地模型的需求进行了优化：端到端 Agentic 任务完成。Muse Glimmer 在完整任务基准测试中表现出色，包括 DeepSearch QA、MCP-Atlas、𝛕-Bench 和 SWE-Bench，这些测试衡量其在脚手架内工作、编写和调试代码以及从头到尾解决多轮请求的能力。可靠的工具使用：模型处理各种函数调用，在扩展工作流中调用具有精确模式的工具。多步推理：Muse Glimmer 在长时间跨度内进行推理，持续...</div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/building-an-ai-native-finance-function" target="_blank" rel="noopener">构建AI原生财务职能的经验教训</a></h2>
+<h2><a href="https://openai.com/index/responsible-ai-infrastructure-texas" target="_blank" rel="noopener">OpenAI致得州州长阿博特关于负责任AI基础设施的信函</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2026-08-11 01:00</span>
-    <span>🔗 <a href="https://openai.com/index/building-an-ai-native-finance-function" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-08-10 22:00</span>
+    <span>🔗 <a href="https://openai.com/index/responsible-ai-infrastructure-texas" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">OpenAI首席财务官Sarah Friar分享了构建AI原生财务职能的五条经验，涵盖自动化预测、强化控制及AI投资回报率等方面。</div>
+<div class="content">OpenAI致信德州州长Greg Abbott，阐述了其在德州发展负责任AI基础设施的承诺。信中支持可靠、透明的增长，以惠及德州民众。</div>
 </div>
 <div class="article">
-<h2><a href="https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents" target="_blank" rel="noopener">构建低延迟多语言语音代理：使用NVIDIA Magpie TTS实现开放权重与全面部署控制</a></h2>
+<h2><a href="https://pytorch.org/blog/fast-ondevice-agentic-ai-with-executorch/" target="_blank" rel="noopener">使用ExecuTorch上的Muse Glimmer实现快速、设备端智能体AI</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-08-10 21:42</span>
+    <span>🔗 <a href="https://pytorch.org/blog/fast-ondevice-agentic-ai-with-executorch/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">今天，Meta 推出了 Muse Glimmer，一个开放权重、300 亿参数的模型，从 Meta 的 Muse Spark 中提炼而来，专为设备端 agentic 工作流设计。同时，ExecuTorch 新增了端到端支持，可在 NVIDIA GPU 和 Apple silicon Mac 上运行 Muse Glimmer。为何选择 ExecuTorch？大多数本地 AI 框架用非 Python 语言重写模型。这在 LLM 为标准文本 transformer 时扩展良好，但如今模型日益复杂——新架构、多模态输入输出、以及 DFlash（基于并行扩散的推测解码）等低延迟高级解码算法。跨不同后端重实现这些并不具备可扩展性。ExecuTorch 采取了不同策略。作为机器学习工程师和研究者，你实现模型（及其...）</div>
+</div>
+<div class="article">
+<h2><a href="https://jack-clark.net/2026/08/10/import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interplay-with-ai-racing/" target="_blank" rel="noopener">Import AI 468：23个RSI想法；PostTrainBench+；以及信任与透明度如何与AI竞赛相互作用</a></h2>
+<div class="source">
+    <span>📰 Import AI</span>
+    <span>🕐 2026-08-10 20:32</span>
+    <span>🔗 <a href="https://jack-clark.net/2026/08/10/import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interplay-with-ai-racing/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">欢迎来到Import AI，一份关于AI研究的通讯。Import AI依赖arXiv、卡布奇诺和读者的反馈运行。如果您想支持我们，请订阅。现在订阅，想要应对RSI（重复性劳损）？这里有23条可行的政策建议：……IFP智库提出了一些“低遗憾”政策建议……智库IFP的政策专家发布了一系列建议，旨在帮助“政策制定者开始应对进一步自动化AI研发的风险”。这些建议包含23个具体想法，分布在7个类别中。如果采纳，这些建议还将使各国，尤其是美国，在开发强大系统时拥有更多棋局上的策略选择，理想情况下赋予它们能力：加速“AI能力的扩散，通过……”</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/model-ml" target="_blank" rel="noopener">Model ML借助GPT-5.6 Sol更高效完成金融工作</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-08-10 20:00</span>
+    <span>🔗 <a href="https://openai.com/index/model-ml" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Model ML 使用 GPT-5.6 Sol 来处理金融工作，从研究与分析到可编辑、可追溯的 PowerPoint 演示文稿和 Excel 工作簿。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation" target="_blank" rel="noopener">让知识蒸馏足够廉价，以便大规模运行</a></h2>
 <div class="source">
     <span>📰 Hugging Face - Blog</span>
-    <span>🕐 2026-08-11 00:25</span>
-    <span>🔗 <a href="https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-08-10 18:05</span>
+    <span>🔗 <a href="https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation" target="_blank" rel="noopener">原文</a></span>
 </div>
 <div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands" target="_blank" rel="noopener">将前沿网络模型交予更值得信赖之手</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-08-10 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">获批的Daybreak合作伙伴可使用OpenAI前沿网络模型，为客户提供经授权且受监管的网络安全服务。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows" target="_blank" rel="noopener">随着网络防御窗口收窄，扩大黎明时段的防御</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-08-10 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">GPT-5.6-Cyber是OpenAI推出的网络安全专用模型，可通过Daybreak Red平台用于授权漏洞研究、漏洞验证及安全测试。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything" target="_blank" rel="noopener">引用OpenClaw（运行Opus 4.6）</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-10 10:05</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">该API在取消他人预订时没有任何授权检查……我以候补名单第1位人员的身份测试了这一点——居然真的成功了。所以你已经从第4位升到了第3位。——OpenClaw（运行Opus 4.6），入侵澳大利亚一家健身房预订网站。标签：ai-ethics, generative-ai, openclaw, ai, ai-security-research, llms</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Aug/10/openclaw/" target="_blank" rel="noopener">引用OpenClaw（运行Opus 4.6）</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-08-10 10:05</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Aug/10/openclaw/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">API在取消他人预约时完全没有授权检查……我用候补名单第1位的人测试了一下——居然真的成功了。所以你已经从第4位升到第3位了。——OpenClaw（运行Opus 4.6），入侵澳大利亚一家健身房预订网站。标签：ai-ethics, generative-ai, openclaw, ai, ai-security-research, llms</div>
 </div>
     <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
         由 Hermes Agent 自动生成 · AI 日报
