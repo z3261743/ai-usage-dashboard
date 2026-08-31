@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-08-31</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-08-31</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-08-31</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything" target="_blank" rel="noopener">llm 0.32rc2</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-31 06:52</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">llm 0.32rc2 版本紧随 RC1 发布，修复了依赖问题，并新增两项功能。默认模型已从 GPT-4o mini 升级为 GPT-5.6 Luna，价格略高（输入每百万 tokens $0.20，输出每百万 tokens $1.20，而 4o mini 为 $0.15/$0.60），但性能更优。用户可通过 `llm models default gpt-4o-mini` 切换回 4o mini，或使用 `llm models default gpt-5-nano` 选择更经济的 GPT-5 nano（$0.05/$0.40）。此外，新增 `llm openai endpoint` 命令，允许用户直接对任意 OpenAI 兼容端点运行 prompts、chats 和模型列表，无需预先配置模型，且这些调用不会被记录。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/30/bruce-schneier/#atom-everything" target="_blank" rel="noopener">引用布鲁斯·施奈尔</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-31 02:25</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/30/bruce-schneier/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我给学生布置的写作作业是“健身房任务”，而非“工作任务”。我要求他们写政策备忘录，并非因为世界需要更多这样的备忘录，而是因为写作本身——包括思考、列提纲、起草、编辑，以及构建、批判和修订论点——能培养他们未来职业所需的批判性思维能力。缺乏这种持续的心智锻炼，这些能力会逐渐退化。雇主们已开始注意到这一点。——布鲁斯·施奈尔，《该用AI处理任务吗？一个简单的判断方法》 标签：ai-ethics, writing, ai-misuse, generative-ai, bruce-schneier, ai, llms</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/#atom-everything" target="_blank" rel="noopener">llm-chat-completions-server 0.1a0</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-30 23:43</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">LLM 0.32rc1 中新增的 content-addressable logs 旨在支持 OpenAI Chat Completion 风格的请求，其中每条传入消息会扩展之前的对话。例如，通过 curl 发送请求，包含用户和助手的多轮消息，如询问法国首都后回答巴黎，再问德国。在此场景中，对话状态由客户端跟踪，因此每个请求会越来越长。LLM 的新 schema 设计正是为了应对这一需求，确保高效处理此类递增式对话。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/30/llm-rc1/#atom-everything" target="_blank" rel="noopener">LLM 0.32rc1</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-30 23:30</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/30/llm-rc1/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">LLM 0.32rc1 版本发布，完成了自 0.32a0 开始的工作。该版本引入新的 schema 设计，能更好地捕捉最新模型家族中提示和响应的细节。最重要的变化是采用内容可寻址哈希 ID 存储消息，实现数据库去重，并支持分叉对话中的消息树表示。由于涉及重大 schema 变更（仅新增表，旧数据不受影响），建议在升级前备份现有 logs.db：`llm logs backup logs-backup.db`。此外，该 RC 版本还新增了对 gpt-5.6-sol、gpt-5.6-terra 和 gpt-5.6-luna 的支持。</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/fbtriton-infra-upstream-ingestion-hierarchical-validation-ideals-vs-realities/" target="_blank" rel="noopener">FBTriton 基础设施：上游数据接入、分层验证、理想与现实</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-07-30 23:26</span>
+    <span>🔗 <a href="https://pytorch.org/blog/fbtriton-infra-upstream-ingestion-hierarchical-validation-ideals-vs-realities/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">TL:DR 了解 Meta 的 FBTriton 基础设施如何通过 agentic ingestion 和分层 L1/L2/L3 验证框架，在保持与上游 Triton 同步的同时，驱动 TLX 和 autoWS 等自定义 GPU 编译器创新。Triton 是 Meta AI 硬件加速战略的基础组件。尽管 Triton 由 OpenAI 开发和维护，但上游仓库无法完全满足内部功能需求、硬件特定优化和紧急 bug 修复。同时，Meta 正在开发自己的 GPU 优化方案，包括 TLX/torchTLX 和 autoWS，其开发时间线和代码结构与上游不完全一致。为弥合这一差距，Meta 将创新整合到名为 fbtriton 的下游 fork 中（pip 安装可用）。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/Dharma-AI/gpu-management" target="_blank" rel="noopener">GPU 管理：为何闲置 GPU 如同停飞的新飞机</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-07-30 23:09</span>
+    <span>🔗 <a href="https://huggingface.co/blog/Dharma-AI/gpu-management" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html" target="_blank" rel="noopener">重构的经济效益</a></h2>
+<div class="source">
+    <span>📰 Martin Fowler</span>
+    <span>🕐 2026-07-30 21:04</span>
+    <span>🔗 <a href="https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Giles Edwards-Alexander 进行了一项实验，探究将大型函数分解是否能降低 token 成本，并暗示现在或许可以量化重构带来的经济效益。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6" target="_blank" rel="noopener">用GPT-5.6推进性价比前沿</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-07-30 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">探索Luna和Terra更低的GPT-5.6定价——以及OpenAI更高效的模型如何帮助企业大规模部署AI工作流。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/avatarin" target="_blank" rel="noopener">avatarin 如何利用 GPT-Realtime 构建 24/7 零售代理</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-07-30 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/avatarin" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">avatarin 利用 OpenAI 的 GPT-Realtime 技术，为 Yamada Denki 的顾客提供全天候多语言支持。在两周内，已有 30,000 人使用了该代理，且 92% 的调查反馈为正面评价。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/29/d-richard-hipp/#atom-everything" target="_blank" rel="noopener">引用D. Richard Hipp</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-30 05:15</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/29/d-richard-hipp/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">多年前，我们还没有SQL。当时有一批人的工作是编写软件来查询大型数据集，他们的职位是COBOL程序员。随后SQL出现了——我这么说只是稍微简化了一下——它提供了一种便捷的方式，让人们只需简单指定需求即可。通过一个非常简单的规格说明，你就能生成之前需要花钱请昂贵的COBOL程序员才能完成的全部代码。这并不意味着程序员消失了，只是意味着工作内容发生了一些变化。—— D. Richard Hipp 标签：d-richard-hipp, sql, careers</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
