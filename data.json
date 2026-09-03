@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-02",
+  "generated_at": "2026-09-03",
   "summary": {
-    "total_cost_7d": 0.1558,
-    "total_cost_30d": 0.2681,
-    "avg_daily_cost_7d": 0.0223,
-    "avg_daily_input_tokens": 111393,
-    "avg_daily_output_tokens": 23796
+    "total_cost_7d": 0.111,
+    "total_cost_30d": 0.2799,
+    "avg_daily_cost_7d": 0.0159,
+    "avg_daily_input_tokens": 82155,
+    "avg_daily_output_tokens": 15544
   },
   "deepseek_balance": {
-    "cny": 6.24,
+    "cny": 6.09,
     "usd": 0.0
   },
   "pricing": {
@@ -35,58 +35,30 @@
   },
   "daily": [
     {
-      "date": "2026-07-04",
-      "sessions": 3,
-      "messages": 16,
-      "tool_calls": 5,
-      "input_tokens": 25101,
-      "output_tokens": 3180,
-      "reasoning_tokens": 0,
-      "cache_read": 67456,
-      "cache_write": 0,
-      "computed_cost": 0.00440454,
-      "estimated_cost_usd": 0.0,
-      "actual_cost_usd": 0.0,
-      "models": {
-        "deepseek-v4-flash": {
-          "input_tokens": 25101,
-          "output_tokens": 3180,
-          "cost": 0.00440454,
-          "sessions": 3
-        }
-      },
-      "sources": {
-        "cron": {
-          "sessions": 3,
-          "cost": 0.00440454
-        }
-      }
-    },
-    {
       "date": "2026-07-05",
-      "sessions": 8,
-      "messages": 67,
-      "tool_calls": 27,
-      "input_tokens": 53294,
-      "output_tokens": 10190,
+      "sessions": 7,
+      "messages": 52,
+      "tool_calls": 20,
+      "input_tokens": 43113,
+      "output_tokens": 7748,
       "reasoning_tokens": 0,
-      "cache_read": 323584,
+      "cache_read": 275072,
       "cache_write": 0,
-      "computed_cost": 0.010314360000000002,
+      "computed_cost": 0.00820526,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 53294,
-          "output_tokens": 10190,
-          "cost": 0.010314360000000002,
-          "sessions": 8
+          "input_tokens": 43113,
+          "output_tokens": 7748,
+          "cost": 0.00820526,
+          "sessions": 7
         }
       },
       "sources": {
         "cron": {
-          "sessions": 8,
-          "cost": 0.010314360000000002
+          "sessions": 7,
+          "cost": 0.00820526
         }
       }
     },
@@ -1560,29 +1532,57 @@
     },
     {
       "date": "2026-09-02",
-      "sessions": 5,
-      "messages": 30,
-      "tool_calls": 12,
-      "input_tokens": 28863,
-      "output_tokens": 7270,
+      "sessions": 8,
+      "messages": 65,
+      "tool_calls": 28,
+      "input_tokens": 84907,
+      "output_tokens": 18220,
       "reasoning_tokens": 0,
-      "cache_read": 177792,
+      "cache_read": 326656,
       "cache_write": 0,
-      "computed_cost": 0.006076420000000001,
+      "computed_cost": 0.01698858,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 28863,
-          "output_tokens": 7270,
-          "cost": 0.006076420000000001,
-          "sessions": 5
+          "input_tokens": 84907,
+          "output_tokens": 18220,
+          "cost": 0.01698858,
+          "sessions": 8
         }
       },
       "sources": {
         "cron": {
-          "sessions": 5,
-          "cost": 0.006076420000000001
+          "sessions": 8,
+          "cost": 0.01698858
+        }
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "sessions": 1,
+      "messages": 0,
+      "tool_calls": 0,
+      "input_tokens": 5248,
+      "output_tokens": 685,
+      "reasoning_tokens": 0,
+      "cache_read": 5376,
+      "cache_write": 0,
+      "computed_cost": 0.0009265200000000001,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "models": {
+        "deepseek-v4-flash": {
+          "input_tokens": 5248,
+          "output_tokens": 685,
+          "cost": 0.0009265200000000001,
+          "sessions": 1
+        }
+      },
+      "sources": {
+        "cron": {
+          "sessions": 1,
+          "cost": 0.0009265200000000001
         }
       }
     }
