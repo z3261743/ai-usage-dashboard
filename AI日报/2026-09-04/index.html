@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-09-04</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-09-04</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-09-04</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Sep/3/gpt6-astra/" target="_blank" rel="noopener">GPT‑6 Astra</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-09-04 04:18</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Sep/3/gpt6-astra/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">GPT-6 Astra今日起向部分组织推出，未来几天将全面开放给ChatGPT Plus、Pro、Business及Enterprise用户，并可通过OpenAI API和AWS使用。作者尚未亲自体验，因此暂无详细评价。其API定价与Claude Fable 5和5.1相同：输入每百万token 10美元，输出每百万token 50美元。这显然是OpenAI对标Fable的产品，在OpenAI自我报告的多数基准测试中得分高于Fable。最引人注目的是，Astra在近期（3月发布）的ARC-AGI 3基准测试中取得99.9%的高分——不过Fable 5尚未公布相关结果，且ARC-AGI博客指出该99.9%得分是在特定条件下实现的。</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-tech-companies-move-to" target="_blank" rel="noopener">科技公司转向开放AI模型</a></h2>
+<div class="source">
+    <span>📰 The Pragmatic Engineer</span>
+    <span>🕐 2026-09-04 01:00</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-tech-companies-move-to" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">The Pulse是一个关注大型科技公司和初创企业动态、洞察与趋势的系列。今日要点：新趋势——科技公司转向开放模型。Uber、Pinterest、Stripe、Coinbase、Ramp及AT&T等企业通过弃用专有模型并采用智能模型路由，大幅削减AI开支。此外，还涉及L…发起的自动软件维护实验。</div>
+</div>
+<div class="article">
+<h2><a href="https://engineering.fb.com/2026/09/03/core-infra/zgateway-proxy-zippydb-meta/" target="_blank" rel="noopener">ZGateway：在ZippyDB前部署代理的经验总结</a></h2>
+<div class="source">
+    <span>📰 Engineering at Meta</span>
+    <span>🕐 2026-09-04 00:00</span>
+    <span>🔗 <a href="https://engineering.fb.com/2026/09/03/core-infra/zgateway-proxy-zippydb-meta/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我们正在推出ZGateway，这是我们用于统一ZippyDB流量的代理，ZippyDB是Meta使用最广泛的键值存储。额外的好处是，它还支持准入控制、负载均衡、跨区域弹性以及更丰富的操作。ZippyDB是Meta使用最广泛的键值存储，支撑产品元数据、计数器和配置，在全球分布式集群中每秒可处理数十亿次操作。之前的文章描述了ZippyDB的工作原理。本文介绍其前端层：ZGateway，即我们用于统一ZippyDB客户端流量的代理。ZGateway源于管理ZippyDB客户端集群蔓延的需求，其价值在于结构性。一个ZippyDB客户端可能是超过一百万个主机中的一个，由数百个...</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/daybreak-for-frontline-defenders" target="_blank" rel="noopener">前线守护者的黎明：10亿美元保护关键服务</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-09-03 21:15</span>
+    <span>🔗 <a href="https://openai.com/index/daybreak-for-frontline-defenders" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI推出Daybreak计划，旨在为一线防御者提供支持。该计划承诺投入10亿美元，扩大前沿网络AI、培训及关键服务的获取渠道。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/Hcompany/neomme" target="_blank" rel="noopener">NeoMME：一种高效的多模态原生多语言编码器</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-09-03 21:13</span>
+    <span>🔗 <a href="https://huggingface.co/blog/Hcompany/neomme" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/legora-financial-statement-review-with-astra" target="_blank" rel="noopener">Legora 借助 GPT-6 Astra 在几分钟内审阅了 41 份文档</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-09-03 20:00</span>
+    <span>🔗 <a href="https://openai.com/index/legora-financial-statement-review-with-astra" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Legora 使用 GPT-6 Astra 在数分钟内审阅了 41 份文档，找出了全部四个预设错误，并在该财务审查工作流中将性能提升了近 40%。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/playco-game-prototyping-with-astra" target="_blank" rel="noopener">Playco 借助 GPT-6 Astra 将游戏原型制作中的手动修复减少了 50%</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-09-03 20:00</span>
+    <span>🔗 <a href="https://openai.com/index/playco-game-prototyping-with-astra" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">使用GPT-6 Astra，Playco基于一个灰色盒子基础构建了三款主题游戏原型，并报告称手动修复次数比之前的模型减少了50%。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/safety-overview-gpt-6-astra" target="_blank" rel="noopener">安全概览：GPT-6 Astra</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-09-03 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/safety-overview-gpt-6-astra" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">GPT-6 Astra 是我们部署最广泛、能力最强的模型，也是首个在我们的 Preparedness Framework 下达到网络安全能力“关键”级别的模型。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything" target="_blank" rel="noopener">首个已知的失控AI代理——还是一场拙劣的营销噱头？</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-07-24 06:53</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">首个已知的失控AI代理——或者只是一场糟糕的营销噱头？Martin Alderson对OpenAI意外攻击Hugging Face事件的评论，包含了我未曾考虑的两个细节。首先，Hugging Face为寻找需执行任意代码的潜在漏洞者提供了极其丰富的目标：其攻击面巨大，拥有无数运行不可信模型和代码的接口。尽管他们确实投入了防御，但因其运营模式本质，遭受攻击的机会远多于其他服务。我绝不羡慕他们的网络安全团队。其次，令我困惑的一点是，OpenAI为何未察觉其沙箱已...</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/helion-on-tpu-towards-hardware-heterogeneous-kernel-authoring/" target="_blank" rel="noopener">Helion 在 TPU 上：迈向硬件异构内核编写</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-07-24 01:22</span>
+    <span>🔗 <a href="https://pytorch.org/blog/helion-on-tpu-towards-hardware-heterogeneous-kernel-authoring/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">TL;DR Helion是PyTorch用于编写性能可移植ML内核的高级DSL。与Google合作，我们构建了一个TPU后端，将Helion内核编译为Pallas，提供了一种PyTorch友好的方式来编写高性能TPU内核。在flash attention工作负载上，Helion生成的内核在TPU v7上实现了838 TFLOPs（约一个tensor core的79% MFU）。针对不同输入形状，Helion通过自动调优不同的代码生成策略，选择最优的流水线方案，充分利用TPU可用的VMEM和计算资源。
+
+引言 TPU作为补充GPU的ML计算平台日益重要。Google最新的TPU v7（Ironwood）在性能上与NVIDIA B200相当，且可能具有更低的总拥有成本（TCO），这使得TPU成为...</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
