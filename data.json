@@ -1,15 +1,15 @@
 {
   "generated_at": "2026-09-22",
   "summary": {
-    "total_cost_7d": 0.1612,
-    "total_cost_30d": 0.4729,
-    "avg_daily_cost_7d": 0.023,
-    "avg_daily_input_tokens": 94014,
-    "avg_daily_output_tokens": 35238
+    "total_cost_7d": 0.1641,
+    "total_cost_30d": 0.4758,
+    "avg_daily_cost_7d": 0.0234,
+    "avg_daily_input_tokens": 95502,
+    "avg_daily_output_tokens": 35962
   },
   "deepseek_balance": {
-    "cny": 0.78,
-    "usd": 0.0
+    "usd": 0.0,
+    "cny": 0.76
   },
   "pricing": {
     "deepseek-v4-flash": {
@@ -36,8 +36,8 @@
   "daily": [
     {
       "date": "2026-07-24",
-      "sessions": 3,
-      "messages": 3,
+      "sessions": 2,
+      "messages": 2,
       "tool_calls": 0,
       "input_tokens": 0,
       "output_tokens": 0,
@@ -52,12 +52,12 @@
           "input_tokens": 0,
           "output_tokens": 0,
           "cost": 0.0,
-          "sessions": 3
+          "sessions": 2
         }
       },
       "sources": {
         "cron": {
-          "sessions": 3,
+          "sessions": 2,
           "cost": 0.0
         }
       }
@@ -1252,29 +1252,29 @@
     },
     {
       "date": "2026-09-22",
-      "sessions": 7,
-      "messages": 348,
-      "tool_calls": 173,
-      "input_tokens": 255001,
-      "output_tokens": 136083,
+      "sessions": 8,
+      "messages": 360,
+      "tool_calls": 179,
+      "input_tokens": 265418,
+      "output_tokens": 141151,
       "reasoning_tokens": 0,
-      "cache_read": 19746048,
+      "cache_read": 19822720,
       "cache_write": 0,
-      "computed_cost": 0.07380338,
+      "computed_cost": 0.0766808,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 255001,
-          "output_tokens": 136083,
-          "cost": 0.07380338,
-          "sessions": 7
+          "input_tokens": 265418,
+          "output_tokens": 141151,
+          "cost": 0.0766808,
+          "sessions": 8
         }
       },
       "sources": {
         "cron": {
-          "sessions": 6,
-          "cost": 0.00910798
+          "sessions": 7,
+          "cost": 0.0119854
         },
         "feishu": {
           "sessions": 1,
