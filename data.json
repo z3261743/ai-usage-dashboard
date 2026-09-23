@@ -1,15 +1,15 @@
 {
   "generated_at": "2026-09-23",
   "summary": {
-    "total_cost_7d": 0.1624,
-    "total_cost_30d": 0.4804,
-    "avg_daily_cost_7d": 0.0232,
-    "avg_daily_input_tokens": 94052,
-    "avg_daily_output_tokens": 35826
+    "total_cost_7d": 0.1717,
+    "total_cost_30d": 0.4897,
+    "avg_daily_cost_7d": 0.0245,
+    "avg_daily_input_tokens": 99278,
+    "avg_daily_output_tokens": 37964
   },
   "deepseek_balance": {
     "usd": 0.0,
-    "cny": 0.71
+    "cny": 50.06
   },
   "pricing": {
     "deepseek-v4-flash": {
@@ -36,8 +36,8 @@
   "daily": [
     {
       "date": "2026-07-25",
-      "sessions": 7,
-      "messages": 7,
+      "sessions": 3,
+      "messages": 3,
       "tool_calls": 0,
       "input_tokens": 0,
       "output_tokens": 0,
@@ -52,12 +52,12 @@
           "input_tokens": 0,
           "output_tokens": 0,
           "cost": 0.0,
-          "sessions": 7
+          "sessions": 3
         }
       },
       "sources": {
         "cron": {
-          "sessions": 7,
+          "sessions": 3,
           "cost": 0.0
         }
       }
@@ -1256,29 +1256,29 @@
     },
     {
       "date": "2026-09-23",
-      "sessions": 1,
-      "messages": 0,
-      "tool_calls": 0,
-      "input_tokens": 5416,
-      "output_tokens": 479,
+      "sessions": 6,
+      "messages": 46,
+      "tool_calls": 21,
+      "input_tokens": 41999,
+      "output_tokens": 15448,
       "reasoning_tokens": 0,
-      "cache_read": 4864,
+      "cache_read": 348032,
       "cache_write": 0,
-      "computed_cost": 0.00089236,
+      "computed_cost": 0.0102053,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 5416,
-          "output_tokens": 479,
-          "cost": 0.00089236,
-          "sessions": 1
+          "input_tokens": 41999,
+          "output_tokens": 15448,
+          "cost": 0.0102053,
+          "sessions": 6
         }
       },
       "sources": {
         "cron": {
-          "sessions": 1,
-          "cost": 0.00089236
+          "sessions": 6,
+          "cost": 0.0102053
         }
       }
     }
