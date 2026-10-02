@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-10-02</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-10-02</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-10-02</div>
+    <div class="article">
+<h2><a href="https://pytorch.org/blog/optimizing-jagged-flash-attention-with-tlx-the-road-toward-sota-fa4-on-blackwell/" target="_blank" rel="noopener">使用TLX优化不规则闪存注意力：迈向Blackwell上SOTA FA4之路</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-10-02 06:26</span>
+    <span>🔗 <a href="https://pytorch.org/blog/optimizing-jagged-flash-attention-with-tlx-the-road-toward-sota-fa4-on-blackwell/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">简而言之，本文介绍我们在NVIDIA Blackwell（B200）上实现的Jagged Flash Attention（JFA）——Meta生成式广告模型（GEM）背后的attention kernel——基于TLX（Triton Low-level Extensions）构建，在Triton高层、基于tile的编程模型之上增加了显式的硬件感知控制。Attention是GEM中最慢的单个kernel，而要在Blackwell上达到峰值性能，传统上需要手写CuteDSL或CUDA——开发缓慢且难以扩展到新变体。我们展示TLX在这两方面都弥补了差距。在开发效率上，TLX attention kernel约3.2K行简洁的Triton级代码——比最先进的FlashAttention-4（FA4）约10K行CuteDSL kernel少约3倍。在性能上，它优于……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/the-eternal-complement" target="_blank" rel="noopener">永恒的互补</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-02 01:00</span>
+    <span>🔗 <a href="https://openai.com/index/the-eternal-complement" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">先进AI可能对突破性想法背后的日常工作最为重要。探索为何执行力可能塑造下一阶段经济与进步速度。</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-firebases-global-outage" target="_blank" rel="noopener">The Pulse：Firebase全球宕机及糟糕的应对</a></h2>
+<div class="source">
+    <span>📰 The Pragmatic Engineer</span>
+    <span>🕐 2026-10-02 00:43</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-firebases-global-outage" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">The Pulse系列聚焦Big Tech与初创公司的事件、洞察与趋势。今日内容：Firebase全球宕机及Google处理不当。Firebase iOS SDK因后端变更崩溃，导致所有使用Firebase analytics的应用崩溃2-6小时。Google未更新状态页面或提供postmortem，这对以卓越事件管理著称的公司而言令人费解。OpenAI借鉴AWS策略打造平台？OpenAI正成为平台，可将ChatGPT支出分配给16个合作伙伴的开放模型和AI产品，不仅限于OpenAI模型。Anthropic是否会考虑类似平台策略值得关注。更多企业转向开放模型的数据。Vercel的AI gateway显示60%的模型支出流向开放...</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/albertsons-reimagining-retail" target="_blank" rel="noopener">艾伯森公司如何从内到外重新构想零售业</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-02 00:00</span>
+    <span>🔗 <a href="https://openai.com/index/albertsons-reimagining-retail" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Albertsons Cos. 正在使用 ChatGPT Enterprise 和 OpenAI API，帮助团队加快工作速度，并为数百万顾客简化购物流程。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/allenai/olmocore3" target="_blank" rel="noopener">介绍 Olmo-core 3：面向大型 MoE 的开放、可扩展训练基础设施</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-10-01 23:01</span>
+    <span>🔗 <a href="https://huggingface.co/blog/allenai/olmocore3" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/the-den-family-social" target="_blank" rel="noopener">Den 每周释放 10-15 小时，借助 ChatGPT Work 实现增长</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-01 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/the-den-family-social" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">一家社交俱乐部在开设新场地时，借助某种工具，将 grant applications 的准备时间从3天缩短至2小时，liquor-license materials 的准备时间从4天缩短至3小时。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/introducing-aardvark" target="_blank" rel="noopener">介绍 Aardvark：OpenAI 的智能体安全研究员</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-10-30 19:00</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-aardvark" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI推出Aardvark，一款AI驱动的安全研究员，能够自主大规模发现、验证并协助修复软件漏洞。该系统目前处于private beta阶段——可注册加入早期测试。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/MiniMax-AI/aligning-to-what" target="_blank" rel="noopener">对齐什么？重新思考MiniMax M2中的智能体泛化</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-10-30 18:03</span>
+    <span>🔗 <a href="https://huggingface.co/blog/MiniMax-AI/aligning-to-what" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/building-chatgpt-atlas" target="_blank" rel="noopener">我们如何构建OWL——Atlas浏览器（基于ChatGPT）背后的新架构</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-10-30 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/building-chatgpt-atlas" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">深入解析 OWL——驱动 ChatGPT Atlas 的全新架构：将 Chromium 解耦，实现快速启动、丰富 UI，以及借助 ChatGPT 的 agentic 浏览。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/huggingface/shifting-compute-landscape" target="_blank" rel="noopener">论全球计算格局的变迁</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-10-29 21:56</span>
+    <span>🔗 <a href="https://huggingface.co/blog/huggingface/shifting-compute-landscape" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
