@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-10-03</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-10-03</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-10-03</div>
+    <div class="article">
+<h2><a href="https://pytorch.org/blog/building-a-high-performance-and-portable-vllm-linear-backend-with-helion/" target="_blank" rel="noopener">使用Helion构建高性能且可移植的vLLM线性后端</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-10-03 03:55</span>
+    <span>🔗 <a href="https://pytorch.org/blog/building-a-high-performance-and-portable-vllm-linear-backend-with-helion/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">简而言之，我们将Helion集成到vLLM的线性后端，探索自动调优的高级内核DSL如何在降低内核实现复杂度的同时提升LLM推理性能。单个Helion GEMM实现即可覆盖多种算法变体，包括Standard GEMM、Split-K和Swap-AB，并通过按形状自动调优自动选择最佳变体和配置。在NVIDIA Hopper GPU上，Helion线性后端结合按形状调优与混合调度，在评估模型中优于vLLM默认的CUTLASS和DeepGEMM后端，带来一致的端到端性能提升，部分工作负载吞吐量提升超过10%。</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/new-pathway-to-pytorch-certified-associate-ptca-certification/" target="_blank" rel="noopener">通往PyTorch认证助理（PTCA）的新途径</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-10-03 03:33</span>
+    <span>🔗 <a href="https://pytorch.org/blog/new-pathway-to-pytorch-certified-associate-ptca-certification/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我们很高兴推出全新的PyTorch认证助理（PTCA）认证路径，通过Linux Foundation Education将专注的学习模块与PTCA认证考试整合为一个结构化体验。该认证路径旨在帮助您建立PTCA所验证的PyTorch基础技能，学习内容更贴合认证的领域和能力要求。路径包含四个自定进度学习模块及PTCA认证考试：PyTorch基础、PyTorch数据处理、PyTorch模型开发、优化PyTorch。这些模块共同覆盖PTCA认证所衡量的同一关键领域的核心技能，从张量和设备操作到数据准备……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/practical-guide-building-gpt-6" target="_blank" rel="noopener">GPT-6 系列模型指南</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-03 00:15</span>
+    <span>🔗 <a href="https://openai.com/index/practical-guide-building-gpt-6" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">了解初创公司如何选择 GPT-6 模型、调整推理强度、改进提示词与技能、协调工具，并为生产环境准备 workflows。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/allenai/astabrief" target="_blank" rel="noopener">开源 AstaBrief：Asta 中快速的报告生成模型</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-10-02 23:19</span>
+    <span>🔗 <a href="https://huggingface.co/blog/allenai/astabrief" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/" target="_blank" rel="noopener">我们在2026年9月发布的最新AI新闻</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-10-02 23:00</span>
+    <span>🔗 <a href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">以下是谷歌2026年9月最新AI动态摘要：
+
+谷歌发布多项AI更新：Gemini模型能力持续提升，在推理与多模态任务上表现更优；Search集成更多AI生成功能，提升查询体验；Workspace办公套件新增AI辅助特性，强化文档与协作效率；Cloud平台扩展Vertex AI工具链，降低企业部署门槛。此外，谷歌强调AI安全与责任原则，推进模型透明度与可控性研究。整体来看，谷歌正加速AI产品化落地，覆盖搜索、办公、云服务等核心场景。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/chatham-financial" target="_blank" rel="noopener">Chatham借助OpenAI扩展其资本市场专业能力</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-02 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/chatham-financial" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Chatham Financial 利用 Codex 和 GPT-5.6 构建技术并重新设计工作流程，将交易验证时间从 30 分钟缩短至 4 分钟以内。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/voice-consent-gate" target="_blank" rel="noopener">经同意的语音克隆</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-10-28 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/voice-consent-gate" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># 基于同意的语音克隆
+
+_在这篇博客文章中，我们引入了“语音同意门”的概念，以支持基于同意的语音克隆。我们提供了一个示例Space和配套代码，以推动这一想法的启动。_
+
+近年来，逼真的语音生成技术已经达到了_令人不安的_高水平。在某些情况下，可以生成听起来几乎与真人声音完全相同的合成语音。而如今，曾经感觉像科幻小说的事情已成为现实：语音克隆。只需_几秒钟_的录音，任何人的声音都可以被用来说出几乎任何内容。语音生成，尤其是语音克隆这一子任务，具有显著的风险和益处。“深度伪造”的风险，例如前总统拜登的克隆声音被用于……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/global-affairs/seizing-the-ai-opportunity" target="_blank" rel="noopener">抓住人工智能机遇</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-10-27 20:00</span>
+    <span>🔗 <a href="https://openai.com/global-affairs/seizing-the-ai-opportunity" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">满足智能时代的需求将需要对能源和基础设施进行战略投资。OpenAI向白宫提交的文件详细阐述了扩大产能和劳动力准备如何维持美国在AI和经济增长方面的领导地位。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/gpt-5-system-card-sensitive-conversations" target="_blank" rel="noopener">GPT-5 系统卡附录：敏感对话</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-10-27 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/gpt-5-system-card-sensitive-conversations" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">本系统卡详细介绍了GPT-5在处理敏感对话方面的改进，包括针对情感依赖、心理健康和抗越狱能力的新基准测试。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations" target="_blank" rel="noopener">加强ChatGPT在敏感对话中的回应</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-10-27 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI与170多位心理健康专家合作，提升ChatGPT识别痛苦、共情回应及引导用户寻求现实支持的能力，将不安全回复减少了高达80%。了解我们如何让ChatGPT在敏感时刻更安全、更具支持性。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
