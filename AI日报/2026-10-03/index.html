@@ -33,100 +33,110 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-10-03</div>
     <div class="article">
-<h2><a href="https://pytorch.org/blog/building-a-high-performance-and-portable-vllm-linear-backend-with-helion/" target="_blank" rel="noopener">使用Helion构建高性能且可移植的vLLM线性后端</a></h2>
-<div class="source">
-    <span>📰 Blog – PyTorch</span>
-    <span>🕐 2026-10-03 03:55</span>
-    <span>🔗 <a href="https://pytorch.org/blog/building-a-high-performance-and-portable-vllm-linear-backend-with-helion/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">简而言之，我们将Helion集成到vLLM的线性后端，探索自动调优的高级内核DSL如何在降低内核实现复杂度的同时提升LLM推理性能。单个Helion GEMM实现即可覆盖多种算法变体，包括Standard GEMM、Split-K和Swap-AB，并通过按形状自动调优自动选择最佳变体和配置。在NVIDIA Hopper GPU上，Helion线性后端结合按形状调优与混合调度，在评估模型中优于vLLM默认的CUTLASS和DeepGEMM后端，带来一致的端到端性能提升，部分工作负载吞吐量提升超过10%。</div>
-</div>
-<div class="article">
-<h2><a href="https://pytorch.org/blog/new-pathway-to-pytorch-certified-associate-ptca-certification/" target="_blank" rel="noopener">通往PyTorch认证助理（PTCA）的新途径</a></h2>
-<div class="source">
-    <span>📰 Blog – PyTorch</span>
-    <span>🕐 2026-10-03 03:33</span>
-    <span>🔗 <a href="https://pytorch.org/blog/new-pathway-to-pytorch-certified-associate-ptca-certification/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">我们很高兴推出全新的PyTorch认证助理（PTCA）认证路径，通过Linux Foundation Education将专注的学习模块与PTCA认证考试整合为一个结构化体验。该认证路径旨在帮助您建立PTCA所验证的PyTorch基础技能，学习内容更贴合认证的领域和能力要求。路径包含四个自定进度学习模块及PTCA认证考试：PyTorch基础、PyTorch数据处理、PyTorch模型开发、优化PyTorch。这些模块共同覆盖PTCA认证所衡量的同一关键领域的核心技能，从张量和设备操作到数据准备……</div>
-</div>
-<div class="article">
-<h2><a href="https://openai.com/index/practical-guide-building-gpt-6" target="_blank" rel="noopener">GPT-6 系列模型指南</a></h2>
-<div class="source">
-    <span>📰 OpenAI News</span>
-    <span>🕐 2026-10-03 00:15</span>
-    <span>🔗 <a href="https://openai.com/index/practical-guide-building-gpt-6" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">了解初创公司如何选择 GPT-6 模型、调整推理强度、改进提示词与技能、协调工具，并为生产环境准备 workflows。</div>
-</div>
-<div class="article">
-<h2><a href="https://huggingface.co/blog/allenai/astabrief" target="_blank" rel="noopener">开源 AstaBrief：Asta 中快速的报告生成模型</a></h2>
+<h2><a href="https://huggingface.co/blog/streaming-datasets" target="_blank" rel="noopener">流式数据集：效率提升100倍</a></h2>
 <div class="source">
     <span>📰 Hugging Face - Blog</span>
-    <span>🕐 2026-10-02 23:19</span>
-    <span>🔗 <a href="https://huggingface.co/blog/allenai/astabrief" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2025-10-27 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/streaming-datasets" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content"></div>
-</div>
-<div class="article">
-<h2><a href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/" target="_blank" rel="noopener">我们在2026年9月发布的最新AI新闻</a></h2>
-<div class="source">
-    <span>📰 AI</span>
-    <span>🕐 2026-10-02 23:00</span>
-    <span>🔗 <a href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">以下是谷歌2026年9月最新AI动态摘要：
+<div class="content"># 流式数据集：效率提升100倍
 
-谷歌发布多项AI更新：Gemini模型能力持续提升，在推理与多模态任务上表现更优；Search集成更多AI生成功能，提升查询体验；Workspace办公套件新增AI辅助特性，强化文档与协作效率；Cloud平台扩展Vertex AI工具链，降低企业部署门槛。此外，谷歌强调AI安全与责任原则，推进模型透明度与可控性研究。整体来看，谷歌正加速AI产品化落地，覆盖搜索、办公、云服务等核心场景。</div>
+## 摘要
+
+> 我们通过一行代码优化了 `load_dataset('dataset', streaming=True)`，实现无需下载即可流式加载数据集！
+>
+> 可立即在 multi-TB 数据集上开始训练，无需复杂配置、无需下载、不会出现“磁盘空间不足”或 429“停止请求！”错误。
+>
+> 速度极快！在 64xH100 上训练、256 个 worker 下载数据时，甚至超过了本地 SSD。
+>
+> 我们将流式加载的请求数减少了 100 倍，→ 数据解析速度提升 10 倍，→ 每秒样本数提升 2 倍，→ 256 个并发 worker 下 0 次崩溃。
+
+在机器学习工作流中，加载数据（尤其是 TB 级数据）是一大痛点。我们在训练 SmolLM3 时深受其苦，曾一度每次运行前需等待 3 小时下载足够数据。流式加载……</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/chatham-financial" target="_blank" rel="noopener">Chatham借助OpenAI扩展其资本市场专业能力</a></h2>
+<h2><a href="https://openai.com/index/steuerrecht" target="_blank" rel="noopener">Steuerrecht.com 利用 ChatGPT 提供可直接交付客户的法律分析</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2026-10-02 08:00</span>
-    <span>🔗 <a href="https://openai.com/index/chatham-financial" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2025-10-27 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/steuerrecht" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">Chatham Financial 利用 Codex 和 GPT-5.6 构建技术并重新设计工作流程，将交易验证时间从 30 分钟缩短至 4 分钟以内。</div>
+<div class="content">Steuerrecht.com 使用 ChatGPT Business 简化法律工作流程、自动化税务研究，并为律师事务所提供更快的、可直接交付客户的分析。</div>
 </div>
 <div class="article">
-<h2><a href="https://huggingface.co/blog/voice-consent-gate" target="_blank" rel="noopener">经同意的语音克隆</a></h2>
+<h2><a href="https://huggingface.co/blog/huggingface-hub-v1" target="_blank" rel="noopener">huggingface_hub v1.0：构建开放机器学习基石的五年</a></h2>
 <div class="source">
     <span>📰 Hugging Face - Blog</span>
-    <span>🕐 2025-10-28 08:00</span>
-    <span>🔗 <a href="https://huggingface.co/blog/voice-consent-gate" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2025-10-27 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/huggingface-hub-v1" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content"># 基于同意的语音克隆
+<div class="content"># huggingface_hub v1.0：构建开放机器学习基础的五年历程
 
-_在这篇博客文章中，我们引入了“语音同意门”的概念，以支持基于同意的语音克隆。我们提供了一个示例Space和配套代码，以推动这一想法的启动。_
+**摘要：** 经过五年发展，`huggingface_hub` 正式发布 v1.0，标志着该库已成熟为支撑 **20 万个依赖库**的 Python 包，为访问超 200 万个公共模型、50 万个公共数据集和 100 万个公共 Spaces 提供核心功能。此版本引入破坏性变更以支持未来十年的开放机器学习发展，由近 300 名贡献者和数百万用户组成的全球社区共同推动。**强烈建议升级至 v1.0** 以获得显著的性能提升和新功能。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/lerobot-release-v040" target="_blank" rel="noopener">LeRobot v0.4.0：为开源机器人学习强力加速</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-10-24 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/lerobot-release-v040" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">LeRobot v0.4.0 发布，为开源机器人学习带来多项重大升级。新版本引入可扩展的 Datasets v3.0、强大的新 VLA 模型（如 PI0.5 和 GR00T N1.5），以及全新的插件系统，简化硬件集成。此外，还新增对 LIBERO 和 Meta-World 仿真的支持，简化多 GPU 训练，并推出新的 Hugging Face Robot 工具。此次更新旨在让开源机器人学习更强大、可扩展且易用，持续满足前沿具身 AI 的需求。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/openai-acquires-software-applications-incorporated" target="_blank" rel="noopener">OpenAI收购Sky开发商Software Applications Incorporated</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-10-23 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/openai-acquires-software-applications-incorporated" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI 已收购 Software Applications Incorporated，该公司是 Sky 的开发者——一个面向 Mac 的自然语言界面，将 AI 直接融入桌面体验。我们将携手把 Sky 深度整合 macOS 的能力引入 ChatGPT，让 AI 更直观、更具上下文感知能力，并更偏向行动导向。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/consensus" target="_blank" rel="noopener">共识利用GPT-5和响应API加速研究</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-10-23 17:00</span>
+    <span>🔗 <a href="https://openai.com/index/consensus" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Consensus 利用 GPT-5 和 OpenAI 的 Responses API 构建多智能体研究助手，可在数分钟内阅读、分析并综合证据，帮助超过 800 万研究人员加速科学发现。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/openenv" target="_blank" rel="noopener">共建开放智能体生态系统：推出 OpenEnv</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-10-23 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/openenv" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># 共建开放智能体生态：推出 OpenEnv
 
-近年来，逼真的语音生成技术已经达到了_令人不安的_高水平。在某些情况下，可以生成听起来几乎与真人声音完全相同的合成语音。而如今，曾经感觉像科幻小说的事情已成为现实：语音克隆。只需_几秒钟_的录音，任何人的声音都可以被用来说出几乎任何内容。语音生成，尤其是语音克隆这一子任务，具有显著的风险和益处。“深度伪造”的风险，例如前总统拜登的克隆声音被用于……</div>
+借助 TRL、TorchForge 和 verl 等工具，开源社区已展示了如何在复杂计算基础设施上扩展 AI。但计算只是硬币的一面，另一面是开发者社区——让智能体系统成为可能的人和工具。因此，Meta 与 Hugging Face 合作推出 OpenEnv Hub：一个共享开放的智能体环境社区中心。智能体环境定义了智能体执行任务所需的一切：工具、API、凭证、执行上下文，仅此而已。它们为智能体行为带来清晰性、安全性和沙箱化控制。这些环境可用于训练和部署，是可扩展智能体的基础……</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/global-affairs/seizing-the-ai-opportunity" target="_blank" rel="noopener">抓住人工智能机遇</a></h2>
+<h2><a href="https://openai.com/index/south-korea-economic-blueprint" target="_blank" rel="noopener">韩国人工智能——OpenAI的经济蓝图</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2025-10-27 20:00</span>
-    <span>🔗 <a href="https://openai.com/global-affairs/seizing-the-ai-opportunity" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2025-10-23 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/south-korea-economic-blueprint" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">满足智能时代的需求将需要对能源和基础设施进行战略投资。OpenAI向白宫提交的文件详细阐述了扩大产能和劳动力准备如何维持美国在AI和经济增长方面的领导地位。</div>
+<div class="content">OpenAI的韩国经济蓝图阐述了韩国如何通过主权能力和战略合作伙伴关系扩展可信AI，以推动增长。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/gpt-5-system-card-sensitive-conversations" target="_blank" rel="noopener">GPT-5 系统卡附录：敏感对话</a></h2>
+<h2><a href="https://openai.com/index/introducing-company-knowledge" target="_blank" rel="noopener">在ChatGPT中更智能地利用公司知识</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2025-10-27 18:00</span>
-    <span>🔗 <a href="https://openai.com/index/gpt-5-system-card-sensitive-conversations" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2025-10-23 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-company-knowledge" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">本系统卡详细介绍了GPT-5在处理敏感对话方面的改进，包括针对情感依赖、心理健康和抗越狱能力的新基准测试。</div>
+<div class="content">公司知识功能将来自你各应用的上下文引入ChatGPT，以提供针对你业务的特定答案，并配有清晰的引用、安全、隐私和管理控制。现已面向Business、Enterprise和Edu用户开放。</div>
 </div>
 <div class="article">
-<h2><a href="https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations" target="_blank" rel="noopener">加强ChatGPT在敏感对话中的回应</a></h2>
+<h2><a href="https://openai.com/index/the-next-chapter-for-uk-sovereign-ai" target="_blank" rel="noopener">英国主权人工智能的新篇章</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
-    <span>🕐 2025-10-27 18:00</span>
-    <span>🔗 <a href="https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2025-10-23 00:00</span>
+    <span>🔗 <a href="https://openai.com/index/the-next-chapter-for-uk-sovereign-ai" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">OpenAI与170多位心理健康专家合作，提升ChatGPT识别痛苦、共情回应及引导用户寻求现实支持的能力，将不安全回复减少了高达80%。了解我们如何让ChatGPT在敏感时刻更安全、更具支持性。</div>
+<div class="content">OpenAI扩大与英国合作，与司法部达成新协议，将ChatGPT引入公务员系统。同时为ChatGPT Enterprise、ChatGPT Edu和API Platform推出英国数据驻留功能，支持可信安全的AI应用。</div>
 </div>
     <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
         由 Hermes Agent 自动生成 · AI 日报
