@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-10-06</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-10-06</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-10-06</div>
+    <div class="article">
+<h2><a href="https://pytorch.org/blog/evolution-of-the-pytorch-media-processing-landscape/" target="_blank" rel="noopener">PyTorch 媒体处理格局的演变</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-10-06 04:45</span>
+    <span>🔗 <a href="https://pytorch.org/blog/evolution-of-the-pytorch-media-processing-landscape/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">简而言之：若需解码或编码媒体（图像、视频或音频），请使用 TorchCodec。若需转换媒体，图像和视频用 TorchVision，音频用 TorchAudio。这些库中曾包含的其他功能（模型、数据集等），如今更适合由更广泛的生态系统提供，例如 HuggingFace 库。图像、视频和音频现已成为众多模型开发的核心，从视觉语言模型到生成图像和视频的扩散模型。训练这些模型意味着将媒体解码为张量并进行转换，而生成模型则需要将输出编码回媒体文件。过去两年，我们整合了 PyTorch 的媒体栈，涵盖三个库：TorchCodec、TorchVision 和 TorchAudio。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/eu-text-provenance" target="_blank" rel="noopener">我们在欧盟文本溯源规则上的做法</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-05 23:00</span>
+    <span>🔗 <a href="https://openai.com/index/eu-text-provenance" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI如何依据欧盟规则推进文本水印。了解水印的适用范围、检测机制，以及为何访问权限首先面向研究人员开放。</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/pytorch-hardware-enablement-updates-from-the-acceleration-integration-working-group/" target="_blank" rel="noopener">PyTorch硬件支持：加速器集成工作组更新</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-10-05 21:12</span>
+    <span>🔗 <a href="https://pytorch.org/blog/pytorch-hardware-enablement-updates-from-the-acceleration-integration-working-group/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">简而言之，加速器集成工作组在标准化新硬件架构与开源AI生态系统的连接方式方面发挥着关键作用。随着计算平台在云端、边缘和专用芯片领域的多样化，该工作组建立了清晰的、厂商中立的集成机制，消除了自定义代码补丁并减少了生态碎片化。本文介绍该工作组在2026年上半年取得的成果，包括关键基础设施改进、统一测试工作流以及覆盖整个PyTorch平台的参考后端。引言：PyTorch硬件生态持续多样化，越来越多的AI计算平台采用原生框架集成。这种不断扩展的采用带来了共同的社区挑战：……</div>
+</div>
+<div class="article">
+<h2><a href="https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/" target="_blank" rel="noopener">导入AI 475：群体扩展；谷歌DeepMind为生物学添加水印；以及AI科学经济</a></h2>
+<div class="source">
+    <span>📰 Import AI</span>
+    <span>🕐 2026-10-05 20:32</span>
+    <span>🔗 <a href="https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">欢迎来到Import AI，一个关于AI研究的新闻通讯。Import AI依托arXiv、卡布奇诺和读者反馈运行。如果您愿意支持，请订阅。立即订阅 何时应该使用swarms？当你赶时间时：…swarm scaling是如何运作的？…Toby Ord写了一篇简短精悍的文章，探讨如何从AI能力发展的角度理解swarms。“理解AI swarms的一个好方式，是将其视为一种新的inference-scaling形式，”他说。他做了一些分析，主要结论是：如果你赶时间，swarms很有用，因为尽管它们相对于单一agent需要大量token，但其并行化能让你在更少的wall clock时间内完成任务。“你为什么要用swarms？最重要的答案是速度。4-agent swarm所需的总量约为……的两倍。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/" target="_blank" rel="noopener">Qwen3.8 27B 文字加法</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-05 07:34</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">研究：Qwen3.8 27B 词语加法实验
+
+Colin Frasier 在 Bluesky 上分享了他两年前用 GPT-4o 做的实验：测试模型能否“计算总和但用词语返回答案”，数字规模逐渐增大。他确信 GPT-4o 没有作弊使用计算器，尤其因为它算错了很多。受此启发，我在本地硬件（DGX Spark）上重跑实验，以在完全可控环境中探索该效应。我将他的图片粘贴到 Codex Remote 会话（GPT-6 Astra）中，让它用 Qwen3.8-27B-Q4_K_M.gguf 运行相同实验。以下是禁用推理时每种组合运行 30 次的结果：随后我又启用了……</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/1/pwasm/" target="_blank" rel="noopener">pwasm 0.2a0</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-02 01:10</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/1/pwasm/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：pwasm 0.2a0。pwasm 是我的一个 folly 项目——一个完全由 vibe 编码的纯 Python WebAssembly 引擎，我在一月份第一次 AI 狂热期间构建了它。自一月以来我一直没碰过它，所以我决定让 Claude Opus 5.5 放手一试，看看它能否做出任何重大改进：评估 pwasm 的当前状态——然后考虑需要什么才能让研究仓库中的 MicroPython 和 micro JavaScript 实验在其下运行——以及需要什么才能加速它。42 次提交后（几乎没有后续提示），它现在处理几乎所有的 WASM 规范，并且来自 PyPI 的 wheel 捆绑了 MicroPython、QuickJS 和 Micro QuickJS 的工作 WASM 构建。我完全不会信任这个东西——因此有 alpha 版本标签——但它……</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Sep/28/llm-anthropic/" target="_blank" rel="noopener">llm-anthropic 0.30</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-09-29 07:06</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Sep/28/llm-anthropic/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：llm-anthropic 0.30。除 Claude Sonnet 5.5 外，此版本新增 `llm anthropic refresh` 命令，可直接从 Anthropic API 刷新模型列表，无需为新模型发布新版本。同时新增 `llm anthropic count` 命令，利用其免费 token 计数 API，在发送 prompt 前返回将消耗的 token 数量。标签：llm、anthropic。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/rl-environments" target="_blank" rel="noopener">欢迎 RL 环境加入 Hub</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-09-28 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/rl-environments" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># 欢迎 RL 环境加入 Hub
+
+Reinforcement Learning 环境为 agentic AI 系统赋予新能力，也是衡量和提升 agent 性能的好方法。因此，Hugging Face Hub 现在为 RL 环境设立了专门区域。环境向 agent 提供任务，通过 observations 回应其动作，并对结果打分。所得 rewards 可在评估时衡量 agent 性能，或在训练时提供学习信号。关于此交互循环的介绍，参见我们关于 environments 的博客文章。在环境中，agent 将执行一组以 datasets 表示的任务。因此，环境大致可分为两部分：tasksets 和 runtimes。本次发布中，我们重点关注……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/disrupting-malicious-uses-of-ai-phishing-and-scripting-support" target="_blank" rel="noopener">网络行动：钓鱼与脚本支持</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-10-01 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/disrupting-malicious-uses-of-ai-phishing-and-scripting-support" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI封禁了一批账号，这些账号的活动与公开报道的威胁组织存在重叠，并显示出符合中国情报需求的特征，利用AI支持钓鱼和脚本编写工作流程。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/disrupting-malicious-uses-of-ai-russian-speaking-malware-tooling" target="_blank" rel="noopener">网络行动：俄语恶意软件工具</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-10-01 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/disrupting-malicious-uses-of-ai-russian-speaking-malware-tooling" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI封禁了可能与俄语犯罪团伙相关的账户，这些账户利用AI构建恶意软件加载器、规避层、凭证窃取脚本及C2基础设施。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
