@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-10-07</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-10-07</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-10-07</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/6/llm-mistral/" target="_blank" rel="noopener">llm-mistral 0.16</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-07 05:32</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/6/llm-mistral/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：llm-mistral 0.16 新增对推理模型的支持，例如最新发布的 Mistral Large 4。标签：llm、mistral、llm-reasoning</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/6/hn-49983751/" target="_blank" rel="noopener">EmbeddingGemma 2</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-07 04:37</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/6/hn-49983751/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我对EmbeddingGemma 2采用Apache 2.0许可证表示赞赏。对于embedding模型而言，使用闭源、专有且仅限托管的模型并不合理。大多数embedding模型应用需要计算数千甚至数百万个embedding向量并存储以备后续比较。如果模型是专有的，供应商迟早可能停止提供该模型。他们会有更好的替代模型，但你仍需付费重新计算已存储的数百万个向量。（2024年4月，OpenAI曾提出“承担用户使用这些新模型重新embedding内容的财务成本”——https://openai.com/index/gpt-4-api-general-availability/——……）</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/6/le-chonk/" target="_blank" rel="noopener">隆重推出 Mistral Large 4：Le chonk</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-07 04:18</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/6/le-chonk/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Mistral Large 4 发布预览版：1 万亿参数、490 亿激活参数，基于自建 3800 块 NVIDIA Grace Blackwell GPU 集群训练。预览版通过 API 提供，承诺“本月底”发布开放权重模型。该模型仅支持“none”和“high”两种推理级别。在 Artificial Analysis 上得分 38，略低于 552B 的 DeepSeek 4.1 Flash，但相比去年 12 月的 Mistral Large 3 有巨大提升。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/6/datasette-parseable-opentelemetry/" target="_blank" rel="noopener">使用Parseable与Datasette处理OpenTelemetry追踪</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-07 03:07</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/6/datasette-parseable-opentelemetry/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">TIL：使用Parseable与Datasette处理OpenTelemetry traces
+
+今天在Show HN上看到Parseable——一个新型可观测性平台，提供开源（AGPL）Rust实现（单个约180MB二进制文件）、功能增强的“企业版”及云托管选项。由于Datasette 1.0a41新增了OpenTelemetry支持（感谢Alex Garcia），我决定启动Codex，让它研究如何运行Parseable并从Datasette向其发送traces。以下是我（人工撰写）的TIL，展示了有效的模式，并附有在Parseable本地Web应用中显示的Datasette trace截图。
+
+标签：datasette, observability, alex-garcia, opentelemetry</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/6/hn-49982139/" target="_blank" rel="noopener">Mistral Large 4</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-07 02:20</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/6/hn-49982139/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我对 Mistral Large 4 的评论——Hacker News。wren6991：基准测试已经饱和。前沿模型的测试场景简直像犰狳穿着渔网袜在火星上乱穿马路。好吧，我实在忍不住试了一下：llm -m claude-opus-5.5 ‘生成一张犰狳穿着渔网袜在火星上乱穿马路的 SVG’ llm -m gpt-6.1-sol ‘生成一张犰狳穿着渔网袜在火星上乱穿马路的 SVG’ llm -m gemini-3.8-flash ‘生成一张犰狳穿着渔网袜在火星上乱穿马路的 SVG’ llm -m mistral/mistral-large-4 ‘生成一张犰狳穿着渔网袜在火星上乱穿马路的 SVG’ 各模型默认推理级别：https://tools.simonwillison.net/markdown-svg-renderer?url=ht...</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/6/datasette-atom/" target="_blank" rel="noopener">datasette-atom 0.11a0</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-07 01:35</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/6/datasette-atom/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：datasette-atom 0.11a0 版本，针对最新 Datasette alpha 版进行了小幅兼容性修复。这意味着我们可以将 datasette.io 网站升级至 Datasette 1.0a41。标签：atom、datasette。</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/the-state-of-the-tech-industry-in" target="_blank" rel="noopener">2026年科技行业现状</a></h2>
+<div class="source">
+    <span>📰 The Pragmatic Engineer</span>
+    <span>🕐 2026-10-07 00:25</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/the-state-of-the-tech-industry-in" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我最近在纽约的LDX3工程领导力大会上发表了主题演讲，参会者有2000多名工程领导者、CTO、总监级及资深工程人员，我试图描绘出科技行业当下所处位置的全景。此前，我有机会拜访了OpenAI和Anthropic等AI实验室，接触了Ramp、Uber等创新初创公司，并从GitHub、Factory AI和Linear获取了新的未公开数据。演讲聚焦于AI实验室、风投支持的初创公司及大型科技公司的趋势。感谢这些团队的开放 access！大会前，我花了数周时间识别并记录一年前不存在——或当时更为初期的趋势，以及当前存在问题的方面……</div>
+</div>
+<div class="article">
+<h2><a href="https://engineering.fb.com/2026/10/06/production-engineering/nts-authenticated-time-at-meta/" target="_blank" rel="noopener">NTS：Meta 的认证时间</a></h2>
+<div class="source">
+    <span>📰 Engineering at Meta</span>
+    <span>🕐 2026-10-07 00:00</span>
+    <span>🔗 <a href="https://engineering.fb.com/2026/10/06/production-engineering/nts-authenticated-time-at-meta/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Meta的公共时间服务现已在nts.meta.com支持NTS（Network Time Security，RFC 8915）。数据包经过认证，设备可验证时间来自我们且未被篡改。NTS服务器不保存每客户端状态，Cookie密钥为派生而非存储或复制。我们已开源全部内容，包括协议、服务器、客户端，通过GitHub上的Meta Time库发布。我们鼓励所有人，尤其是Android或iOS上NTP客户端的维护者，加入启用NTS支持。此前我们曾介绍在Meta规模构建更精确时间服务的经验——从ntpd迁移到chrony，从10毫秒提升到100微秒，并向所有人开放time.meta.com。那项工作让时间精确，而这项工作让时间……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/atlassian-partnership" target="_blank" rel="noopener">Atlassian与OpenAI扩大合作，将企业知识转化为行动</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-07 00:00</span>
+    <span>🔗 <a href="https://openai.com/index/atlassian-partnership" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Atlassian与OpenAI扩大合作，将前沿模型与企业知识连接，助力团队规划、构建和交付工作。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox/" target="_blank" rel="noopener">斯克林肖点唱机</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-06 23:17</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">工具：Scrimshaw Jukebox 我想测试Claude Opus 5.5能否作曲，于是尝试：让它为电脑游戏创作音乐，先设计简单的文本音乐格式，再构建可播放的artifact，并包含示例曲目，目标是达到《猴岛小英雄》原版音乐的水准。结果比预期更贴近猴岛主题，但质量出奇地好。我怀疑这种作曲能力是否类似3D图形能力——是文本模型近几个月涌现的新能力？需要用其他近期和较早的模型做仔细实验，才能确认这是新能力还是早已具备。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
