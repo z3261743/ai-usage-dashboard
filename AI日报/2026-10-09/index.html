@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-10-09</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-10-09</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-10-09</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/8/carson-gross/" target="_blank" rel="noopener">引用卡森·格罗斯</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-09 05:05</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/8/carson-gross/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">计算机编程本质上关乎两件事：利用计算机解决问题，以及在解决问题的过程中学会控制复杂性。我很难想象未来会有这样一个世界：懂得如何用计算机解决问题、如何控制解决方案的复杂性，反而比今天更不值钱。因此，我认为即使AI工具出现，编程仍将是一个可行的职业。——卡森·格罗斯
+标签：计算机科学、卡森·格罗斯、职业、AI</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/session-aware-agentic-inference-with-nvidia-dynamo/" target="_blank" rel="noopener">基于NVIDIA Dynamo的会话感知型智能体推理</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-10-09 02:13</span>
+    <span>🔗 <a href="https://pytorch.org/blog/session-aware-agentic-inference-with-nvidia-dynamo/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">简而言之，Agentic 工作负载改变了推理服务器所面对的流量形态。与单轮聊天不同，一个 agent 会话可能包含大规模初始 prefill、重复的模型调用以及并行运行的 subagents，并且在轮次之间工具执行时 KV cache 仍保持驻留。这篇技术博客详细介绍了 NVIDIA Dynamo 如何使用统一的会话级标识符，将请求级服务基础设施转变为程序感知系统，从而实现 session-aware routing、共享 KV cache indexing，以及跨 vLLM 和 SGLang 的程序化 cache movement。引言：Agentic 工作负载已经改变了推理服务器所看到的流量形态。一个编码会话以大规模 prefill 开始，通常包含数万 tokens 的 system prompt、工具定义和用户特定指导……</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-of-building-internal" target="_blank" rel="noopener">The Pulse：科技公司内部“氛围编程应用”开发新趋势</a></h2>
+<div class="source">
+    <span>📰 The Pragmatic Engineer</span>
+    <span>🕐 2026-10-09 00:55</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-of-building-internal" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">《The Pulse》系列聚焦于大型科技公司与初创企业中的事件、洞察和趋势。今日内容：新趋势——中型企业正在构建内部 vibe-coding 应用。Ramp 和 Stripe 为非工程师打造了用于构建内部网站和工具的平台，二者在这些公司中均迅速流行。预计更多公司将效仿。继续阅读……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/oracle" target="_blank" rel="noopener">Oracle如何利用ChatGPT和Codex将数天工作缩短至几分钟</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-09 00:00</span>
+    <span>🔗 <a href="https://openai.com/index/oracle" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Oracle 在招聘、工程和运营领域，借助 ChatGPT Work 和 Codex，将专业知识转化为快速、可重复的工作流。</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/building-spyre-as-a-native-pytorch-device/" target="_blank" rel="noopener">将Spyre构建为原生PyTorch设备</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-10-08 20:45</span>
+    <span>🔗 <a href="https://pytorch.org/blog/building-spyre-as-a-native-pytorch-device/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">简而言之，Spyre通过torch-spyre将PyTorch现有的device、allocator、stream和compiler抽象连接到Spyre运行时和固件，成为原生PyTorch设备。PrivateUse1赋予Spyre真正的设备标识，PyTorch allocator存储使张量驻留在device="spyre"上，stream提供熟悉的排序语义，runtime event连接跨stream的依赖工作。FX graph保留在Inductor编译器路径中。本文聚焦PyTorch到Spyre的设备/运行时集成：设备标识、allocator支持的存储、stream、event及编译程序启动如何映射到Spyre的运行时约束。一旦编译产物存在，启动就是在有序队列上执行类型化操作的预制配方，而非基于graph的运行时。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/pollo-ai" target="_blank" rel="noopener">Pollo AI借助OpenAI将创意转化为营销活动</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-08 20:00</span>
+    <span>🔗 <a href="https://openai.com/index/pollo-ai" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">借助GPT-5.6、GPT-6 Astra和GPT-Image-2.5，Pollo AI帮助创作者将大胆创意转化为精细图像和电影级视频广告。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/building-with-ml-intern" target="_blank" rel="noopener">那个不存在的模型，于是你自己动手做了一个</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-10-08 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/building-with-ml-intern" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># 不存在的模型，那就自己造
+
+上周，我想要一个 Qwen-Image 2.1 自带 prompt rewriter 的小型版本。官方版本是 9B 模型，需要约 20 GB 内存，写一段话前要思考数千个 token。在 Hub 上，我只找到同一个 9B 模型的压缩副本。于是我向 ML Intern 描述了我的需求，第二天就得到了一个能在 CPU 上运行的 0.8B 版本。它 99.7% 的情况下返回有效输出，使用的 token 约为教师模型的四分之一。整个项目的算力成本，包括用 9B 模型标注 8,797 条示例请求，共计 16 美元。接下来几天里，我用同样的方法又做了五个模型。每一个都始于 HuggingChat 中开启 ML-intern 后的一条消息……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/disrupting-ai-enabled-false-front-operations" target="_blank" rel="noopener">扰乱AI驱动的“假象”行动</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-08 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/disrupting-ai-enabled-false-front-operations" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI 阻止了两起利用 AI 技术的影响力行动，这些行动通过虚假记者身份和一家智库传播地缘政治信息。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/tiiuae/falcon-asr" target="_blank" rel="noopener">推出 Falcon ASR</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-10-07 21:21</span>
+    <span>🔗 <a href="https://huggingface.co/blog/tiiuae/falcon-asr" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/gdpval" target="_blank" rel="noopener">衡量我们的模型在真实任务中的性能</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-09-25 17:00</span>
+    <span>🔗 <a href="https://openai.com/index/gdpval" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI推出GDPval，一项新评估，用于衡量模型在44个职业中真实世界经济有价值任务上的表现。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
