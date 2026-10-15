@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-14",
+  "generated_at": "2026-10-15",
   "summary": {
-    "total_cost_7d": 0.0818,
-    "total_cost_30d": 0.484,
-    "avg_daily_cost_7d": 0.0117,
-    "avg_daily_input_tokens": 57043,
-    "avg_daily_output_tokens": 13217
+    "total_cost_7d": 0.0791,
+    "total_cost_30d": 0.4912,
+    "avg_daily_cost_7d": 0.0113,
+    "avg_daily_input_tokens": 56061,
+    "avg_daily_output_tokens": 12341
   },
   "deepseek_balance": {
-    "cny": 42.92,
+    "cny": 42.53,
     "usd": 0.0
   },
   "pricing": {
@@ -1368,29 +1368,57 @@
     },
     {
       "date": "2026-10-14",
-      "sessions": 6,
-      "messages": 37,
-      "tool_calls": 15,
-      "input_tokens": 44514,
-      "output_tokens": 9534,
+      "sessions": 9,
+      "messages": 76,
+      "tool_calls": 34,
+      "input_tokens": 77167,
+      "output_tokens": 16280,
       "reasoning_tokens": 0,
-      "cache_read": 244864,
+      "cache_read": 396544,
       "cache_write": 0,
-      "computed_cost": 0.00890148,
+      "computed_cost": 0.015361780000000002,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 44514,
-          "output_tokens": 9534,
-          "cost": 0.00890148,
-          "sessions": 6
+          "input_tokens": 77167,
+          "output_tokens": 16280,
+          "cost": 0.015361780000000002,
+          "sessions": 9
         }
       },
       "sources": {
         "cron": {
-          "sessions": 6,
-          "cost": 0.00890148
+          "sessions": 9,
+          "cost": 0.015361780000000002
+        }
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "sessions": 1,
+      "messages": 0,
+      "tool_calls": 0,
+      "input_tokens": 4674,
+      "output_tokens": 297,
+      "reasoning_tokens": 0,
+      "cache_read": 4736,
+      "cache_write": 0,
+      "computed_cost": 0.0007375200000000001,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "models": {
+        "deepseek-v4-flash": {
+          "input_tokens": 4674,
+          "output_tokens": 297,
+          "cost": 0.0007375200000000001,
+          "sessions": 1
+        }
+      },
+      "sources": {
+        "cron": {
+          "sessions": 1,
+          "cost": 0.0007375200000000001
         }
       }
     }
