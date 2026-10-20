@@ -33,94 +33,96 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-10-20</div>
     <div class="article">
-<h2><a href="https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/" target="_blank" rel="noopener">GenRecs 分词：以稳定模型词表革新 Meta 广告推荐</a></h2>
-<div class="source">
-    <span>📰 Engineering at Meta</span>
-    <span>🕐 2026-10-20 00:00</span>
-    <span>🔗 <a href="https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">Generative Recommenders（GenRecs）代表了一种范式转变：不再对每个广告逐一评分，而是结合广告内容与用户偏好进行推理，以预测广告主的最佳结果。借助LLM内置的世界知识，广告匹配变得更智能、更精准，为广告主带来叠加收益。GenRecs Tokenization是实现这一目标的基础数据表示方式。它不再为每个item维护专属ID，而是用来自稳定语义词表的token集合表示每个item。结合Meta的Generative Ads Model（GEM）与Meta的Adaptive Ranking Model，GenRecs Tokenization为广告主在各场景带来了+0.35%的转化提升。GenRecs改进了Meta广告推荐的方式……</div>
-</div>
-<div class="article">
-<h2><a href="https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/" target="_blank" rel="noopener">一次搜索，两层结构：使用 NVIDIA CompileIQ 在 PyTorch Helion 内部实现编译器控制</a></h2>
-<div class="source">
-    <span>📰 Blog – PyTorch</span>
-    <span>🕐 2026-10-19 23:45</span>
-    <span>🔗 <a href="https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">Helion 去年发布，目标是让开发者用 PyTorch 原生 Python 编写 GPU kernel，并由其强大的 autotuner 完成过去需要手写 Triton 才能完成的工作，同时抽象掉硬件相关的实现细节。Helion 的 autotuner 会探索数千种 kernel 配置，通常能达到专家调优代码的几个百分点以内，甚至经常超越。现在需要回答的问题是：如果一个 kernel 已经过 autotune 并优化到开发者能力所及的最佳状态，还有什么可做的吗？有。它位于 kernel 之下，在编译器里。生态系统中的每个 kernel autotuner——无论是 Helion 的、Triton 的，还是 torch.compile 内部的——搜索的都是同样的东西：tile 形状、warp 数量……</div>
-</div>
-<div class="article">
-<h2><a href="https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/" target="_blank" rel="noopener">薄编排器：如何通过减少路由器的职责让我们的AI代理更可靠</a></h2>
-<div class="source">
-    <span>📰 Engineering at Meta</span>
-    <span>🕐 2026-10-19 23:30</span>
-    <span>🔗 <a href="https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">有时，为AI agent提供其所需的全部知识并非正确做法。在Meta，我们通过刻意保持数据管道agent编排层的精简，在效率和准确性上取得了显著提升：编排层负责路由工作并执行可靠性检查，而由专业化agent负责领域推理。我们分享自身流程与洞见，以及任何团队如何将其应用于生产环境AI agent。我们构建了一个1,300行的orchestrator，将20多个工作流路由至14个专业化AI agent，其自身不执行任何领域工作——这正是关键所在。最初我们将AI agent部署用于自动化Meta推荐系统中的数据列接入流程，该流程横跨三个代码仓库、三种编程语言以及多达六个管道阶段……</div>
-</div>
-<div class="article">
-<h2><a href="https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/" target="_blank" rel="noopener">深入Prometheus：Meta迈向吉瓦级超级集群之旅</a></h2>
-<div class="source">
-    <span>📰 Engineering at Meta</span>
-    <span>🕐 2026-10-19 21:00</span>
-    <span>🔗 <a href="https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">随着Muse系列基础模型的发布，我们带您深入了解支撑这一切的基础设施。Prometheus超级集群第一阶段已完成，正扩展至约100万块GPU，并采用闭环液冷等技术提升效率。目前Meta在俄亥俄州New Albany推进迄今最雄心勃勃的AI基础设施项目——Prometheus千兆瓦级超级集群，用于训练下一代基础模型，为数以十亿计的用户带来全新AI体验。两年前，New Albany还只是一个运行网络流量的常规数据中心站点。</div>
-</div>
-<div class="article">
-<h2><a href="https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/" target="_blank" rel="noopener">推出 TorchNeuron：AWS Trainium 的原生 PyTorch 后端</a></h2>
-<div class="source">
-    <span>📰 Blog – PyTorch</span>
-    <span>🕐 2026-10-19 20:45</span>
-    <span>🔗 <a href="https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">前沿模型涵盖语言、视频和音频，架构从稠密和混合专家 transformer 到 diffusion、state-space、world 和 structure-prediction 模型。PyTorch 是 AI 研究的发生地，是模型定义之处，也日益成为生产部署的场所。研究者希望实验和创新，客户希望 AWS Trainium 提供的性能来达成其性能和规模目标。训练和 serving 库针对 PyTorch 自身 API 编写，新库和新版本持续发布。过去几年，PyTorch 使这些 API 与加速器无关，并提供官方扩展点用于注册自定义硬件。如今，为满足开发者和研究日益增长的需求……</div>
-</div>
-<div class="article">
-<h2><a href="https://jack-clark.net/2026/10/19/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun/" target="_blank" rel="noopener">导入AI 477：我向国际货币基金组织宣告奇点已至</a></h2>
-<div class="source">
-    <span>📰 Import AI</span>
-    <span>🕐 2026-10-19 20:31</span>
-    <span>🔗 <a href="https://jack-clark.net/2026/10/19/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">欢迎阅读Import AI，这是一份关于AI研究的通讯。Import AI依托arXiv、卡布奇诺咖啡和读者反馈运营。若您愿意支持，请订阅。立即订阅。以下是我于10月17日（周六）在曼谷IMF会议上发表的演讲。本次演讲的灵感源自读者今年见我报道的一大趋势：AI开始在前沿人类科学领域运作，有时甚至是自主运作。尽管我们可能对细节各执一词，但我认为显而易见的是，我们正处于singularity的早期阶段。我想利用发表Per Jacobsson讲座这一难得机会，尽力告诉齐聚一堂的经济学家、银行家和政策制定者：他们应预期未来将发生重大而迅速的变化。在本次演讲中，我重点聚焦……</div>
-</div>
-<div class="article">
-<h2><a href="https://huggingface.co/blog/hf-torchneuron" target="_blank" rel="noopener">TorchNeuron：在 AWS Trainium 上运行 HF 模型比以往更简单</a></h2>
+<h2><a href="https://huggingface.co/blog/mps-pytorch-2-15" target="_blank" rel="noopener">PyTorch 2.15 中的 MPS</a></h2>
 <div class="source">
     <span>📰 Hugging Face - Blog</span>
-    <span>🕐 2026-10-19 08:00</span>
-    <span>🔗 <a href="https://huggingface.co/blog/hf-torchneuron" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-10-20 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/mps-pytorch-2-15" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">TorchNeuron 为 AWS Trainium 上的 PyTorch 提供了新的原生后端，使在 Trainium 上运行模型并在 HF hub 上共享变得前所未有的简单。TorchNeuron 是一个 PyTorch 插件，为 Trainium 带来新后端，支持 eager 模式、`torch.compile` 以及 FSDP、TP 等原生分布式 API。自 2026 年 10 月 20 日起，TorchNeuron 将作为公开测试版发布，研究人员和开发者可通过 `pip install torch-neuronx` 安装。Transformers、Diffusers 和 Kernels 原生支持该后端。此前，Hugging Face 在 AWS Trainium 和 Inferentia 上的体验……</div>
-</div>
-<div class="article">
-<h2><a href="https://simonwillison.net/2026/Oct/18/llm-tools-datasette/" target="_blank" rel="noopener">llm-tools-datasette 0.1.1</a></h2>
-<div class="source">
-    <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-10-19 07:43</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Oct/18/llm-tools-datasette/" target="_blank" rel="noopener">原文</a></span>
-</div>
-<div class="content">发布：llm-tools-datasette 0.1.1。在 LLM 0.33 中将 LLM 切换到 httpx2 时，我忘了这会破坏那些使用 httpx 但未直接依赖它的插件。llm-tools-datasette 就是其中之一，现已修复。标签：datasette、llm</div>
+<div class="content"># PyTorch 2.15 中的 MPS
+
+如果你在 Mac 上运行模型，或将 MPS 作为主要计算加速工具，PyTorch 2.15 值得期待！MPS 现已支持 FP8，语言模型解码通过 linear layers 和 softmax 获得更快路径，新的 Metal kernels 解决了音频、视频和训练工作负载中一些出奇昂贵的部分。我们是 Hugging Face 的 PyTorch 团队，重点领域之一是 MPS 后端，目标是让 Mac 成为运行和训练 PyTorch 模型的一流平台。2026 年初，在 MPS 上运行小模型常需绕过不支持的操作、性能悬崖和意外内存增长。因此我们运行来自 Hugging Face 的真实模型……</div>
 </div>
 <div class="article">
-<h2><a href="https://simonwillison.net/2026/Oct/18/llm-echo/" target="_blank" rel="noopener">llm-echo 0.5</a></h2>
+<h2><a href="https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/" target="_blank" rel="noopener">我的编程讣告</a></h2>
 <div class="source">
     <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-10-19 07:16</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Oct/18/llm-echo/" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-10-20 07:58</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">Release: llm-echo 0.5 我正在准备新的 LLM 版本，测试 PR 时重新审视了 llm-echo 调试插件。该插件提供一个不涉及 LLM 的“model”，仅回显输入的 prompt。新版本更新了模拟 token 用量统计，将 tool calls、system prompts 和 reasoning tokens 纳入计算。示例用法：uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage 输出：First I consider the prompt, then I decide what to say. { "prompt": "hi there", "system": "", "attachments": [], "stream": true, "previous": [] } Token usage: 2 input, 24 output 标签：llm</div>
+<div class="content">Jeremy Scheff的讣文精准捕捉了coding agents给职业程序员带来的关键损失——那些享受开发代码解谜乐趣的人。编程曾是最理想的工作之一：你拿钱解决巧妙的小逻辑谜题，越难越赚钱，甚至简单谜题也很值钱，因为普通人做不了，他们需要我们。我们按自己的方式解决问题，制定策略、时间线，定义什么可行什么不可行。如果你热衷于构建可运行系统、不太在意沿途解决的问题，LLM就是源源不断的礼物。</div>
 </div>
 <div class="article">
-<h2><a href="https://simonwillison.net/2026/Oct/17/document-currentscript/" target="_blank" rel="noopener">使用 document.currentScript 进行内联渲染</a></h2>
+<h2><a href="https://openai.com/index/low-resource-programming-languages" target="_blank" rel="noopener">推进低资源编程语言的编码发展</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-19 20:00</span>
+    <span>🔗 <a href="https://openai.com/index/low-resource-programming-languages" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI正在改进ChatGPT对低资源编程语言的支持，新增了针对软件工程、SQLite和COBOL迁移的评估。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/17/web-edit/" target="_blank" rel="noopener">网页编辑 0.1a2</a></h2>
 <div class="source">
     <span>📰 Simon Willison&#x27;s Weblog</span>
-    <span>🕐 2026-10-18 05:11</span>
-    <span>🔗 <a href="https://simonwillison.net/2026/Oct/17/document-currentscript/" target="_blank" rel="noopener">原文</a></span>
+    <span>🕐 2026-10-17 21:16</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/17/web-edit/" target="_blank" rel="noopener">原文</a></span>
 </div>
-<div class="content">利用document.currentScript进行内联渲染：Lean Rada描述了一个利用document.currentScript属性的巧妙技巧。你可以借此插入一个微小的内联&lt;script&gt;元素，在页面加载时替换自身：年份是&lt;script&gt; document.currentScript.replaceWith( new Date().getFullYear())&lt;/script&gt;。如果定义如下快捷函数：$=(...n)=&gt;document.currentScript.replaceWith(...n)，你就得到了一个微型模板语言：年份是&lt;script&gt;$(new Date().getFullYear())&lt;/script&gt;。标签：javascript</div>
+<div class="content">发布：web-edit 0.1a2。web-edit（前身）是我开发的一个小型 Web 应用，用于浏览和编辑文件夹中的文件。我主要构建它是为了通过 Tailscale 在不同机器上编辑文件。我为文本和图像数据都添加了“复制到剪贴板”选项。我需要这个功能，因为我在笔记本电脑上通过手机运行 pelican prompts（这里是 DeepSeek 4.1 Flash 1017），想要一种简便的方式将生成的日志复制到 Gist 中。标签：projects、pelican-riding-a-bicycle、deepseek</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/16/code-review/" target="_blank" rel="noopener">引用 Addy Osmani、Morgan Westlee Lunt 和 Qing Wang 的话</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-17 06:06</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/16/code-review/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我们认为“人类是否读过代码？”并不能精确反映“这次改动可能出什么问题，哪种检查——自动或人工——才是发现它的正确方式？”追问这个问题也改变了 review 发生的时机。过去，review 是终点关卡：写代码、开 PR、等同事。如今，review 持续运行，更像写作时的拼写检查。大多数改动在被要求人工查看前，已由 Claude 至少 review 并修复过一次。这能捕获多数常规错误，把团队注意力留给更高层的问题与审查。—— Addy Osmani、Morgan Westlee Lunt 和 Qing Wang，《Claude Code 团队如何做代码审查》 标签：anthropic、claude、ai、claude-code、llms、addy-osmani、coding-agents、generative-ai……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/itau-generative-ai" target="_blank" rel="noopener">Itaú如何为其全体客户群构建生成式AI</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-17 03:00</span>
+    <span>🔗 <a href="https://openai.com/index/itau-generative-ai" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Itaú正在巴西监管最严格的行业之一中，通过ia.i对话界面和IARA治理平台，将AI First战略应用于客户和员工。</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/bringing-elastically-deterministic-data-loading-to-torchtitan-with-zephon/" target="_blank" rel="noopener">将弹性确定性数据加载引入 TorchTitan 与 Zephon</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-10-17 00:30</span>
+    <span>🔗 <a href="https://pytorch.org/blog/bringing-elastically-deterministic-data-loading-to-torchtitan-with-zephon/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">为什么选择Zephon？模型在训练期间所见的数据是影响其性能的最有力杠杆之一。改进模型的许多日常工作发生在数据侧：我们改变数据混合比例、所应用的过滤器，或样本的tokenize和打包方式，然后运行消融实验来检验改动是否有帮助。首要问题在于，这些改动中的每一项通常都要求我们对训练语料做一次完整遍历，并运行昂贵的离线操作来准备数据、将其存储到磁盘上，之后消融实验才能运行。由于一次典型的训练运行恰好只读取该副本一次，且大多数实验最终并未产出更好的模型，我们便花费了大量时间和存储来创建……</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/nvidia/scaling-indic-pretraining" target="_blank" rel="noopener">扩展印度语预训练：2.8万亿Token与开放数据生成流程</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-10-16 09:44</span>
+    <span>🔗 <a href="https://huggingface.co/blog/nvidia/scaling-indic-pretraining" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/stack-overflow-chatgpt-plugin" target="_blank" rel="noopener">面向代理的 Stack Overflow 借助 ChatGPT 插件使注册量增至三倍</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-16 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/stack-overflow-chatgpt-plugin" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">两名工程师借助Codex在几周内构建了Stack Overflow for Agents，其ChatGPT plugin推动agent创建量增长高达10倍。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/benefit-street-partners" target="_blank" rel="noopener">Benefit Street Partners 借助 Codex 更快解答问题</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-10-16 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/benefit-street-partners" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Anant Kumar 构建了用于比较贷款估值和分析信贷协议的工具，利用 Codex 进行代码审查并加快后续跟进。</div>
 </div>
     <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
         由 Hermes Agent 自动生成 · AI 日报
