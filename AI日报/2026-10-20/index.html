@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-10-20</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-10-20</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-10-20</div>
+    <div class="article">
+<h2><a href="https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/" target="_blank" rel="noopener">GenRecs 分词：以稳定模型词表革新 Meta 广告推荐</a></h2>
+<div class="source">
+    <span>📰 Engineering at Meta</span>
+    <span>🕐 2026-10-20 00:00</span>
+    <span>🔗 <a href="https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Generative Recommenders（GenRecs）代表了一种范式转变：不再对每个广告逐一评分，而是结合广告内容与用户偏好进行推理，以预测广告主的最佳结果。借助LLM内置的世界知识，广告匹配变得更智能、更精准，为广告主带来叠加收益。GenRecs Tokenization是实现这一目标的基础数据表示方式。它不再为每个item维护专属ID，而是用来自稳定语义词表的token集合表示每个item。结合Meta的Generative Ads Model（GEM）与Meta的Adaptive Ranking Model，GenRecs Tokenization为广告主在各场景带来了+0.35%的转化提升。GenRecs改进了Meta广告推荐的方式……</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/" target="_blank" rel="noopener">一次搜索，两层结构：使用 NVIDIA CompileIQ 在 PyTorch Helion 内部实现编译器控制</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-10-19 23:45</span>
+    <span>🔗 <a href="https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Helion 去年发布，目标是让开发者用 PyTorch 原生 Python 编写 GPU kernel，并由其强大的 autotuner 完成过去需要手写 Triton 才能完成的工作，同时抽象掉硬件相关的实现细节。Helion 的 autotuner 会探索数千种 kernel 配置，通常能达到专家调优代码的几个百分点以内，甚至经常超越。现在需要回答的问题是：如果一个 kernel 已经过 autotune 并优化到开发者能力所及的最佳状态，还有什么可做的吗？有。它位于 kernel 之下，在编译器里。生态系统中的每个 kernel autotuner——无论是 Helion 的、Triton 的，还是 torch.compile 内部的——搜索的都是同样的东西：tile 形状、warp 数量……</div>
+</div>
+<div class="article">
+<h2><a href="https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/" target="_blank" rel="noopener">薄编排器：如何通过减少路由器的职责让我们的AI代理更可靠</a></h2>
+<div class="source">
+    <span>📰 Engineering at Meta</span>
+    <span>🕐 2026-10-19 23:30</span>
+    <span>🔗 <a href="https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">有时，为AI agent提供其所需的全部知识并非正确做法。在Meta，我们通过刻意保持数据管道agent编排层的精简，在效率和准确性上取得了显著提升：编排层负责路由工作并执行可靠性检查，而由专业化agent负责领域推理。我们分享自身流程与洞见，以及任何团队如何将其应用于生产环境AI agent。我们构建了一个1,300行的orchestrator，将20多个工作流路由至14个专业化AI agent，其自身不执行任何领域工作——这正是关键所在。最初我们将AI agent部署用于自动化Meta推荐系统中的数据列接入流程，该流程横跨三个代码仓库、三种编程语言以及多达六个管道阶段……</div>
+</div>
+<div class="article">
+<h2><a href="https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/" target="_blank" rel="noopener">深入Prometheus：Meta迈向吉瓦级超级集群之旅</a></h2>
+<div class="source">
+    <span>📰 Engineering at Meta</span>
+    <span>🕐 2026-10-19 21:00</span>
+    <span>🔗 <a href="https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">随着Muse系列基础模型的发布，我们带您深入了解支撑这一切的基础设施。Prometheus超级集群第一阶段已完成，正扩展至约100万块GPU，并采用闭环液冷等技术提升效率。目前Meta在俄亥俄州New Albany推进迄今最雄心勃勃的AI基础设施项目——Prometheus千兆瓦级超级集群，用于训练下一代基础模型，为数以十亿计的用户带来全新AI体验。两年前，New Albany还只是一个运行网络流量的常规数据中心站点。</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/" target="_blank" rel="noopener">推出 TorchNeuron：AWS Trainium 的原生 PyTorch 后端</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-10-19 20:45</span>
+    <span>🔗 <a href="https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">前沿模型涵盖语言、视频和音频，架构从稠密和混合专家 transformer 到 diffusion、state-space、world 和 structure-prediction 模型。PyTorch 是 AI 研究的发生地，是模型定义之处，也日益成为生产部署的场所。研究者希望实验和创新，客户希望 AWS Trainium 提供的性能来达成其性能和规模目标。训练和 serving 库针对 PyTorch 自身 API 编写，新库和新版本持续发布。过去几年，PyTorch 使这些 API 与加速器无关，并提供官方扩展点用于注册自定义硬件。如今，为满足开发者和研究日益增长的需求……</div>
+</div>
+<div class="article">
+<h2><a href="https://jack-clark.net/2026/10/19/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun/" target="_blank" rel="noopener">导入AI 477：我向国际货币基金组织宣告奇点已至</a></h2>
+<div class="source">
+    <span>📰 Import AI</span>
+    <span>🕐 2026-10-19 20:31</span>
+    <span>🔗 <a href="https://jack-clark.net/2026/10/19/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">欢迎阅读Import AI，这是一份关于AI研究的通讯。Import AI依托arXiv、卡布奇诺咖啡和读者反馈运营。若您愿意支持，请订阅。立即订阅。以下是我于10月17日（周六）在曼谷IMF会议上发表的演讲。本次演讲的灵感源自读者今年见我报道的一大趋势：AI开始在前沿人类科学领域运作，有时甚至是自主运作。尽管我们可能对细节各执一词，但我认为显而易见的是，我们正处于singularity的早期阶段。我想利用发表Per Jacobsson讲座这一难得机会，尽力告诉齐聚一堂的经济学家、银行家和政策制定者：他们应预期未来将发生重大而迅速的变化。在本次演讲中，我重点聚焦……</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/hf-torchneuron" target="_blank" rel="noopener">TorchNeuron：在 AWS Trainium 上运行 HF 模型比以往更简单</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-10-19 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/hf-torchneuron" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">TorchNeuron 为 AWS Trainium 上的 PyTorch 提供了新的原生后端，使在 Trainium 上运行模型并在 HF hub 上共享变得前所未有的简单。TorchNeuron 是一个 PyTorch 插件，为 Trainium 带来新后端，支持 eager 模式、`torch.compile` 以及 FSDP、TP 等原生分布式 API。自 2026 年 10 月 20 日起，TorchNeuron 将作为公开测试版发布，研究人员和开发者可通过 `pip install torch-neuronx` 安装。Transformers、Diffusers 和 Kernels 原生支持该后端。此前，Hugging Face 在 AWS Trainium 和 Inferentia 上的体验……</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/18/llm-tools-datasette/" target="_blank" rel="noopener">llm-tools-datasette 0.1.1</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-19 07:43</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/18/llm-tools-datasette/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：llm-tools-datasette 0.1.1。在 LLM 0.33 中将 LLM 切换到 httpx2 时，我忘了这会破坏那些使用 httpx 但未直接依赖它的插件。llm-tools-datasette 就是其中之一，现已修复。标签：datasette、llm</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/18/llm-echo/" target="_blank" rel="noopener">llm-echo 0.5</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-19 07:16</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/18/llm-echo/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Release: llm-echo 0.5 我正在准备新的 LLM 版本，测试 PR 时重新审视了 llm-echo 调试插件。该插件提供一个不涉及 LLM 的“model”，仅回显输入的 prompt。新版本更新了模拟 token 用量统计，将 tool calls、system prompts 和 reasoning tokens 纳入计算。示例用法：uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage 输出：First I consider the prompt, then I decide what to say. { "prompt": "hi there", "system": "", "attachments": [], "stream": true, "previous": [] } Token usage: 2 input, 24 output 标签：llm</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Oct/17/document-currentscript/" target="_blank" rel="noopener">使用 document.currentScript 进行内联渲染</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-10-18 05:11</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Oct/17/document-currentscript/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">利用document.currentScript进行内联渲染：Lean Rada描述了一个利用document.currentScript属性的巧妙技巧。你可以借此插入一个微小的内联&lt;script&gt;元素，在页面加载时替换自身：年份是&lt;script&gt; document.currentScript.replaceWith( new Date().getFullYear())&lt;/script&gt;。如果定义如下快捷函数：$=(...n)=&gt;document.currentScript.replaceWith(...n)，你就得到了一个微型模板语言：年份是&lt;script&gt;$(new Date().getFullYear())&lt;/script&gt;。标签：javascript</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
