@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-20",
+  "generated_at": "2026-10-21",
   "summary": {
-    "total_cost_7d": 0.0383,
-    "total_cost_30d": 0.4546,
-    "avg_daily_cost_7d": 0.0055,
-    "avg_daily_input_tokens": 27888,
-    "avg_daily_output_tokens": 5620
+    "total_cost_7d": 0.0303,
+    "total_cost_30d": 0.4422,
+    "avg_daily_cost_7d": 0.0043,
+    "avg_daily_input_tokens": 23020,
+    "avg_daily_output_tokens": 3948
   },
   "deepseek_balance": {
     "usd": 0.0,
-    "cny": 43.2
+    "cny": 43.13
   },
   "pricing": {
     "deepseek-v4-flash": {
@@ -35,58 +35,30 @@
   },
   "daily": [
     {
-      "date": "2026-08-21",
-      "sessions": 3,
-      "messages": 22,
-      "tool_calls": 9,
-      "input_tokens": 26611,
-      "output_tokens": 2737,
-      "reasoning_tokens": 0,
-      "cache_read": 113280,
-      "cache_write": 0,
-      "computed_cost": 0.0044919,
-      "estimated_cost_usd": 0.0,
-      "actual_cost_usd": 0.0,
-      "models": {
-        "deepseek-v4-flash": {
-          "input_tokens": 26611,
-          "output_tokens": 2737,
-          "cost": 0.0044919,
-          "sessions": 3
-        }
-      },
-      "sources": {
-        "cron": {
-          "sessions": 3,
-          "cost": 0.0044919
-        }
-      }
-    },
-    {
       "date": "2026-08-22",
-      "sessions": 8,
-      "messages": 55,
-      "tool_calls": 23,
-      "input_tokens": 84137,
-      "output_tokens": 10616,
+      "sessions": 7,
+      "messages": 43,
+      "tool_calls": 17,
+      "input_tokens": 72889,
+      "output_tokens": 6850,
       "reasoning_tokens": 0,
-      "cache_read": 216832,
+      "cache_read": 181248,
       "cache_write": 0,
-      "computed_cost": 0.014751660000000003,
+      "computed_cost": 0.01212246,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 84137,
-          "output_tokens": 10616,
-          "cost": 0.014751660000000003,
-          "sessions": 8
+          "input_tokens": 72889,
+          "output_tokens": 6850,
+          "cost": 0.01212246,
+          "sessions": 7
         }
       },
       "sources": {
         "cron": {
-          "sessions": 8,
-          "cost": 0.014751660000000003
+          "sessions": 7,
+          "cost": 0.01212246
         }
       }
     },
@@ -1452,29 +1424,57 @@
     },
     {
       "date": "2026-10-20",
-      "sessions": 6,
-      "messages": 30,
-      "tool_calls": 11,
-      "input_tokens": 19812,
-      "output_tokens": 7604,
+      "sessions": 9,
+      "messages": 64,
+      "tool_calls": 25,
+      "input_tokens": 57218,
+      "output_tokens": 11835,
       "reasoning_tokens": 0,
-      "cache_read": 157824,
+      "cache_read": 302592,
       "cache_write": 0,
-      "computed_cost": 0.0049028000000000006,
+      "computed_cost": 0.01132432,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 19812,
-          "output_tokens": 7604,
-          "cost": 0.0049028000000000006,
-          "sessions": 6
+          "input_tokens": 57218,
+          "output_tokens": 11835,
+          "cost": 0.01132432,
+          "sessions": 9
         }
       },
       "sources": {
         "cron": {
-          "sessions": 6,
-          "cost": 0.0049028000000000006
+          "sessions": 9,
+          "cost": 0.01132432
+        }
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "sessions": 1,
+      "messages": 0,
+      "tool_calls": 0,
+      "input_tokens": 5686,
+      "output_tokens": 343,
+      "reasoning_tokens": 0,
+      "cache_read": 4608,
+      "cache_write": 0,
+      "computed_cost": 0.0008920800000000002,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "models": {
+        "deepseek-v4-flash": {
+          "input_tokens": 5686,
+          "output_tokens": 343,
+          "cost": 0.0008920800000000002,
+          "sessions": 1
+        }
+      },
+      "sources": {
+        "cron": {
+          "sessions": 1,
+          "cost": 0.0008920800000000002
         }
       }
     }
