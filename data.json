@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-24",
+  "generated_at": "2026-10-25",
   "summary": {
-    "total_cost_7d": 0.0627,
-    "total_cost_30d": 0.3314,
-    "avg_daily_cost_7d": 0.009,
-    "avg_daily_input_tokens": 43777,
-    "avg_daily_output_tokens": 10091
+    "total_cost_7d": 0.0686,
+    "total_cost_30d": 0.3249,
+    "avg_daily_cost_7d": 0.0098,
+    "avg_daily_input_tokens": 48060,
+    "avg_daily_output_tokens": 10994
   },
   "deepseek_balance": {
-    "usd": 0.0,
-    "cny": 40.42
+    "cny": 40.32,
+    "usd": 0.0
   },
   "pricing": {
     "deepseek-v4-flash": {
@@ -35,58 +35,30 @@
   },
   "daily": [
     {
-      "date": "2026-08-25",
-      "sessions": 3,
-      "messages": 25,
-      "tool_calls": 10,
-      "input_tokens": 23294,
-      "output_tokens": 3058,
-      "reasoning_tokens": 0,
-      "cache_read": 96128,
-      "cache_write": 0,
-      "computed_cost": 0.0041174,
-      "estimated_cost_usd": 0.0,
-      "actual_cost_usd": 0.0,
-      "models": {
-        "deepseek-v4-flash": {
-          "input_tokens": 23294,
-          "output_tokens": 3058,
-          "cost": 0.0041174,
-          "sessions": 3
-        }
-      },
-      "sources": {
-        "cron": {
-          "sessions": 3,
-          "cost": 0.0041174
-        }
-      }
-    },
-    {
       "date": "2026-08-26",
-      "sessions": 8,
-      "messages": 70,
-      "tool_calls": 29,
-      "input_tokens": 83207,
-      "output_tokens": 14653,
+      "sessions": 7,
+      "messages": 55,
+      "tool_calls": 22,
+      "input_tokens": 71640,
+      "output_tokens": 10339,
       "reasoning_tokens": 0,
-      "cache_read": 356224,
+      "cache_read": 302208,
       "cache_write": 0,
-      "computed_cost": 0.01575182,
+      "computed_cost": 0.01292452,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 83207,
-          "output_tokens": 14653,
-          "cost": 0.01575182,
-          "sessions": 8
+          "input_tokens": 71640,
+          "output_tokens": 10339,
+          "cost": 0.01292452,
+          "sessions": 7
         }
       },
       "sources": {
         "cron": {
-          "sessions": 8,
-          "cost": 0.01575182
+          "sessions": 7,
+          "cost": 0.01292452
         }
       }
     },
@@ -1452,29 +1424,57 @@
     },
     {
       "date": "2026-10-24",
-      "sessions": 6,
-      "messages": 38,
-      "tool_calls": 15,
-      "input_tokens": 40387,
-      "output_tokens": 14712,
+      "sessions": 9,
+      "messages": 103,
+      "tool_calls": 47,
+      "input_tokens": 65298,
+      "output_tokens": 20676,
       "reasoning_tokens": 0,
-      "cache_read": 346752,
+      "cache_read": 581632,
       "cache_write": 0,
-      "computed_cost": 0.00977354,
+      "computed_cost": 0.014931000000000002,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 40387,
-          "output_tokens": 14712,
-          "cost": 0.00977354,
-          "sessions": 6
+          "input_tokens": 65298,
+          "output_tokens": 20676,
+          "cost": 0.014931000000000002,
+          "sessions": 9
         }
       },
       "sources": {
         "cron": {
-          "sessions": 6,
-          "cost": 0.00977354
+          "sessions": 9,
+          "cost": 0.014931000000000002
+        }
+      }
+    },
+    {
+      "date": "2026-10-25",
+      "sessions": 1,
+      "messages": 0,
+      "tool_calls": 0,
+      "input_tokens": 5069,
+      "output_tokens": 361,
+      "reasoning_tokens": 0,
+      "cache_read": 4608,
+      "cache_write": 0,
+      "computed_cost": 0.00081074,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "models": {
+        "deepseek-v4-flash": {
+          "input_tokens": 5069,
+          "output_tokens": 361,
+          "cost": 0.00081074,
+          "sessions": 1
+        }
+      },
+      "sources": {
+        "cron": {
+          "sessions": 1,
+          "cost": 0.00081074
         }
       }
     }
