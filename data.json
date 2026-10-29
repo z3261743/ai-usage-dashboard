@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-28",
+  "generated_at": "2026-10-29",
   "summary": {
-    "total_cost_7d": 0.089,
-    "total_cost_30d": 0.3261,
-    "avg_daily_cost_7d": 0.0127,
-    "avg_daily_input_tokens": 60809,
-    "avg_daily_output_tokens": 15024
+    "total_cost_7d": 0.0796,
+    "total_cost_30d": 0.3159,
+    "avg_daily_cost_7d": 0.0114,
+    "avg_daily_input_tokens": 54874,
+    "avg_daily_output_tokens": 13194
   },
   "deepseek_balance": {
     "usd": 0.0,
-    "cny": 39.66
+    "cny": 39.37
   },
   "pricing": {
     "deepseek-v4-flash": {
@@ -35,58 +35,30 @@
   },
   "daily": [
     {
-      "date": "2026-08-29",
-      "sessions": 2,
-      "messages": 9,
-      "tool_calls": 3,
-      "input_tokens": 21659,
-      "output_tokens": 616,
-      "reasoning_tokens": 0,
-      "cache_read": 49536,
-      "cache_write": 0,
-      "computed_cost": 0.0032047400000000006,
-      "estimated_cost_usd": 0.0,
-      "actual_cost_usd": 0.0,
-      "models": {
-        "deepseek-v4-flash": {
-          "input_tokens": 21659,
-          "output_tokens": 616,
-          "cost": 0.0032047400000000006,
-          "sessions": 2
-        }
-      },
-      "sources": {
-        "cron": {
-          "sessions": 2,
-          "cost": 0.0032047400000000006
-        }
-      }
-    },
-    {
       "date": "2026-08-30",
-      "sessions": 8,
-      "messages": 61,
-      "tool_calls": 24,
-      "input_tokens": 58328,
-      "output_tokens": 13668,
+      "sessions": 7,
+      "messages": 46,
+      "tool_calls": 17,
+      "input_tokens": 47187,
+      "output_tokens": 9798,
       "reasoning_tokens": 0,
-      "cache_read": 310016,
+      "cache_read": 257664,
       "cache_write": 0,
-      "computed_cost": 0.01199296,
+      "computed_cost": 0.009349620000000001,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 58328,
-          "output_tokens": 13668,
-          "cost": 0.01199296,
-          "sessions": 8
+          "input_tokens": 47187,
+          "output_tokens": 9798,
+          "cost": 0.009349620000000001,
+          "sessions": 7
         }
       },
       "sources": {
         "cron": {
-          "sessions": 8,
-          "cost": 0.01199296
+          "sessions": 7,
+          "cost": 0.009349620000000001
         }
       }
     },
@@ -1444,29 +1416,57 @@
     },
     {
       "date": "2026-10-28",
-      "sessions": 8,
-      "messages": 84,
-      "tool_calls": 37,
-      "input_tokens": 50195,
-      "output_tokens": 14588,
+      "sessions": 9,
+      "messages": 121,
+      "tool_calls": 56,
+      "input_tokens": 66095,
+      "output_tokens": 16898,
       "reasoning_tokens": 0,
-      "cache_read": 581248,
+      "cache_read": 687872,
       "cache_write": 0,
-      "computed_cost": 0.01111194,
+      "computed_cost": 0.013984740000000002,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 50195,
-          "output_tokens": 14588,
-          "cost": 0.01111194,
-          "sessions": 8
+          "input_tokens": 66095,
+          "output_tokens": 16898,
+          "cost": 0.013984740000000002,
+          "sessions": 9
         }
       },
       "sources": {
         "cron": {
-          "sessions": 8,
-          "cost": 0.01111194
+          "sessions": 9,
+          "cost": 0.013984740000000002
+        }
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "sessions": 1,
+      "messages": 0,
+      "tool_calls": 0,
+      "input_tokens": 4856,
+      "output_tokens": 314,
+      "reasoning_tokens": 0,
+      "cache_read": 4608,
+      "cache_write": 0,
+      "computed_cost": 0.00076776,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "models": {
+        "deepseek-v4-flash": {
+          "input_tokens": 4856,
+          "output_tokens": 314,
+          "cost": 0.00076776,
+          "sessions": 1
+        }
+      },
+      "sources": {
+        "cron": {
+          "sessions": 1,
+          "cost": 0.00076776
         }
       }
     }
