@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-29",
+  "generated_at": "2026-10-30",
   "summary": {
-    "total_cost_7d": 0.0871,
-    "total_cost_30d": 0.3233,
-    "avg_daily_cost_7d": 0.0124,
-    "avg_daily_input_tokens": 60495,
-    "avg_daily_output_tokens": 14185
+    "total_cost_7d": 0.0797,
+    "total_cost_30d": 0.3199,
+    "avg_daily_cost_7d": 0.0114,
+    "avg_daily_input_tokens": 55781,
+    "avg_daily_output_tokens": 12793
   },
   "deepseek_balance": {
-    "cny": 39.24,
+    "cny": 39.19,
     "usd": 0.0
   },
   "pricing": {
@@ -35,58 +35,30 @@
   },
   "daily": [
     {
-      "date": "2026-08-30",
-      "sessions": 3,
-      "messages": 18,
-      "tool_calls": 6,
-      "input_tokens": 22271,
-      "output_tokens": 2906,
-      "reasoning_tokens": 0,
-      "cache_read": 81152,
-      "cache_write": 0,
-      "computed_cost": 0.00393162,
-      "estimated_cost_usd": 0.0,
-      "actual_cost_usd": 0.0,
-      "models": {
-        "deepseek-v4-flash": {
-          "input_tokens": 22271,
-          "output_tokens": 2906,
-          "cost": 0.00393162,
-          "sessions": 3
-        }
-      },
-      "sources": {
-        "cron": {
-          "sessions": 3,
-          "cost": 0.00393162
-        }
-      }
-    },
-    {
       "date": "2026-08-31",
-      "sessions": 8,
-      "messages": 92,
-      "tool_calls": 41,
-      "input_tokens": 87638,
-      "output_tokens": 19392,
+      "sessions": 7,
+      "messages": 55,
+      "tool_calls": 23,
+      "input_tokens": 73212,
+      "output_tokens": 11316,
       "reasoning_tokens": 0,
-      "cache_read": 511616,
+      "cache_read": 286208,
       "cache_write": 0,
-      "computed_cost": 0.01769908,
+      "computed_cost": 0.01341816,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 87638,
-          "output_tokens": 19392,
-          "cost": 0.01769908,
-          "sessions": 8
+          "input_tokens": 73212,
+          "output_tokens": 11316,
+          "cost": 0.01341816,
+          "sessions": 7
         }
       },
       "sources": {
         "cron": {
-          "sessions": 8,
-          "cost": 0.01769908
+          "sessions": 7,
+          "cost": 0.01341816
         }
       }
     },
@@ -1444,29 +1416,57 @@
     },
     {
       "date": "2026-10-29",
-      "sessions": 6,
-      "messages": 34,
-      "tool_calls": 13,
-      "input_tokens": 44204,
-      "output_tokens": 7249,
+      "sessions": 9,
+      "messages": 74,
+      "tool_calls": 30,
+      "input_tokens": 70070,
+      "output_tokens": 11677,
       "reasoning_tokens": 0,
-      "cache_read": 185088,
+      "cache_read": 323712,
       "cache_write": 0,
-      "computed_cost": 0.008218280000000001,
+      "computed_cost": 0.013079360000000002,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 44204,
-          "output_tokens": 7249,
-          "cost": 0.008218280000000001,
-          "sessions": 6
+          "input_tokens": 70070,
+          "output_tokens": 11677,
+          "cost": 0.013079360000000002,
+          "sessions": 9
         }
       },
       "sources": {
         "cron": {
-          "sessions": 6,
-          "cost": 0.008218280000000001
+          "sessions": 9,
+          "cost": 0.013079360000000002
+        }
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "sessions": 1,
+      "messages": 0,
+      "tool_calls": 0,
+      "input_tokens": 5553,
+      "output_tokens": 342,
+      "reasoning_tokens": 0,
+      "cache_read": 4608,
+      "cache_write": 0,
+      "computed_cost": 0.0008731800000000001,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "models": {
+        "deepseek-v4-flash": {
+          "input_tokens": 5553,
+          "output_tokens": 342,
+          "cost": 0.0008731800000000001,
+          "sessions": 1
+        }
+      },
+      "sources": {
+        "cron": {
+          "sessions": 1,
+          "cost": 0.0008731800000000001
         }
       }
     }
