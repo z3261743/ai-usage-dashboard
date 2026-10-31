@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-30",
+  "generated_at": "2026-10-31",
   "summary": {
-    "total_cost_7d": 0.0853,
-    "total_cost_30d": 0.3255,
-    "avg_daily_cost_7d": 0.0122,
-    "avg_daily_input_tokens": 59609,
-    "avg_daily_output_tokens": 13734
+    "total_cost_7d": 0.077,
+    "total_cost_30d": 0.3181,
+    "avg_daily_cost_7d": 0.011,
+    "avg_daily_input_tokens": 55422,
+    "avg_daily_output_tokens": 11562
   },
   "deepseek_balance": {
     "usd": 0.0,
-    "cny": 38.35
+    "cny": 38.29
   },
   "pricing": {
     "deepseek-v4-flash": {
@@ -35,58 +35,30 @@
   },
   "daily": [
     {
-      "date": "2026-08-31",
-      "sessions": 3,
-      "messages": 23,
-      "tool_calls": 9,
-      "input_tokens": 27138,
-      "output_tokens": 3581,
-      "reasoning_tokens": 0,
-      "cache_read": 112896,
-      "cache_write": 0,
-      "computed_cost": 0.004802000000000001,
-      "estimated_cost_usd": 0.0,
-      "actual_cost_usd": 0.0,
-      "models": {
-        "deepseek-v4-flash": {
-          "input_tokens": 27138,
-          "output_tokens": 3581,
-          "cost": 0.004802000000000001,
-          "sessions": 3
-        }
-      },
-      "sources": {
-        "cron": {
-          "sessions": 3,
-          "cost": 0.004802000000000001
-        }
-      }
-    },
-    {
       "date": "2026-09-01",
-      "sessions": 8,
-      "messages": 60,
-      "tool_calls": 25,
-      "input_tokens": 83915,
-      "output_tokens": 13614,
+      "sessions": 7,
+      "messages": 49,
+      "tool_calls": 20,
+      "input_tokens": 72495,
+      "output_tokens": 9783,
       "reasoning_tokens": 0,
-      "cache_read": 283136,
+      "cache_read": 252160,
       "cache_write": 0,
-      "computed_cost": 0.01556002,
+      "computed_cost": 0.012888540000000002,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 83915,
-          "output_tokens": 13614,
-          "cost": 0.01556002,
-          "sessions": 8
+          "input_tokens": 72495,
+          "output_tokens": 9783,
+          "cost": 0.012888540000000002,
+          "sessions": 7
         }
       },
       "sources": {
         "cron": {
-          "sessions": 8,
-          "cost": 0.01556002
+          "sessions": 7,
+          "cost": 0.012888540000000002
         }
       }
     },
@@ -1444,29 +1416,57 @@
     },
     {
       "date": "2026-10-30",
-      "sessions": 6,
-      "messages": 33,
-      "tool_calls": 13,
-      "input_tokens": 32348,
-      "output_tokens": 6928,
+      "sessions": 9,
+      "messages": 71,
+      "tool_calls": 29,
+      "input_tokens": 63482,
+      "output_tokens": 12077,
       "reasoning_tokens": 0,
-      "cache_read": 204800,
+      "cache_read": 361472,
       "cache_write": 0,
-      "computed_cost": 0.006468560000000001,
+      "computed_cost": 0.01226904,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 32348,
-          "output_tokens": 6928,
-          "cost": 0.006468560000000001,
-          "sessions": 6
+          "input_tokens": 63482,
+          "output_tokens": 12077,
+          "cost": 0.01226904,
+          "sessions": 9
         }
       },
       "sources": {
         "cron": {
-          "sessions": 6,
-          "cost": 0.006468560000000001
+          "sessions": 9,
+          "cost": 0.01226904
+        }
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "sessions": 1,
+      "messages": 0,
+      "tool_calls": 0,
+      "input_tokens": 4851,
+      "output_tokens": 321,
+      "reasoning_tokens": 0,
+      "cache_read": 4608,
+      "cache_write": 0,
+      "computed_cost": 0.00076902,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "models": {
+        "deepseek-v4-flash": {
+          "input_tokens": 4851,
+          "output_tokens": 321,
+          "cost": 0.00076902,
+          "sessions": 1
+        }
+      },
+      "sources": {
+        "cron": {
+          "sessions": 1,
+          "cost": 0.00076902
         }
       }
     }
