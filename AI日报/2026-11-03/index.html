@@ -33,6 +33,102 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-11-03</div>
     <div class="article">
+<h2><a href="https://pytorch.org/blog/kvcache-meetup-korea-2026-event-recap/" target="_blank" rel="noopener">KVCache 韩国聚会 2026：活动回顾</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-11-03 17:22</span>
+    <span>🔗 <a href="https://pytorch.org/blog/kvcache-meetup-korea-2026-event-recap/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">2026年9月30日晚，PyTorchKR与XCENA联合举办了KVCache Meetup Korea。PyTorchKR是韩国主要AI/ML社区，XCENA是专注CXL（Compute Express Link）的初创公司，LMCache背后的公司Tensormesh亦赞助了此次活动。来自XCENA、SK hynix、FuriosaAI和LMCache的演讲者分享了大语言模型（LLM）推理与KV Cache优化方面的工作。LLM推理运行语言模型以生成输出，KV Cache存储注意力数据以便推理时复用。演讲涵盖CXL内存扩展、GPU与高带宽内存（HBM）瓶颈、RNGD上的请求调度以及LMCache MP Mode，展示了硬件与服务软件处理KV Cache的不同方式。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/heimstaden" target="_blank" rel="noopener">Heimstaden 正利用人工智能改变住宅房地产管理</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-03 16:00</span>
+    <span>🔗 <a href="https://openai.com/index/heimstaden" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">了解Heimstaden如何利用OpenAI的ChatGPT Enterprise和Codex，在欧洲范围内变革物业管理、降低成本并赋能员工。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/" target="_blank" rel="noopener">我发现了一种能泄露你确切位置的声音（而且无处不在）- YouTube</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-03 13:32</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我发现一种会泄露你精确位置的声音（而且无处不在）——YouTube。这是Colsto的OSINT佳作，演示了如何从视频音轨中提取几乎不可察觉的飞机背景噪音，计算其多普勒曲线，再结合ADS-B数据，根据飞机的速度、距离以及不同航班之间的间隔，交叉比对以确定视频的精确拍摄位置。Via Lobste.rs 标签：隐私、YouTube</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/3/october-newsletter/" target="_blank" rel="noopener">十月赞助者专属通讯</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-03 13:28</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/3/october-newsletter/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我发布了十月赞助者专属月度通讯。赞助者或新赞助者可在此查看。本月内容：vibe游戏开发的十月拐点、漏洞危机升温、LLM发布每月100美元以上订阅的API额度、我目前正在使用的工具、我的软件发布。九月通讯可在此预览。每月支付10美元即可比免费版提前一个月获取内容。标签：newsletter</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/transformers-mic" target="_blank" rel="noopener">Transformer 模型集成契约</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-11-03 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/transformers-mic" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># Transformers 模型集成契约
+
+2026年7月30日，Transformers 为 T5 启用了 PyTorch 的 scaled dot-product attention (SDPA)。副作用是 UMT5 的 decoder 可能关注到未来 token，训练时可窥见本应预测的答案。程序未崩溃，该 bug 在 main 分支存留近两个月。回放这些 commit 时，一个在 CPU 上运行的小型 UMT5 模型在每个 commit 上都标记出了该问题。本文介绍该模型及围绕它构建的测试。
+
+## 为何 bug 能进入 main
+
+Transformers 支持 750 多种模型类型，测试套件庞大：**main 分支上 88,000+ CPU 测试，每日运行另有 200,000+ GPU 测试。** 模型测试只是其中一部分，还包括 pipeline、训练、分布式执行、量化和 attention kernel 等测试。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/2/llm/" target="_blank" rel="noopener">llm 0.37</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-03 07:49</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/2/llm/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Release: llm 0.37 我的 LLM CLI 工具和 Python 库新版本包含大量内容，代表约两个月积累的功能和修复。我添加了 gpt-6.1-sol 和 gpt-6.1-terra，以及新的 llm openai endpoint add 命令，便于配置使用 OpenAI 兼容端点的额外模型。我将默认模型（若未设置自己的默认）切换为 gpt-6-luna——价格是之前默认 gpt-5.6-luna 的一半。LLM 对 embeddings 的支持现在接受不同二进制内容可能具有不同 content-type——这对 Gemini Embedding 2 等可嵌入文本、音频、图像和视频的模型是必要的。许多开源维护者抱怨 AI 辅助 PR 泛滥。LLM 是我的项目中最……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai" target="_blank" rel="noopener">准备我们的下一次安全冲刺以强化OpenAI</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-03 02:00</span>
+    <span>🔗 <a href="https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI正与Cathedral Systems筹备下一轮内部安全冲刺，利用AI测试并强化其防御能力。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties" target="_blank" rel="noopener">奖励防守者更高的漏洞赏金</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-03 02:00</span>
+    <span>🔗 <a href="https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI 正在提高安全漏洞赏金奖励，并为独立安全研究人员引入报告质量、忠诚度和优先活动奖金。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/scaling-git-at-openai" target="_blank" rel="noopener">在OpenAI扩展Git</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-02 23:30</span>
+    <span>🔗 <a href="https://openai.com/index/scaling-git-at-openai" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI构建了Pando，一个兼容Git的后端，专为Codex所支持的大规模开发而设计。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/dan-driscoll-joins-openai" target="_blank" rel="noopener">OpenAI任命Dan Driscoll为国家安全现代化高级顾问</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-02 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/dan-driscoll-joins-openai" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI任命Dan Driscoll为顾问，负责就国家安全现代化中的负责任AI、网络韧性及与美国盟友的合作提供建议。</div>
+</div>
+<div class="article">
 <h2><a href="https://pytorch.org/blog/announcing-the-special-interest-group-sig-for-ray-on-accelerators/" target="_blank" rel="noopener">宣布 Ray 加速器特别兴趣小组 (SIG)</a></h2>
 <div class="source">
     <span>📰 Blog – PyTorch</span>
