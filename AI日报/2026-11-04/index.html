@@ -33,6 +33,116 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-11-04</div>
     <div class="article">
+<h2><a href="https://huggingface.co/blog/gradio-mcp" target="_blank" rel="noopener">如何使用Gradio构建MCP服务器</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-04-30 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/gradio-mcp" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># 如何用5行Python构建MCP Server
+
+> [!TIP]
+> **更新！（2025年9月）** 本文已更新至最新Gradio MCP功能，包括Resources、Prompts、增强认证等。
+
+Gradio是每月超100万开发者用于构建机器学习模型界面的Python库。除创建UI外，Gradio还提供API能力，现在Gradio应用可作为LLM的Model Context Protocol (MCP) server启动。这意味着你的Gradio应用（如图像生成器、税务计算器等）可被LLM作为工具调用。本指南展示如何用几行Python借助Gradio构建MCP server。
+
+### 前提条件
+如尚未安装，请...</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/sycophancy-in-gpt-4o" target="_blank" rel="noopener">GPT-4o中的谄媚现象：发生了什么及我们的应对措施</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-04-30 02:00</span>
+    <span>🔗 <a href="https://openai.com/index/sycophancy-in-gpt-4o" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我们已回滚上周ChatGPT中GPT-4o的更新，用户现使用行为更均衡的早期版本。被移除的更新过于奉承或顺从——常被描述为sycophantic。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/llama-guard-4" target="_blank" rel="noopener">欢迎 Llama Guard 4 入驻 Hugging Face Hub</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-04-29 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/llama-guard-4" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">TL;DR：Meta 发布 Llama Guard 4（12B dense 多模态安全模型，非 MoE）及两个新版 Llama Prompt Guard 2 模型，提供多个开放模型 checkpoint 和交互式 notebook。模型 checkpoint 见 Llama 4 Collection。
+
+目录：Llama Guard 4 简介、模型详情（Llama Guard 4、Llama Prompt Guard 2）、使用 🤗transformers 入门、实用资源。
+
+Llama Guard 4 简介：生产环境中的视觉和大语言模型可能通过越狱图像和文本提示被利用生成不安全输出，不安全内容包括有害、不当、侵犯隐私或知识产权等。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/autoround" target="_blank" rel="noopener">介绍 AutoRound：英特尔面向 LLM 和 VLM 的高级量化技术</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-04-29 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/autoround" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">随着大语言模型（LLMs）和视觉语言模型（VLMs）规模和复杂度持续增长，高效部署日益困难。量化通过减小模型大小和推理延迟提供解决方案。Intel的AutoRound作为前沿量化工具，兼顾精度、效率与兼容性。# 什么是AutoRound？**AutoRound**是Intel开发的仅权重量化训练后量化（PTQ）方法。它使用符号梯度下降联合优化权重舍入和裁剪范围，在多数场景下实现低比特量化（如INT2-INT8）且精度损失极小。例如在INT2下，其相对精度比流行基线最高提升**2.1倍**。下图展示了...</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/ServiceNow/pipelinerl" target="_blank" rel="noopener">流水线强化学习</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-04-26 06:37</span>
+    <span>🔗 <a href="https://huggingface.co/blog/ServiceNow/pipelinerl" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/tiny-agents" target="_blank" rel="noopener">微型智能体：50行代码实现MCP驱动的智能体</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-04-25 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/tiny-agents" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># Tiny Agents：50行代码实现MCP驱动的agent
+
+> [!WARNING]
+> 新消息！（25年5月23日）如果你偏好Python，请查看配套文章《Tiny Agents in Python》。
+
+过去几周，我深入研究了MCP（Model Context Protocol），想了解它为何备受关注。我的TL;DR是：它相当简单，但依然强大：**MCP是一个标准API，用于暴露可接入LLM的工具集。** 扩展推理客户端相当简单——在HF，我们有两个官方客户端SDK：JS版的`@huggingface/inference`和Python版的`huggingface_hub`——它们也可作为MCP客户端，将MCP服务器提供的可用工具接入LLM推理。但在做这件事时，我有了第二个领悟：
+
+> [!TIP]
+> **一旦你有了MCP客户端，一个Agent就是……**</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/business/new-in-chatgpt-for-business-april-updates-2025" target="_blank" rel="noopener">ChatGPT for Business 四月新动态：2025年4月</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-04-24 08:00</span>
+    <span>🔗 <a href="https://openai.com/business/new-in-chatgpt-for-business-april-updates-2025" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">观看ChatGPT for Business最新功能的实操演示：o3、图像生成、增强记忆和内部知识。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/image-generation-api" target="_blank" rel="noopener">介绍我们API中最新的图像生成模型</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-04-23 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/image-generation-api" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我们最新的图像生成模型现已通过‘gpt-image-1’在API中提供，使开发者和企业能够直接将专业级、可定制的视觉内容构建到自己的工具和平台中。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/tngtech/finetuning-olmocr-to-be-a-faithful-ocr-engine" target="_blank" rel="noopener">微调olmOCR使其成为忠实的OCR引擎</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-04-23 02:33</span>
+    <span>🔗 <a href="https://huggingface.co/blog/tngtech/finetuning-olmocr-to-be-a-faithful-ocr-engine" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/speak-connor-zwick" target="_blank" rel="noopener">Speak 正在利用 AI 实现语言学习个性化</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-04-22 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/speak-connor-zwick" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">与Speak首席执行官兼联合创始人Connor Zwick的对话。</div>
+</div>
+<div class="article">
 <h2><a href="https://huggingface.co/blog/allenai/statebench" target="_blank" rel="noopener">StateBench：测试语言模型如何追踪长文档中的状态变化</a></h2>
 <div class="source">
     <span>📰 Hugging Face - Blog</span>
