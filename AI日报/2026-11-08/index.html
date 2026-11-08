@@ -33,6 +33,112 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-11-08</div>
     <div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/7/link-rel-next/" target="_blank" rel="noopener">datasette #3046：不要向 Firefox 发送 HTML 页面的 link: rel=next HTTP 头</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-08 07:57</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/7/link-rel-next/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Datasette #3046：不为HTML页面向Firefox发送link: rel=next HTTP头。今天查看Firefox网络面板时，我注意到对Datasette表页面的请求触发了对下一页行的HTTP预取。这是因为Datasette页面会发送如下HTTP link头：link: <https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv>; rel="next"。这很糟糕。访问这些页面的用户中只有极少数会点击“next”链接，这意味着他们的浏览器在获取不必要的数据，而Datasette服务器不得不渲染一个随后被丢弃的完整页面。我深入调查后了解到，Firefox有一个关于此问题的issue已经开放了24年……</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/train-reranker" target="_blank" rel="noopener">使用Sentence Transformers训练和微调重排序模型</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-03-26 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/train-reranker" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">使用 Sentence Transformers 训练和微调 Reranker 模型
+
+Sentence Transformers 是一个 Python 库，用于使用和训练 embedding 及 reranker 模型，适用于检索增强生成、语义搜索、语义文本相似度、释义挖掘等多种应用。本博客将展示如何使用它微调 reranker 模型（也称为 cross-encoder），使其在您的特定数据上超越所有现有选项。该方法还可从头训练极强的新 reranker 模型。微调 reranker 模型涉及多个组件：数据集、损失函数、训练参数、评估器和训练器类本身。我将逐一介绍这些组件，并附上实际使用示例……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/introducing-4o-image-generation" target="_blank" rel="noopener">推出4o图像生成</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-25 19:05</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-4o-image-generation" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">2025年发布的GPT-4o引入原生图像生成功能，文本渲染与指令遵循能力更强。探索ChatGPT Images 2.5。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/gpt-4o-image-generation-system-card-addendum" target="_blank" rel="noopener">GPT-4o 系统卡补充说明：4o 图像生成</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-25 19:00</span>
+    <span>🔗 <a href="https://openai.com/index/gpt-4o-image-generation-system-card-addendum" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">4o图像生成是一种全新的、能力显著更强的图像生成方法，优于我们之前的DALL·E 3系列模型。它能生成照片级真实感的输出，还能接收图像作为输入并进行转换。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/hebbia" target="_blank" rel="noopener">用智能体自动化90%的财务和法律工作</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-25 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/hebbia" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Hebbia的deep research由OpenAI驱动，可自动化90%的金融和法律工作。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/leadership-updates-march-2025" target="_blank" rel="noopener">领导层更新</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-24 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/leadership-updates-march-2025" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI已大幅成长。我们仍专注于同一核心——推进前沿AI研究以加速人类进步，但如今我们也提供数亿人使用的产品。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/gradio-dataframe-upgrade" target="_blank" rel="noopener">介绍 Gradio 的新 Dataframe！</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-03-24 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/gradio-dataframe-upgrade" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># Gradio 新 Dataframe 组件介绍
+
+Gradio 的 `gr.Dataframe` 组件是最受欢迎的组件之一，广泛应用于排行榜、仪表盘和交互式可视化等场景。尽管此前较长时间未做改动，但积压的问题不断增多，部分改进需求也由来已久。现在我们非常高兴地发布 Gradio dataframe 组件的一系列新更新。过去 6 周内，我们关闭了 70 多个 dataframe 相关问题，包括 bug、改进和增强。
+
+### 1. 多单元格选择
+现在可以一次选择多个单元格，轻松复制或删除所选范围内的值。
+
+### 2. 行号与列固定
+可添加行号列，并保持……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/affective-use-study" target="_blank" rel="noopener">早期研究ChatGPT情感使用与情绪健康的方法</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-21 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/affective-use-study" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI与MIT Media Lab研究合作。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/endpoint-analytics" target="_blank" rel="noopener">推理端点中的全新分析功能</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-03-21 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/endpoint-analytics" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># 分析很重要
+
+分析与指标是理解部署运行状况的基石。您的 Inference Endpoints 是否过载？它们正在处理多少请求？实时展示良好可视化的相关指标对于监控和调试至关重要。我们意识到分析仪表盘需要更新。由于我们自己也要调试大量 endpoint，因此感同身受用户的痛点。正因如此，我们坐下来规划并做出了多项改进，为您提供更好的体验。
+
+# 新变化？
+
+⏰ 实时指标：数据现已实时更新，确保您获得准确、精确到秒的 endpoint 性能视图。无论您是在监控请求延迟、响应时间还是错误率，现在都可以看到……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/booking-com" target="_blank" rel="noopener">利用OpenAI实现大规模个性化旅行体验</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-21 07:00</span>
+    <span>🔗 <a href="https://openai.com/index/booking-com" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Booking.com将其数据系统与OpenAI的LLMs集成，提供更智能的搜索、更快速的支持以及意图驱动的旅行体验。</div>
+</div>
+<div class="article">
 <h2><a href="https://huggingface.co/blog/tngtech/llm-performance-request-queueing" target="_blank" rel="noopener">高效请求排队——优化LLM性能</a></h2>
 <div class="source">
     <span>📰 Hugging Face - Blog</span>
