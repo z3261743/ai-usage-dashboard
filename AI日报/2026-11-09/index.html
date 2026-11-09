@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-11-09</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-11-09</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-11-09</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/" target="_blank" rel="noopener">将 parse_number() 作为 SQLite 扩展：C 与 Rust 对比</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-09 06:26</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">研究：parse_number() 作为 SQLite 扩展：C 与 Rust 对比
+
+我遛狗时好奇：编写一个 SQLite C 扩展来添加 parse_number() 函数有多难？该函数将 -$1,234.56 或 '12.5%' 等字符串转为可求和、排序的数值。我启动 Claude 聊天（Opus 5.5）并提示：我想做一个 SQLite 自定义函数 parse_number(value)，去除 ','、'$'、'£' 和 '%'，处理前导 '-'，无法解析时返回 NULL。请探讨用 C 与 Rust 构建此 SQLite 扩展的差异——比较性能、代码复杂度及生成的 .so 文件大小。这给了我一个……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/introducing-our-next-generation-audio-models" target="_blank" rel="noopener">在API中引入下一代音频模型</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-20 19:00</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-our-next-generation-audio-models" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">首次，开发者可以指示text-to-speech模型以特定方式说话，例如“像有同情心的客服人员那样交谈”，为语音代理开启新的定制水平。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/olympic-coder-lmstudio" target="_blank" rel="noopener">开放 R1：如何在本地使用 OlympicCoder 进行编码</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-03-20 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/olympic-coder-lmstudio" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># Open R1：如何在本地使用 OlympicCoder 进行编码
+
+过去几年，大家一直使用 Claude 和 OpenAI 作为编码助手，但开源项目如 Open R1 的发展使其吸引力下降。从 LiveCodeBench 的评估来看，7B 参数版本的表现优于 Claude 3.7 Sonnet 和 GPT-4o——而这些模型正是许多工程师在 Cursor 和 VSCode 等应用中的日常工具。
+
+评估固然好，但我更想动手实践、感受提交代码的乐趣！本文重点介绍如何立即将这些模型集成到你的 IDE 中。我们将设置 OlympicCoder 7B（两个变体中较小的一个），并使用量化版本以实现最佳的本地推理。以下是技术栈……</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/ai-action-wh-2025" target="_blank" rel="noopener">AI政策@🤗：对白宫AI行动计划信息征询的回应</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-03-19 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/ai-action-wh-2025" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># AI政策@🤗：对白宫AI行动计划信息征询的回应
+
+3月14日，我们就白宫科技政策办公室关于《白宫AI行动计划》的信息征询提交了Hugging Face的回应。我们借此机会（再次）强调开放AI系统和开放科学在使技术更高效、更广泛可靠地被采用以及满足最高安全标准方面的基础性作用。本博文概述了我们的回应内容，全文可在此处查阅。
+
+#### 背景：不要忽视（强）开放模型的能力
+
+开放的AI开发方式不仅（通常）更加透明、适应性强且科学合理，而且一直能够**复现或超越……**</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/eliseai-minna-song" target="_blank" rel="noopener">EliseAI利用AI提升住房和医疗保健效率</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-18 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/eliseai-minna-song" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">与EliseAI首席执行官兼联合创始人Minna Song的对话。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/business/new-in-chatgpt-for-work-march-updates-2025" target="_blank" rel="noopener">ChatGPT for Business 三月新动态：2025年3月</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-18 08:00</span>
+    <span>🔗 <a href="https://openai.com/business/new-in-chatgpt-for-work-march-updates-2025" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">加入我们，了解最新发布，以及ChatGPT如何变得更互动、更贴合团队工作方式，并更具agentic能力。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/xet-on-the-hub" target="_blank" rel="noopener">Xet 已上线 Hub</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-03-18 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/xet-on-the-hub" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># Xet 已上线 Hub
+
+想跳过细节，直接体验更快上传下载和更大文件？点击此处了解加入 Xet 等待名单（或立即加入）。过去几周，Hugging Face 的 Xet 团队取得重大进展，已将首批 Model 和 Dataset 仓库从 LFS 迁移至 Xet 存储。这是实现 Hugging Face Hub 愿景的众多步骤之一，旨在帮助 AI 构建者更高效地开发、迭代和协作处理大规模模型与数据集。如需深入了解相关技术，请参阅以下文章：* From Files to Chunks: Improving Hugging Face Storage Efficiency * Rearchitecting Hugging Face Uploads and Downloads * From Chunks to Blocks:...</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/nvidia-physical-ai" target="_blank" rel="noopener">NVIDIA GTC 2025 面向物理AI开发者的公告：全新开放模型与数据集</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-03-18 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/nvidia-physical-ai" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">在年度GTC大会上，NVIDIA发布三项开源成果以加速physical AI发展：带多控制功能的world foundation models（WFMs）套件**Cosmos Transfer**、精选**Physical AI Dataset**，以及首个通用人形推理开放模型**NVIDIA Isaac GR00T N1**。这些成果为开发者提供强大工具，推动机器人系统与自动驾驶技术发展。Cosmos Transfer是NVIDIA Cosmos™ WFMs的最新成员……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/court-rejects-elon" target="_blank" rel="noopener">法院驳回埃隆拖延OpenAI的最新企图</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-14 17:00</span>
+    <span>🔗 <a href="https://openai.com/index/court-rejects-elon" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我们欢迎法院2025年3月4日的裁决，该裁决驳回了Elon Musk为个人利益而试图延缓OpenAI发展的最新企图。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/ly-corporation" target="_blank" rel="noopener">与OpenAI共同推动增长和创造“WOW”时刻</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-13 02:00</span>
+    <span>🔗 <a href="https://openai.com/index/ly-corporation" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">LY Corporation：借助 OpenAI 推动增长并创造“WOW”时刻</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
