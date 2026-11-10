@@ -33,6 +33,98 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-11-10</div>
     <div class="article">
+<h2><a href="https://openai.com/index/closing-ai-guidance-gap-education" target="_blank" rel="noopener">缩小教育领域的人工智能指导差距</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-10 17:00</span>
+    <span>🔗 <a href="https://openai.com/index/closing-ai-guidance-gap-education" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI欧洲、中东和非洲教育合作的经验及ThinkYoung新研究带来的启示：支持教师、AI素养与自主学习。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/10/muse-ember/" target="_blank" rel="noopener">推出我们最小、最高效的模型：Muse Ember</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-10 15:28</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/10/muse-ember/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Meta AI 发布其入门级模型 Muse Ember，对标 Claude Haiku 与 GPT Luna 类别。官方称其为最小、最高效的模型，专为复杂推理执行及 agent 日常重复工作设计，涵盖 tool calls、编码子任务、路由、信息提取和长文档解析。短 prompt 定价与 GPT-6 Luna、Claude Haiku 5.5 相同：输入 $0.10/百万 token，输出 $0.50/百万 token；同日发布的 Claude Fable 5.2 价格为其 80 倍（$8/$40）。三者均支持百万输入 token，但长 prompt 定价存在阈值，超过后价格上升。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/" target="_blank" rel="noopener">引用提示 Claude Fable 5.2</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-10 13:34</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Claude Fable 5.2 对提示词中关于代码归属的表述反应明显。在 Anthropic 针对小型编码任务的测试中，当提示词未提及归属或将代码库描述为他人所有时，模型倾向于在现有结构上追加，即使这会重复已有代码。[...] 若希望模型在工作过程中改进结构，应声明代码归其所有：此代码库归你所有：它的用途与构建方式由你决定，你将在此基础上持续构建。在 Anthropic 的小型编码任务测试中，使用该句时模型约有一半的尝试会合并重复代码，不使用该句时则不到十分之一。——《Prompting Claude Fable 5.2》，Anthropic 文档 标签：prompt-engineering、anthropic、...</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/10/yonkers-rises/" target="_blank" rel="noopener">扬克斯崛起</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-10 11:53</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/10/yonkers-rises/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">工具：扬克斯崛起。我意识到自己不知道扬克斯在哪里，于是用Google Maps查了一下，然后为了帮助记住它的位置和形状（也为了测试Claude Fable 5.2的3D建模和动画能力），我提示Fable 5.2 Medium：制作一个three.js动画，让扬克斯作为一个巨型机甲站起来（酷炫的站起动作），并踩踏曼哈顿、皇后区和布鲁克林，使用OpenStreetMap地图数据。它正确推断出“átomos”是移动键盘上“stomps”的输入错误。标签：three-js、llms、ai、generative-ai、claude-mythos-fable</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/9/llm-anthropic/" target="_blank" rel="noopener">llm-anthropic 0.31</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-10 07:58</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/9/llm-anthropic/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">llm-anthropic 0.31 发布：Anthropic 今日推出 Fable 5.2 和 Mythos 5.2。Fable 5.2 目前在 Artificial Analysis 排名第一。Anthropic 称其“解决了黑洞物理学中的两个开放问题”，可见其内部 benchmark 已更具野心！我已将新模型加入 llm-anthropic，现在可这样通过 Fable 5.2 运行 prompt：uv tool install llm、llm install llm-anthropic、llm keys set anthropic（粘贴 key）、llm -m claude-fable-5.2 “Generate an SVG of a pelican riding a bicycle”。我在全部五个 reasoning 级别（low、medium、high、xhigh、max）测试了 pelican，结果见此；最佳结果来自 xhigh。max 未能返回图像，在消耗 128,000 tokens 后耗尽。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/" target="_blank" rel="noopener">用Claude定位神秘哔声的来源</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-10 07:57</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我家有一间储物室，堆满了上次搬家后尚未拆封的箱子。几周前，那间屋子里有东西开始间歇性发出哔哔声。哔声间隔太久，站在房间里试图确定声源令人沮丧，而我又实在不想翻遍每一个箱子。于是我让 Claude Code 构建了 Beep Locator——一个利用散布在房间各处的多台设备对神秘哔声进行三角定位的软件系统。运行一段时间后的 Beep Locator 界面如下：你运行 Python web server 显示主 UI，然后通过二维码或 URL 连接尽可能多的设备作为监听器——我用了两台 iPad、一部手机、一台 MacBook Pro……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/launchdarkly-claire-vo" target="_blank" rel="noopener">LaunchDarkly的AI驱动产品管理方法</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-04 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/launchdarkly-claire-vo" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">与LaunchDarkly首席产品官Claire Vo的对话，探讨产品经理角色的变化、她的反待办事项清单，以及构建AI原生团队。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/introducing-nextgenai" target="_blank" rel="noopener">介绍NextGenAI</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-03-04 14:00</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-nextgenai" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI向领先机构承诺提供5000万美元资金和工具支持。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/aya-vision" target="_blank" rel="noopener">深入解析 Aya Vision：推进多语言多模态的前沿</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-03-04 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/aya-vision" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># Aya Vision 深度解析：推进多语言多模态前沿
+
+随着 Aya Vision 系列的发布，我们推出了全新的 **8B** 和 **32B** 参数视觉语言模型（VLM），旨在解决 AI 领域的重大挑战之一：*将多语言能力引入多模态模型*。Aya Vision 是 Cohere For AI 最新开源的轻量级多语言多模态模型系列，致力于为 **23 种语言**的语言与视觉理解提供强大基础。该模型基于多语言语言模型 Aya Expanse 的成功经验，结合合成标注、通过翻译和改写扩展多语言数据、多模态模型合并等先进技术进行扩展——这些关键方法……</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/jfrog" target="_blank" rel="noopener">Hugging Face 与 JFrog 合作，提升 AI 安全透明度</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-03-04 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/jfrog" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我们很高兴宣布与JFrog（JFrog软件供应链平台创建者）建立合作伙伴关系，这是我们长期致力于为ML社区提供安全可靠平台的一部分。我们决定将JFrog的扫描器集成到平台中，以持续提升Hugging Face Hub的安全性。JFrog扫描器为扫描带来新功能，旨在减少Hub上的误报。目前我们观察到，模型权重可能包含在反序列化时执行的代码，有时在推理时也会执行，具体取决于格式。这些代码对开发者而言通常是无害的实用功能。由于我们的picklescan扫描器仅对模块名称进行模式匹配，我们无法总是确认给定函数的使用或……</div>
+</div>
+<div class="article">
 <h2><a href="https://openai.com/index/chatgpt-enterprise-aws-marketplace" target="_blank" rel="noopener">ChatGPT企业版现已登陆AWS Marketplace</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
