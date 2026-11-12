@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-11-12</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-11-12</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-11-12</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/" target="_blank" rel="noopener">Gemini 决策 API</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-12 06:03</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Gemini Decisions API 加入决策模型领域，与 Jev 和 OpenAI 并列，推出“Gemini Decision 1”。该新模型 API 与 Jev 几乎相同：支持相同的三类问题（是/否、选择和评分标准打分），甚至沿用 Jev 的术语“Noul”来表示是/否问题。定价与 GPT-6 Luna 决策模型相同：每百万输入 token 10 美分，输出免费。Jev 仍是三者中最便宜的，每百万 4.2 美分。Jev 仅支持文本（和 JSON）。OpenAI 可处理文本和图像。Gemini Decision 1 完全多模态：涵盖文本、图像、音频、视频和 PDF。我通过将这些问题连同我的 Yonkers 踩踏机器人视频文件传递给它来测试视频功能：dragon：这个视频里有龙吗？...</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/11/aws-emulator/" target="_blank" rel="noopener">aws 模拟器</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-12 05:18</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/11/aws-emulator/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">AWS 终于推出官方 emulator，可在本地克隆众多服务上运行测试，无需付费 API key。该项目用 Rust 编写，由大量 agent 协作完成——前三周提交达 29,684 次。Swaminathan (Swami) Sivasubramanian 在 Werner Vogels 博客的客座文章中讲述了其由来。目前在 macOS 或 Windows 上运行需依赖 Docker。希望未来改进：只需下载单个二进制文件，即可作为标准测试套件的一部分，在其他语言和平台上使用。标签：amazon, amazon-web-services, testing, werner-vogels, ai, rust, docker, generative-ai, llms, agentic-engineering</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/11/tools-tags/" target="_blank" rel="noopener">按标签浏览 tools.simonwillison.net</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-12 02:42</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/11/tools-tags/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我一直在寻找更好的方式来浏览我收集的vibe-coded工具（已有244个且还在增加）。在每周重置前还剩一些Fable 5.2额度，于是我用tree-sitter分析每个工具代码中使用的JavaScript API、库和Web API主机。现在主页新增了标签云，可按这些标签类别浏览。标签：javascript、tools、ai、generative-ai、llms、claude、vibe-coding</div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" target="_blank" rel="noopener">Gemini决策API：快速、校准的多模态决策</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-11-12 02:00</span>
+    <span>🔗 <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">认识Gemini Decisions API，它由我们最先进的模型Gemini Decision驱动，用于快速、校准的多模态决策。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/11/llm/" target="_blank" rel="noopener">llm 0.37.2</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-12 01:19</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/11/llm/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：llm 0.37.2 修复了 Daniel de Araujo 在 GHSA-v9h7-jj4g-f862 和 GHSA-r639-rr7r-x72w 中报告的安全问题。LLM 有一个名为 extra-openai-models.yaml 的机制——现由 0.37 版新增的 llm openai endpoint add 命令管理——用于将 LLM 与其他提供商的 OpenAI 兼容 API 端点配合使用。Daniel 报告了两种可能意外将你配置的 OpenAI API key 发送给这些提供商的情况：如果 api_key_name 指定的 key 从未被存储，或者以 -o chat_completions 1 运行 responses: true 模型。标签：projects、security、llm、releases</div>
+</div>
+<div class="article">
+<h2><a href="https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/" target="_blank" rel="noopener">智能投放：让每一份算力更好地服务广告</a></h2>
+<div class="source">
+    <span>📰 Engineering at Meta</span>
+    <span>🕐 2026-11-12 01:00</span>
+    <span>🔗 <a href="https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">广告排序模型正朝着LLM规模增长，速度超过了运行它们所需的硬件能力。额外一单位compute对某些广告请求、模型和芯片的影响大于其他。挑战在于决定在哪里分配它以获得整个系统的最佳结果。我们构建了Intelligent Delivery，一个ML驱动的系统，它在整个serving stack中分配资源以实现系统级最优。自2017年以来，它在模型和系统进步之上交付了约10%的增量排序性能。我们分享Intelligent Delivery的几项能力：我们如何构建ML模型来预测compute的边际效用、跨系统移动资源的多层机制，以及我们如何日益利用agentic AI来持续检测并响应……</div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/" target="_blank" rel="noopener">试试桌面：可定制的协作空间，让团队一起规划、娱乐和做更多事情。</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-11-12 00:00</span>
+    <span>🔗 <a href="https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Tabletop 是 Google Labs 推出的一项新实验，专为团队协作设计。用户可与团队成员共同创建互动式行程、投票和分组对阵表。目前可加入等待名单。</div>
+</div>
+<div class="article">
+<h2><a href="https://martinfowler.com/articles/tests-as-data.html" target="_blank" rel="noopener">测试即数据：确保AI生成的代码符合我们的期望</a></h2>
+<div class="source">
+    <span>📰 Martin Fowler</span>
+    <span>🕐 2026-11-11 23:17</span>
+    <span>🔗 <a href="https://martinfowler.com/articles/tests-as-data.html" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">AI编程助手时代的自动化测试面临挑战：当AI代理同时编写生产代码和测试代码时，开发者可能失去自动化测试对功能错误的保障。Matteo Vaccari提出三点主张：(1) 当AI编写代码时，开发者成为其客户；(2) 因此客户测试而非开发者测试成为人与AI之间的主要契约；(3) 将该契约从测试代码转移到测试数据中，更易防止编码代理的意外修改。这一切都旨在优化人类可读的测试，建立人与AI之间的契约。过去DSL解析器和自定义测试运行器编写维护成本高昂，如今AI使其变得廉价。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/" target="_blank" rel="noopener">Anthropic的IPO路演视频</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-11 23:11</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Anthropic昨日启动IPO路演，其路演视频披露了此前未公开的业务运作信息。联合创始人Tom Brown关于“计算策略”的部分尤为引人关注，介绍了Anthropic如何在AWS Trainium、Google TPUs、NVIDIA GPUs和AMD GPUs上训练和部署Claude。目前尚不清楚为何没有官方视频文字稿，以下为使用MacWhisper提取的要点：我们现已在全部四大芯片系列上训练和部署Claude，这得益于早期对多芯片策略的非传统押注。当时许多人认为在不同芯片上运行AI模型不值得投入……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/jiostar-vijay-seshadri" target="_blank" rel="noopener">JioStar首席架构师谈5亿用户规模下的AI探索</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-11 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/jiostar-vijay-seshadri" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">JioStar的Vijay Seshadri阐述了在5亿用户规模下的AI发现。阅读他关于evals、guardrails以及将AI投入生产的经验教训。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
