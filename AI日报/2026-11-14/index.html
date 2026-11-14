@@ -33,6 +33,96 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-11-14</div>
     <div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/13/datasette-cluster-map/" target="_blank" rel="noopener">datasette-cluster-map 0.19</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-14 07:02</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/13/datasette-cluster-map/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：datasette-cluster-map 0.19 这是 Datasette 最古老的插件之一，也是我最喜欢的插件之一。它现在支持 Datasette 1.0a42，并依赖新的 datasette-leaflet 来确保 OpenStreetMap 瓦片请求携带 referrer header。这里展示的是加州 PG&E 拥有的发电厂地图，同时也演示了 Datasette 最近重新设计的 facets。标签：datasette、geospatial、openstreetmap</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/13/datasette-leaflet/" target="_blank" rel="noopener">datasette-leaflet 0.3</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-14 06:30</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/13/datasette-leaflet/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">datasette-leaflet 0.3 版本发布。OpenStreetMap 有一项非常合理的政策，要求对其托管瓦片服务器的请求应发送 referrer header。Datasette 表格页面此前使用了 Referrer-Policy: no-referrer HTTP header，导致从 OpenStreetMap 加载瓦片的插件违反了该政策。datasette-leaflet 是加载捆绑 Leaflet 的插件，以便其他 Datasette 插件可以依赖它。现在它在瓦片请求本身上将 referrer policy 设置为 strict-origin-when-cross-origin，传递主机但不传递页面的完整路径。标签：leaflet、datasette、openstreetmap</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/business/customer-stories/shield" target="_blank" rel="noopener">Shield借助OpenAI帮助技术人员交接遗留门户工作</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-13 16:00</span>
+    <span>🔗 <a href="https://openai.com/business/customer-stories/shield" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Shield利用OpenAI帮助IT技术人员在传统门户中交接工作。其Forge agents可导航系统，使技术人员专注于需要其判断的问题。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/swe-lancer" target="_blank" rel="noopener">介绍 SWE-Lancer 基准测试</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-02-18 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/swe-lancer" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">前沿LLM能否从现实世界的自由职业软件工程中赚取100万美元？</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/inference-providers-nebius-novita-hyperbolic" target="_blank" rel="noopener">推出三个新的无服务器推理提供商：Hyperbolic、Nebius AI Studio 和 Novita 🔥</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-02-18 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/inference-providers-nebius-novita-hyperbolic" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我们很高兴宣布，Hugging Face Hub 新增三家优秀的 serverless Inference Providers：Hyperbolic、Nebius AI Studio 和 Novita。它们加入我们不断壮大的生态系统，扩展了 Hub 模型页面上 serverless inference 的广度与能力，并已无缝集成到我们的 JS 和 Python 客户端 SDK 中，让你能轻松使用各类模型和偏好的 provider。这些新伙伴与现有 provider（Together AI、Sambanova、Replicate、fal 和 Fireworks.ai）共同支持 DeepSeek-R1、Flux.1 等众多新模型。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/openai-and-guardian-media-group-launch-content-partnership" target="_blank" rel="noopener">OpenAI与卫报传媒集团启动内容合作</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-02-14 15:00</span>
+    <span>🔗 <a href="https://openai.com/index/openai-and-guardian-media-group-launch-content-partnership" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI与卫报传媒集团宣布内容合作，将Guardian新闻内容引入ChatGPT。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/math_verify_leaderboard" target="_blank" rel="noopener">用Math-Verify修复开放LLM排行榜</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-02-14 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/math_verify_leaderboard" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">3周前，我们展示了正确评估LLM数学问题表现的难度，并推出了Math-Verify——一种更优的数学验证方案。今天，我们使用Math-Verify重新评估了Open LLM Leaderboard上全部3,751个模型，以实现更公平、更稳健的模型比较。Open LLM Leaderboard是Hugging Face Hub上最常用的排行榜，其中MATH-Hard任务专门评估LLM解决高中数学问题的能力。此前评估方法存在缺陷，导致结果不准确。通过Math-Verify的重新评估，我们修复了这些问题，提升了排行榜的可靠性和公平性。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/fireworks-ai" target="_blank" rel="noopener">欢迎 Fireworks.ai 加入 Hub 🎆</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-02-14 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/fireworks-ai" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">继近期Hub上Inference Providers公告后，我们欣然分享：**Fireworks.ai**现已成为HF Hub支持的Inference Provider！Fireworks.ai直接在模型页面及整个HF库与工具生态中提供极速无服务器推理，让您更轻松地对喜爱的模型进行推理。即日起，您可通过Fireworks.ai对以下模型进行无服务器推理：- deepseek-ai/DeepSeek-R1 - deepseek-ai/DeepSeek-V3 - mistralai/Mistral-Small-24B-Instruct-2501 - Qwen/Qwen2.5-Coder-32B-Instruct - meta-llama/Llama-3.2-90B-Vision-Instruct等，完整列表见此。立即用Fireworks.ai点亮您的项目！## 工作原理 ### 在网站UI中...</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/fanatics-betting-gaming-andrea-ellis" target="_blank" rel="noopener">Fanatics博彩与游戏公司利用AI着眼大局</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-02-13 18:01</span>
+    <span>🔗 <a href="https://openai.com/index/fanatics-betting-gaming-andrea-ellis" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">与Fanatics Betting and Gaming首席财务官Andrea Ellis的对话。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/wayfair-fiona-tan" target="_blank" rel="noopener">Wayfair 正在用 AI 塑造零售业的未来</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-02-13 18:00</span>
+    <span>🔗 <a href="https://openai.com/index/wayfair-fiona-tan" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">与Wayfair首席技术官Fiona Tan的对话。</div>
+</div>
+<div class="article">
 <h2><a href="https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place" target="_blank" rel="noopener">使用SimReady资产构建机器人拾放仿真</a></h2>
 <div class="source">
     <span>📰 Hugging Face - Blog</span>
