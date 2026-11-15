@@ -33,6 +33,100 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-11-15</div>
     <div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/14/datasette-llm/" target="_blank" rel="noopener">datasette-llm 0.1a11</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-15 07:59</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/14/datasette-llm/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Release: datasette-llm 0.1a11 datasette-llm 是 Datasette 的中间插件，用于配置 LLM 以供其他 Datasette 插件使用。此版本新增对 OpenAI 兼容端点的支持，因此你可以配置 Datasette 使用任何遵循 OpenAI 伪标准 Web 协议的 LLM。这意味着，如果你使用 LM Studio、Ollama 或 llama.cpp（刚发布 v1.0.0）运行本地模型，可以通过 uvx 运行 Datasette，如下所示：wget https://datasette.io/content.db uvx --with datasette-agent datasette \ --root --secret 1 \ -s plugins.datasette-llm.default_model '{ "model": "lmstudio-qwen", "model_name": "qwen/qwen3.8-27b", "api_base": "http://localhost:1234/v1" }' content.db 以及……</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/14/datasette-vega/" target="_blank" rel="noopener">datasette-vega 0.7</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-15 01:09</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/14/datasette-vega/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：datasette-vega 0.7 版本。这是 Datasette 最久未更新的插件的新版本，用于针对表格或自定义查询中的数据渲染图表（使用 Vega-Lite）。上一次发布是在 2018 年 7 月！我终于更新了它，以兼容最新的 Datasette alpha 版本，并做了一些外观调整，使其更好地配合 Datasette Lite 工作。（Datasette Lite 刚刚获得了运行此类 JavaScript 插件的能力！我很快会写更多相关内容。）由于它可与 Datasette Lite 配合使用，README 中的实时演示现在链接到 Datasette Lite 上的这个演示。标签：datasette、visualisation、datasette-lite</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/openai-and-the-csu-system" target="_blank" rel="noopener">OpenAI与CSU系统将AI带给50万学生和教职员工</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-02-04 19:30</span>
+    <span>🔗 <a href="https://openai.com/index/openai-and-the-csu-system" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">迄今为止规模最大的ChatGPT部署将扩大AI在教育领域的应用，并助力美国打造一支具备AI能力的劳动力队伍。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/open-deep-research" target="_blank" rel="noopener">开源DeepResearch——解放我们的搜索代理</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-02-04 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/open-deep-research" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># 开源DeepResearch——释放我们的搜索代理 ## 摘要 昨日，OpenAI发布了Deep Research，这是一个能够浏览网页以总结内容并基于摘要回答问题的系统。该系统令人印象深刻，初次尝试便令我们惊叹不已。博客文章中的主要成果之一是在通用AI助手基准（GAIA）上的性能显著提升，这也是我们近期一直在研究的基准，他们成功在1-shot上平均达到近67%的正确答案率，在涉及多步推理和工具使用的尤其具有挑战性的“level 3”问题上达到47.6%（见下文GAIA介绍）。DeepResearch由LLM组成（可从当前提供的LLM列表中选择……</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/pi0" target="_blank" rel="noopener">π0 与 π0-FAST：面向通用机器人控制的视觉-语言-动作模型</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-02-04 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/pi0" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我们已将首批**机器人基础模型**移植到**Hugging Face LeRobot**！由Physical Intelligence开发的**π0和π0-FAST**现已在**LeRobot仓库**中提供，将通用机器人智能引入Hugging Face生态系统。若想了解Vision-Language-Action（VLA）模型与Vision-Language Models（VLM）的区别及动作表示方式，请阅读此博客文章！探索模型集合及PyTorch版本：Huggingface Pi0模型集合 | Pi0+FAST模型集合 | LeRobot仓库 --- ## 引言 Robert Heinlein认为，全面发展的人应能处理广泛任务——无论智力还是体力——而非……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/my-dog-the-math-tutor" target="_blank" rel="noopener">构建由ChatGPT驱动的自定义数学辅导工具</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-02-04 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/my-dog-the-math-tutor" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">ChatGPT与个性化辅导
+
+ChatGPT作为个性化辅导工具，能够根据学生的需求提供定制化学习支持。它可解答问题、解释概念、提供练习反馈，并适应不同学习节奏。然而，其准确性、隐私及过度依赖等问题仍需关注。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/dabstep" target="_blank" rel="noopener">DABStep：多步推理数据代理基准</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2025-02-04 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/dabstep" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># DABStep：多步推理语言模型的数据Agent基准
+
+语言模型能力日益增强，已能作为Agent自主解决任务。在推理、代码与数据的交叉领域存在许多令人兴奋的应用场景。然而，缺乏针对真实世界问题的合适评估基准，阻碍了该领域的发展。为应对这一挑战，Adyen与Hugging Face共同构建了多步推理数据Agent基准（DABstep）。DABstep包含450多项数据分析任务，旨在评估最先进LLM与AI Agent的能力。我们的研究结果表明，DABstep对当前AI模型构成重大挑战，能力最强的基于推理的Agent仅达到16%的准确率，凸显出显著……</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/ten-tiny-canvases" target="_blank" rel="noopener">用ChatGPT创作美甲艺术</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-02-04 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/ten-tiny-canvases" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">使用ChatGPT为美甲艺术寻找灵感</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/fishing-for-first-timers" target="_blank" rel="noopener">用ChatGPT捕捉大比目鱼</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-02-04 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/fishing-for-first-timers" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">使用ChatGPT捕捉大比目鱼</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/deep-research" target="_blank" rel="noopener">通过深度研究理解复杂趋势</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-02-03 00:00</span>
+    <span>🔗 <a href="https://openai.com/index/deep-research" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI深度研究如何助力贝恩公司洞察复杂行业趋势。</div>
+</div>
+<div class="article">
 <h2><a href="https://openai.com/index/rogo" target="_blank" rel="noopener">使用OpenAI o1进行财务分析</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
