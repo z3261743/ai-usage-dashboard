@@ -33,6 +33,96 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-11-16</div>
     <div class="article">
+<h2><a href="https://openai.com/index/lvmh-media-division-partnership" target="_blank" rel="noopener">LVMH媒体部门宣布与OpenAI建立战略合作伙伴关系</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-16 17:00</span>
+    <span>🔗 <a href="https://openai.com/index/lvmh-media-division-partnership" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">LVMH媒体部门与OpenAI宣布合作，利用AI支持新闻业，并通过ChatGPT使其出版物更易获取。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/15/datasette-maplibre/" target="_blank" rel="noopener">datasette-maplibre 0.1a0</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-16 07:58</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/15/datasette-maplibre/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：datasette-maplibre 0.1a0 这是时隔许久推出的新款 Datasette 地理空间插件。它将出色的 MapLibre GL 库与 OpenFreeMap 结合——后者是由 Zsolt Ero 运营的免费矢量地图服务器（建议在 GitHub 上赞助 Zsolt）。我主要借助对 Claude Fable 5.2 的一次提示完成了大部分构建：先查看 datasette-cluster-map 和 datasette-leaflet-geojson 插件，再查看 ~/dev/tools/openfreemap-demo.html，然后构建一个全新的 Datasette 插件，使用 maplibreGL 和 openfreemap，融合上述两个插件的功能，同时发挥创意、跳出框架思考该插件可能具备的其他实用功能。“发挥创意、跳出框架”带来了几个巧妙的想法——我最喜欢的是它能显示 GeoJSON 形状的 SVG 预览……</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/15/datasette/" target="_blank" rel="noopener">datasette 1.0a43</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-16 07:20</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/15/datasette/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：datasette 1.0a43 我一直在深度借助 Claude Fable 5.2 推进 1.0 里程碑，目前完成度已达 53%。本次发布中最大的 1.0 事项是输出渲染器的流式支持——内置的 TSV 和 CSV 导出机制现已采用该支持，插件可通过新的 Response.stream() 方法注册为能够一次性流式输出表中的每一行。另有若干安全修复，其中一项我认为值得发布 GitHub 安全公告：私有存储查询可能被暴露，从而泄露查询的标题和 SQL（但不允许执行该查询）。此外还有数十项较小的改进。行页面的 JSON 表示终于有了适合 1.0 的设计。新增的 &lt;datasette-copy-button&gt;……</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/15/datasette-2/" target="_blank" rel="noopener">datasette 0.65.6</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-16 07:18</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/15/datasette-2/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：datasette 0.65.6 我从 1.0a43 版本回迁了一个小型安全修复：修复了一个安全问题，即使用 add_database(db, name=..., route=...) 注册的数据库，如果其 route 与 name 不同，可能被无权访问的 actor 从 /<route>.db 下载。标签：security、datasette</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/15/datasette-apps/" target="_blank" rel="noopener">datasette-apps 0.4a0</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-15 12:02</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/15/datasette-apps/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：datasette-apps 0.4a0。Datasette Apps 是运行在 Datasette 内的沙箱化 HTML 和 JavaScript 应用，类似 Claude Artifacts，但可对数据执行 SQL 查询。0.4a0 新增链接支持：可通过 URL 中的 #fragments 链接到应用，应用能读取并使用这些片段；支持的 URL scheme 会反馈给 Datasette Agent，助其编写可相互链接的应用。例如，一个应用展示特定记录详情，另一个独立应用搜索记录并链接到前者中的对应展示。标签：datasette-agent、datasette-apps、datasette、urls。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/15/datasette-agent/" target="_blank" rel="noopener">datasette-agent 0.6a0</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-15 11:49</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/15/datasette-agent/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：datasette-agent 0.6a0 版本，为 Datasette Agent 累积了多项小修复。Datasette Agent 是我为 Datasette 开发的 agent 插件，可让你针对数据提问。最值得注意的是，它现在直接在 Datasette 首页添加了 agent prompt，并支持对表和查询进行 hash-mentions。标签：datasette-agent、llm、datasette、llms、ai、generative-ai</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/disrupting-malicious-uses-of-ai-deceptive-employment-scheme" target="_blank" rel="noopener">欺骗性就业骗局：AI辅助招聘欺诈</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-02-01 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/disrupting-malicious-uses-of-ai-deceptive-employment-scheme" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI封禁了可能被用于协助欺骗性就业计划的账户，该计划具有公开报道的朝鲜相关IT工作者活动的特征。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/disrupting-malicious-uses-of-ai-task-scam" target="_blank" rel="noopener">任务骗局：AI辅助的虚假评论工作</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-02-01 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/disrupting-malicious-uses-of-ai-task-scam" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI封禁了疑似源自柬埔寨的账号，这些账号利用AI翻译信息，用于虚假评论兼职诈骗，要求受害者支付费用。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/openai-o3-mini" target="_blank" rel="noopener">OpenAI o3-mini</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-01-31 19:00</span>
+    <span>🔗 <a href="https://openai.com/index/openai-o3-mini" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/o3-mini-system-card" target="_blank" rel="noopener">OpenAI o3-mini 系统卡</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2025-01-31 19:00</span>
+    <span>🔗 <a href="https://openai.com/index/o3-mini-system-card" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">本报告概述了针对OpenAI o3-mini模型开展的安全工作，包括安全评估、外部红队测试以及Preparedness Framework评估。</div>
+</div>
+<div class="article">
 <h2><a href="https://openai.com/index/step-toward-defining-the-standard-model" target="_blank" rel="noopener">迈向在格点上定义标准模型的一步</a></h2>
 <div class="source">
     <span>📰 OpenAI News</span>
