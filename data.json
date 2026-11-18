@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-17",
+  "generated_at": "2026-11-18",
   "summary": {
-    "total_cost_7d": 0.1022,
-    "total_cost_30d": 0.3851,
-    "avg_daily_cost_7d": 0.0146,
-    "avg_daily_input_tokens": 68956,
-    "avg_daily_output_tokens": 17642
+    "total_cost_7d": 0.1056,
+    "total_cost_30d": 0.3966,
+    "avg_daily_cost_7d": 0.0151,
+    "avg_daily_input_tokens": 71457,
+    "avg_daily_output_tokens": 18158
   },
   "deepseek_balance": {
-    "cny": 31.88,
-    "usd": 0.0
+    "usd": 0.0,
+    "cny": 31.71
   },
   "pricing": {
     "deepseek-v4-flash": {
@@ -35,58 +35,30 @@
   },
   "daily": [
     {
-      "date": "2026-09-18",
-      "sessions": 3,
-      "messages": 22,
-      "tool_calls": 10,
-      "input_tokens": 34234,
-      "output_tokens": 3198,
-      "reasoning_tokens": 0,
-      "cache_read": 95360,
-      "cache_write": 0,
-      "computed_cost": 0.005688200000000001,
-      "estimated_cost_usd": 0.0,
-      "actual_cost_usd": 0.0,
-      "models": {
-        "deepseek-v4-flash": {
-          "input_tokens": 34234,
-          "output_tokens": 3198,
-          "cost": 0.005688200000000001,
-          "sessions": 3
-        }
-      },
-      "sources": {
-        "cron": {
-          "sessions": 3,
-          "cost": 0.005688200000000001
-        }
-      }
-    },
-    {
       "date": "2026-09-19",
-      "sessions": 8,
-      "messages": 111,
-      "tool_calls": 54,
-      "input_tokens": 73994,
-      "output_tokens": 20384,
+      "sessions": 7,
+      "messages": 68,
+      "tool_calls": 30,
+      "input_tokens": 53174,
+      "output_tokens": 11494,
       "reasoning_tokens": 0,
-      "cache_read": 726528,
+      "cache_read": 447872,
       "cache_write": 0,
-      "computed_cost": 0.01606668,
+      "computed_cost": 0.01066268,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 73994,
-          "output_tokens": 20384,
-          "cost": 0.01606668,
-          "sessions": 8
+          "input_tokens": 53174,
+          "output_tokens": 11494,
+          "cost": 0.01066268,
+          "sessions": 7
         }
       },
       "sources": {
         "cron": {
-          "sessions": 8,
-          "cost": 0.01606668
+          "sessions": 7,
+          "cost": 0.01066268
         }
       }
     },
@@ -1720,29 +1692,57 @@
     },
     {
       "date": "2026-11-17",
-      "sessions": 6,
-      "messages": 109,
-      "tool_calls": 50,
-      "input_tokens": 81638,
-      "output_tokens": 35380,
+      "sessions": 9,
+      "messages": 203,
+      "tool_calls": 95,
+      "input_tokens": 144901,
+      "output_tokens": 52538,
       "reasoning_tokens": 0,
-      "cache_read": 1541120,
+      "cache_read": 2602880,
       "cache_write": 0,
-      "computed_cost": 0.021335720000000002,
+      "computed_cost": 0.034996780000000005,
       "estimated_cost_usd": 0.0,
       "actual_cost_usd": 0.0,
       "models": {
         "deepseek-v4-flash": {
-          "input_tokens": 81638,
-          "output_tokens": 35380,
-          "cost": 0.021335720000000002,
-          "sessions": 6
+          "input_tokens": 144901,
+          "output_tokens": 52538,
+          "cost": 0.034996780000000005,
+          "sessions": 9
         }
       },
       "sources": {
         "cron": {
-          "sessions": 6,
-          "cost": 0.021335720000000002
+          "sessions": 9,
+          "cost": 0.034996780000000005
+        }
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "sessions": 1,
+      "messages": 0,
+      "tool_calls": 0,
+      "input_tokens": 11545,
+      "output_tokens": 1324,
+      "reasoning_tokens": 0,
+      "cache_read": 32640,
+      "cache_write": 0,
+      "computed_cost": 0.0019870200000000004,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "models": {
+        "deepseek-v4-flash": {
+          "input_tokens": 11545,
+          "output_tokens": 1324,
+          "cost": 0.0019870200000000004,
+          "sessions": 1
+        }
+      },
+      "sources": {
+        "cron": {
+          "sessions": 1,
+          "cost": 0.0019870200000000004
         }
       }
     }
