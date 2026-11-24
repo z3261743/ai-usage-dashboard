@@ -33,6 +33,98 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-11-24</div>
     <div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/24/datasette-charts/" target="_blank" rel="noopener">datasette-charts 0.2a0</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-24 12:24</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/24/datasette-charts/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Release: datasette-charts 0.2a0 昨天我介绍了这个新的 Datasette 图表插件。今天它已与 Datasette Agent 集成，现在你可以向聊天请求图表，它会使用相同的底层图表建议和生成工具为你创建图表。这是一个演示视频，录制于 agent.datasette.io，你可以用 GitHub 登录自行试用该插件：下载视频（MP4）。我提示 Datasette Agent“使用 #stats 将 sqlite-utils 下载量随时间变化显示为图表”——输入“#stats”会打开一个表格搜索框。它在聊天中内联显示图表，当我点击“在图表构建器中打开”时，图表会在面板中与表格页面一起打开。我使用表格页面切换到……的图表。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/24/datasette-agent/" target="_blank" rel="noopener">datasette-agent 0.7a1</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-24 11:45</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/24/datasette-agent/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">发布：datasette-agent 0.7a1。对 Datasette Agent 的小改进：聊天会话可打开 iframe 侧面板，该面板能导航到不同页面。此版本改进了基于 fragment hash 的导航，以便与其他 Datasette 插件更深度集成——当用户与插件交互并改变状态时，这些插件会更新 fragment hash。我构建此功能是为了修复更令人兴奋的 datasette-charts 0.2a0 版本中的一些 bug。标签：datasette-agent、datasette</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/23/glm-54/" target="_blank" rel="noopener">GLM-5.4：借助我们的首个循环 Transformer 迈向通用编码</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-24 07:40</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/23/glm-54/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">GLM-5.4 现已由中国 AI 实验室 Z.ai 发布。这是其首个采用 looped transformer 架构的模型。该架构的特点是：标准 Transformer 中每层在前向传播时只运行一次，而 Loop Transformer 中一组权重共享层会多次迭代运行，对上一轮的隐藏状态进行精炼，从而在不增加参数量的情况下获得更深的网络。这是过去一周内我第二次看到 looped transformer 的相关消息——第一次是 Thinking Machines Lab 于 11 月 20 日发布的 Inkling 2 Mini，其模型中间层对每个 token 运行三次。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/introducing-medchembench" target="_blank" rel="noopener">人工智能能帮助科学家识别有前景的候选药物吗？</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-20 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-medchembench" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">MedChemBench评估AI模型在早期药物发现中解读分子结构、基于实验证据推理以及筛选化合物的能力。</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/harness-adapters-at-scale" target="_blank" rel="noopener">推出 harness 适配器：将你喜欢的模型适配到你的 harness，以提升性能和降低成本</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-11-20 08:00</span>
+    <span>🔗 <a href="https://huggingface.co/blog/harness-adapters-at-scale" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"># 推出 harness 适配器：将你常用的模型适配到你的 harness，以提升性能并降低成本
+
+将自定义任务分布上的 RL 与你常用的 agent harness 相结合，可为该目标 harness 和任务分布生成更准确、更高效的模型。模型并非针对所有 harness 和你正在执行的任务进行了完全优化，而是面向通用性能。因此，当你将模型与 harness 组合使用时，实际上在你真正执行的任务上损失了性能和效率。借助 RL，你可以训练一个自定义 harness 适配器，为你的 harness 与任务组合充分挖掘模型潜力。以 Qwen3.8-27B 为例，其在 pi harness 上的 Terminal-Bench 2.1 得分为 39%，平均每个任务使用 2.9K tokens。如果我们冻结这些权重……</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/19/postgresql-19/" target="_blank" rel="noopener">PostgreSQL 19 发布</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-20 04:43</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/19/postgresql-19/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">PostgreSQL 19 发布。往年 PostgreSQL 通常在九月发布新版本，但今年的发布推迟了两个月，主要原因是 PostgreSQL 团队需要处理大量问题，作为持续应对 AI 报告漏洞浪潮的一部分。这个版本绝对值得等待。我最喜欢的新功能是：对于将读请求发送到备库的应用，PostgreSQL 19 通过新的 WAIT FOR LSN 命令实现了“读己之写”一致性。备库上的会话可以使用 WAIT FOR LSN，在运行查询前等待备库将预写日志（WAL）重放到特定的日志序列号（LSN），这样应用就能读取它刚在主库上写入的数据。实际使用中大致如下：UPDATE movie SET genre =...</div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/" target="_blank" rel="noopener">在Gemini API中引入工具检索</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-11-20 02:00</span>
+    <span>🔗 <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">使用Tool Retrieval，你的代理可以访问数百种工具，同时消耗更少的token。该功能现已在Gemini API中提供预览。</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-is-amazons-writing-culture" target="_blank" rel="noopener">脉搏：亚马逊的写作文化是否因AI而崩溃？</a></h2>
+<div class="source">
+    <span>📰 The Pragmatic Engineer</span>
+    <span>🕐 2026-11-20 01:08</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-is-amazons-writing-culture" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">《The Pulse》是一个报道大型科技公司与初创企业动态、洞察和趋势的系列栏目。今天日程繁忙：Anthropic 已完成史上最大规模 IPO，游戏 GTA VI 也已发售。图片由前 Anthropic 工程师 Thariq Shihipar 提供。以下内容比往常更简洁：Anthropic：史上最大规模 IPO。这家领先的 AI 前沿实验室筹集了……阅读更多</div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/" target="_blank" rel="noopener">沃尔特·艾萨克森谈AI时代的好奇心与创造力。</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-11-20 01:00</span>
+    <span>🔗 <a href="https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Walter Isaacson做客Google，探讨历史上最伟大的创新者如何启发AI时代的创造力与人类判断力。观看本期节目。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast" target="_blank" rel="noopener">OpenAI的性能工厂如何保持ChatGPT的高速运行</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-19 16:00</span>
+    <span>🔗 <a href="https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">了解 OpenAI 如何构建 Performance Factory——一套由 Codex 驱动的工作流系统，用于发现并修复性能问题，帮助保持 ChatGPT 的快速运行。</div>
+</div>
+<div class="article">
 <h2><a href="https://simonwillison.net/2026/Nov/23/ladybird/" target="_blank" rel="noopener">瓢虫浏览器首个 alpha 版本发布</a></h2>
 <div class="source">
     <span>📰 Simon Willison&#x27;s Weblog</span>
