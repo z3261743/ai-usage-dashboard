@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI 日报 — 2026-11-25</title>
+<style>/* 同上 serve_kb.py 的样式 */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.8;-webkit-text-size-adjust:100%}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.header-bar h1{font-size:1.2rem;font-weight:600}
+.header-bar .subtitle{font-size:.8rem;opacity:.7}
+.article{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin:16px 0}
+.article h2{font-size:1.15rem;color:#1a1a2e;margin-bottom:8px}
+.article h2 a{color:#1a1a2e;text-decoration:none}
+.article .source{font-size:.8rem;color:#888;margin-bottom:12px;display:flex;gap:12px}
+.article img{max-width:100%;height:auto;border-radius:8px}
+.article p{margin:8px 0}
+.article a{color:#4a6cf7;word-break:break-all}
+.article pre{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:8px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.article code{font-family:'SF Mono',Monaco,monospace;font-size:.9em}
+.article blockquote{border-left:3px solid #4a6cf7;padding:8px 16px;margin:12px 0;background:#f0f3ff;border-radius:0 8px 8px 0;color:#555}
+.index-link{display:inline-block;padding:10px 16px;background:#4a6cf7;color:#fff;border-radius:8px;text-decoration:none;font-size:.95rem;margin-bottom:16px}
+.day-heading{font-size:1.3rem;color:#1a1a2e;padding:16px 0 8px;border-bottom:2px solid #4a6cf7;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <div><h1>🤖 AI 日报</h1><div class="subtitle">2026-11-25</div></div>
+</div>
+<div class="container">
+    <a href="../" class="index-link">← 返回日报列表</a>
+    <div class="day-heading">📅 2026-11-25</div>
+    <div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/24/llm-inflection-points/" target="_blank" rel="noopener">十二个月内的三个LLM拐点</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-25 07:02</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/24/llm-inflection-points/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">几周前，我在AI Engineer Code Summit上发表了一场主题演讲，核心观点是：过去十二个月里，LLM与coding agents的能力出现了三个重大拐点。本文提取“重大拐点”这一主题并深入探讨。2025年11月的coding agents：今天是2026年11月24日，正值Claude Opus 4.5发布一周年。事后看来，这是一个具有重要意义的模型。在Opus 4.5的发布公告中，Anthropic表示：测试者指出，Claude Opus 4.5能够处理模糊性并权衡取舍，无需手把手指导。他们告诉我们，当面对复杂的多系统bug时，Opus 4.5能找出修复方案。他们表示，任务……</div>
+</div>
+<div class="article">
+<h2><a href="https://pytorch.org/blog/executorch-tensorrt-pytorch-robot-policies-at-nvidia-tensorrt-speed/" target="_blank" rel="noopener">ExecuTorch-TensorRT：以 NVIDIA TensorRT 速度运行 PyTorch 机器人策略</a></h2>
+<div class="source">
+    <span>📰 Blog – PyTorch</span>
+    <span>🕐 2026-11-25 04:31</span>
+    <span>🔗 <a href="https://pytorch.org/blog/executorch-tensorrt-pytorch-robot-policies-at-nvidia-tensorrt-speed/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">简而言之，借助 Torch-TensorRT 2.15 和 ExecuTorch 1.6，你可以用 TensorRT 编译 PyTorch 模型，将其保存为 ExecuTorch 程序，并在不加载 torch 的情况下从 C++ 或 Python 运行。全程留在 PyTorch 中，TensorRT 无法处理的部分仍可在 GPU 上运行。在 NVIDIA Jetson Orin Nano 上，其速度和内存均与我们测得的最快 TensorRT 配置相差不到 4%。一个 36 亿参数的策略可装入 8 GB 板卡，而 PyTorch eager 模式会内存不足。只需一次 pip install "torch_tensorrt[executorch]" 即可编译。运行时机器人只需 ExecuTorch 和一个小型 TensorRT 后端，无需 PyTorch。我们在 PyTorch Conference 2026 上讨论了这项工作：Deploying Robot Policies Across Many Targets with ExecuTorch……</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge" target="_blank" rel="noopener">务实工程师征文挑战：类别获奖者（第一部分）</a></h2>
+<div class="source">
+    <span>📰 The Pragmatic Engineer</span>
+    <span>🕐 2026-11-25 03:16</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">开始前，先说一个黑五特惠。黑五即将到来，完整订阅首年可享8折优惠——全年120美元，或每月10美元。付费订阅者可访问完整深度文章、周四的The Pulse、面向工程经理和软件工程师的资源，以及完整存档。获取此特惠。优惠截至12月1日（周二）。也可将此优惠作为礼物赠送。为纪念The Pragmatic Engineer九月五周年，我发起了一场征文比赛，主题是自AI模型出现以来软件开发领域发生了哪些变化——这些模型在编程方面比以往任何时候都更强。工程师们分享了他们的经历和观察，我们最喜爱的一篇作品获得了10,000美元大奖，题为“How software engineering...”</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/24/astra-historical-mystery/" target="_blank" rel="noopener">GPT 6.2 Astra 解开历史谜团</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-25 00:53</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/24/astra-historical-mystery/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">GPT-6.2 Astra解决历史谜团
+
+历史学教授Mark Humphries分享了一个使用GPT-6.2 Astra进行历史研究的案例：仅需极少提示，GPT-6.2 Astra便能自主识别耶鲁Beinecke图书馆所藏1808年匿名速写本的创作者。它仅用22分钟，利用公开的一手和二手资料完成这一任务。过程中，它在纸质档案中发现了一个鲜为人知的来源，预测若加以检验即可证实其假设，最终果然如此。不仅如此，这一新来源本身即为重大发现，将引起加拿大史和毛皮贸易史学者的浓厚兴趣。此处为数字化速写本。Astra找到了一条日记线索……</div>
+</div>
+<div class="article">
+<h2><a href="https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance" target="_blank" rel="noopener">微鸭避障：基于Isaac Lab和Newton的仿真到现实工作流</a></h2>
+<div class="source">
+    <span>📰 Hugging Face - Blog</span>
+    <span>🕐 2026-11-25 00:34</span>
+    <span>🔗 <a href="https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/" target="_blank" rel="noopener">Gemini如何改变金州勇士队组织和球迷的游戏规则。</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-11-25 00:00</span>
+    <span>🔗 <a href="https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">谷歌Gemini与金州合作，为勇士队、女武神队和大通中心提供球迷体验和业务运营支持。详见新闻。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities" target="_blank" rel="noopener">GPT-6模型展现出内在的蛋白质设计能力</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-24 21:00</span>
+    <span>🔗 <a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">GPT-6模型利用推理和代码设计蛋白质结构与序列。实验室测试发现，在五个靶标上存在结合证据。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/searching-for-distant-planets-with-astra" target="_blank" rel="noopener">使用Astra搜寻遥远行星</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-24 19:00</span>
+    <span>🔗 <a href="https://openai.com/index/searching-for-distant-planets-with-astra" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">两位业余天文学家利用Codex和Astra，在NASA开普勒与TESS太空望远镜的公开数据中寻找潜在的系外行星。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/business/customer-stories/ifood" target="_blank" rel="noopener">iFood如何在上万个代码库中扩展编码代理</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-24 08:00</span>
+    <span>🔗 <a href="https://openai.com/business/customer-stories/ifood" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content"></div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/business/customer-stories/intentful-dots" target="_blank" rel="noopener">Intentful如何利用dots腾出更多时间促进增长</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-24 08:00</span>
+    <span>🔗 <a href="https://openai.com/business/customer-stories/intentful-dots" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Marina Petrova的dot Aria助力研究网站与构建提案，同时主动标记信息并解决问题。</div>
+</div>
+    <div style="text-align:center;padding:24px;color:#aaa;font-size:.85rem">
+        由 Hermes Agent 自动生成 · AI 日报
+    </div>
+</div>
+</body>
+</html>
