@@ -33,6 +33,96 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <a href="../" class="index-link">← 返回日报列表</a>
     <div class="day-heading">📅 2026-11-27</div>
     <div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/" target="_blank" rel="noopener">面向编码代理的外部沙箱</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-18 06:52</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">我一直在探索为coding agents执行的代码提供sandbox的新方法，重点是让本地模型的试用更安全，避免错误或prompt injection攻击导致其对机器执行破坏性操作。我与Prime Radiant（Superpowers等项目的AI研究实验室）合作开展了此项目。我在Prime Radiant博客文章中介绍了external sandbox模式，即agent执行的代码运行在专用sandbox内，而agent本身位于该sandbox之外。为演示此模式，我们发布了三个sandbox服务器实现：external-sandbox-v86运行Node.js服务器，再通过v86在WebAssembly中运行Alpine Linux；external-sandbox-container……</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/" target="_blank" rel="noopener">GPT‑6.2 Astra 与 GPT‑6.2 Sol</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-18 06:38</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI 推出 GPT‑6.2 Astra 与 GPT‑6.2 Sol：前者面向高难度项目的前沿模型，后者为高效通用的日常模型，API 名称分别为 gpt-6.2-astra 和 gpt-6.2-sol。LLM 0.38 已支持新模型。Astra 价格为 6 Astra 的 80%，输入 $8/MTok、输出 $40/MTok，与 Claude Fable 5.2 相同；6 Astra 与 Fable 5 均为 $10/$50。缓存价格更低至 $0.40/百万，远优于旧模型的 $1/百万，利于长时间 agentic 会话。Sol 维持 $2/$10，与 6.1 Sol、6 Sol 相同，为 GPT-5.6 Sol（$4/$20）的一半。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/introducing-gpt-6-2-astra-sol" target="_blank" rel="noopener">推出 GPT-6.2 Astra 和 Sol</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-18 01:45</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-gpt-6-2-astra-sol" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">GPT‑6.2 Astra 与 Sol 发布，在 ChatGPT Work、Codex 和 API 中实现更专业的输出、更强的编码与计算机使用能力，并以更低成本提升效率。</div>
+</div>
+<div class="article">
+<h2><a href="https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/" target="_blank" rel="noopener">让 Gemini 为你效力</a></h2>
+<div class="source">
+    <span>📰 AI</span>
+    <span>🕐 2026-11-18 01:00</span>
+    <span>🔗 <a href="https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Gemini中的Tasks功能现已在六个国家免费开放，并率先在美国推出新功能，同时深化与Google Workspace的集成，以代您完成各项任务。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/17/datasette-lite/" target="_blank" rel="noopener">在浏览器中使用 service workers 和 Pyodide 运行完整的服务器端 Datasette Python 应用</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-18 00:48</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/17/datasette-lite/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">Datasette Lite 是我将 Datasette Python 应用移植到浏览器中，利用 WebAssembly 和 Pyodide 直接运行的版本。我已发布使用 service workers 完全重写的 Datasette Lite，现在它几乎与真正的服务器端应用无异。你现在可以通过精心构造的 URL 访问 lite.datasette.io，实现以下所有操作：加载客户端 Datasette 以浏览任意 SQLite 数据库、JSON 文件、CSV 文件或 SQL 脚本；从 PyPI 选择已发布的 Datasette 版本加载；从 Datasette GitHub 仓库加载特定 commit、tag 或分支名；从 100 多个 SQLite 版本中选择与 Datasette 配合使用；从 PyPI 或 wheel 文件 URL 安装额外的 Datasette 插件，包括 JavaScript 可视化工具。</div>
+</div>
+<div class="article">
+<h2><a href="https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers" target="_blank" rel="noopener">面向软件工程师的推理工程</a></h2>
+<div class="source">
+    <span>📰 The Pragmatic Engineer</span>
+    <span>🕐 2026-11-18 00:11</span>
+    <span>🔗 <a href="https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">近期趋势显示，科技公司正转向开放模型以控制AI支出：Uber将每token成本降低50%，Pinterest降低90%，AT&amp;T也实现了56%的降幅。但从前沿实验室的API迁移到开放模型该如何操作？有两种选择：“裸金属”方案：若有充足时间和资金，可购买数十块NVIDIA GPU并使用AI超级计算机，如Revolut自行运行56个B200单元满足推理需求。搭建工作量大，但此后运营成本极低。推理提供商：多数公司与运营大规模GPU集群的推理提供商签约，便于客户接入并开始使用开放模型。</div>
+</div>
+<div class="article">
+<h2><a href="https://martinfowler.com/articles/deterministic-simulation-testing.html" target="_blank" rel="noopener">确定性模拟测试</a></h2>
+<div class="source">
+    <span>📰 Martin Fowler</span>
+    <span>🕐 2026-11-17 22:33</span>
+    <span>🔗 <a href="https://martinfowler.com/articles/deterministic-simulation-testing.html" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">分布式系统测试困难，因为部分故障与实时流量重叠，同一故障在不同运行中可能产生不同的执行轨迹。Unmesh Joshi描述了确定性模拟测试如何解决这一问题：用由单线程执行循环驱动的模拟组件替换真实时钟、网络和存储。这样可以模拟硬故障和常规减速——如网络和磁盘延迟峰值——更重要的是使每次执行可复现。本文以quorum键值存储为示例，结合该方法的Java实现Tickloom的代码进行说明。</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/introducing-chatgpt-for-sales" target="_blank" rel="noopener">为销售团队推出ChatGPT</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-17 16:00</span>
+    <span>🔗 <a href="https://openai.com/index/introducing-chatgpt-for-sales" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">探索全新的Sales插件以及ChatGPT中30多个新增和扩展的合作伙伴插件，用于研究潜在客户、准备推介材料、更新CRM并推进交易。</div>
+</div>
+<div class="article">
+<h2><a href="https://simonwillison.net/2026/Nov/17/go-proverbs/" target="_blank" rel="noopener">引用 Go 谚语</a></h2>
+<div class="source">
+    <span>📰 Simon Willison&#x27;s Weblog</span>
+    <span>🕐 2026-11-17 14:16</span>
+    <span>🔗 <a href="https://simonwillison.net/2026/Nov/17/go-proverbs/" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">少复制一点，胜过多一点依赖。 ——Go 谚语，来自 Tags: go, programming</div>
+</div>
+<div class="article">
+<h2><a href="https://openai.com/index/strengthening-nato-allied-cyber-defences-ai" target="_blank" rel="noopener">利用AI加强北约及盟国网络防御</a></h2>
+<div class="source">
+    <span>📰 OpenAI News</span>
+    <span>🕐 2026-11-17 08:00</span>
+    <span>🔗 <a href="https://openai.com/index/strengthening-nato-allied-cyber-defences-ai" target="_blank" rel="noopener">原文</a></span>
+</div>
+<div class="content">OpenAI与北约及盟国网络机构合作，帮助可信防御者发现漏洞、测试修复方案并保护关键系统。</div>
+</div>
+<div class="article">
 <h2><a href="https://simonwillison.net/2026/Nov/26/jack-despain-zhou/" target="_blank" rel="noopener">引用Jack Despain Zhou的话</a></h2>
 <div class="source">
     <span>📰 Simon Willison&#x27;s Weblog</span>
